@@ -1,0 +1,68 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "ko": "http://knowledge.local/ontology#"
+    },
+    "@graph": [
+        {
+            "@id": "ko:article/clovis-erreurs-et-regrets",
+            "@type": "ko:Article",
+            "title": "Erreurs et regrets",
+            "url": "https://write.bdx.town/clovis/erreurs-et-regrets-1717525595546/",
+            "publishedDate": "2025-12-14",
+            "readDate": "2026-03-07",
+            "language": "fr",
+            "abstract": "Cet article explore les défis de la gestion des erreurs dans le développement logiciel, en mettant l'accent sur l'importance de fournir des informations claires aux utilisateurs et aux développeurs, tout en protégeant le système. Il propose des stratégies pour gérer les erreurs de manière proactive et améliorer l'expérience utilisateur.",
+            "hasAuthor": "ko:author/clovis",
+            "introduces": ["ko:concept/error-user-information", "ko:concept/error-developer-information", "ko:concept/error-system-protection", "ko:concept/actionable-error", "ko:concept/non-actionable-error"],
+            "uses": ["ko:concept/validation-error", "ko:concept/form-validation", "ko:concept/user-support-communication", "ko:concept/error-reporting-form", "ko:concept/bug-reporting-strategy"],
+            "critiques": []
+        },
+        {
+            "@id": "ko:concept/error-user-information",
+            "@type": "ko:Concept",
+            "prefLabel": "Error User Information",
+            "altLabel": ["User error communication", "Error message for user"],
+            "definition": "The process of providing clear and actionable information to the user when an error occurs, ensuring they understand what went wrong and how to resolve it.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/error-developer-information",
+            "@type": "ko:Concept",
+            "prefLabel": "Error Developer Information",
+            "altLabel": ["Developer error logging", "Error debugging"],
+            "definition": "The process of capturing and logging errors for developers to analyze, ensuring that unexpected issues are identified and resolved.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/error-system-protection",
+            "@type": "ko:Concept",
+            "prefLabel": "Error System Protection",
+            "altLabel": ["System error isolation", "Secure error handling"],
+            "definition": "The practice of ensuring that errors do not expose sensitive information or compromise the system's integrity, protecting both users and developers.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/actionable-error",
+            "@type": "ko:Concept",
+            "prefLabel": "Actionable Error",
+            "altLabel": ["User-controllable error", "Resolvable error"],
+            "definition": "An error that the user can take action to resolve, such as correcting input or retrying an operation.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/non-actionable-error",
+            "@type": "ko:Concept",
+            "prefLabel": "Non-Actionable Error",
+            "altLabel": ["System error", "Unresolvable error"],
+            "definition": "An error that the user cannot resolve, often indicating a system issue or failure. These errors typically require intervention from developers or administrators to address.",
+            "domain": "software engineering"
+        }
+    ]
+}

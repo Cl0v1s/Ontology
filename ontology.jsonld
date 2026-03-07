@@ -1,0 +1,235 @@
+{
+  "@context": {
+    "owl":     "http://www.w3.org/2002/07/owl#",
+    "rdf":     "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs":    "http://www.w3.org/2000/01/rdf-schema#",
+    "skos":    "http://www.w3.org/2004/02/skos/core#",
+    "dc":      "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd":     "http://www.w3.org/2001/XMLSchema#",
+    "ko":      "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+
+    {
+      "@id": "ko:",
+      "@type": "owl:Ontology",
+      "rdfs:label": "Knowledge Ontology",
+      "rdfs:comment": "Ontologie pour lier des articles à leurs concepts. Utilisée pour constituer une base de connaissances personnelle.",
+      "owl:versionInfo": "1.0"
+    },
+
+    {
+      "@id": "ko:Article",
+      "@type": "owl:Class",
+      "rdfs:label": "Article",
+      "rdfs:comment": "Un article, billet de blog, papier académique ou tout document textuel source."
+    },
+    {
+      "@id": "ko:Concept",
+      "@type": "owl:Class",
+      "rdfs:label": "Concept",
+      "rdfs:comment": "Une idée, notion, théorie ou terme intellectuel extrait ou décrit dans des articles.",
+      "rdfs:subClassOf": { "@id": "skos:Concept" }
+    },
+    {
+      "@id": "ko:Author",
+      "@type": "owl:Class",
+      "rdfs:label": "Auteur",
+      "rdfs:comment": "Personne ayant rédigé un ou plusieurs articles."
+    },
+
+    {
+      "@id": "ko:title",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "titre",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "xsd:string" },
+      "owl:equivalentProperty": { "@id": "dc:title" }
+    },
+    {
+      "@id": "ko:url",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "URL",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "xsd:anyURI" }
+    },
+    {
+      "@id": "ko:publishedDate",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "date de publication",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "xsd:date" },
+      "owl:equivalentProperty": { "@id": "dcterms:created" }
+    },
+    {
+      "@id": "ko:readDate",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "date de lecture",
+      "rdfs:comment": "Date à laquelle l'article a été lu ou ajouté à la base.",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "xsd:date" }
+    },
+    {
+      "@id": "ko:abstract",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "résumé",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "xsd:string" },
+      "owl:equivalentProperty": { "@id": "dcterms:abstract" }
+    },
+    {
+      "@id": "ko:language",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "langue",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "xsd:language" },
+      "owl:equivalentProperty": { "@id": "dc:language" }
+    },
+    {
+      "@id": "ko:notes",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "notes personnelles",
+      "rdfs:comment": "Annotations libres sur l'article.",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "xsd:string" }
+    },
+    {
+      "@id": "ko:hasAuthor",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "auteur",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "ko:Author" },
+      "owl:equivalentProperty": { "@id": "dc:creator" }
+    },
+
+    {
+      "@id": "ko:describes",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "décrit",
+      "rdfs:comment": "L'article traite généralement ce concept, sans nécessairement le définir.",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "ko:Concept" }
+    },
+    {
+      "@id": "ko:introduces",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "introduit",
+      "rdfs:comment": "L'article définit ou introduit ce concept pour la première fois (ou de manière centrale).",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "ko:Concept" },
+      "rdfs:subPropertyOf": { "@id": "ko:describes" }
+    },
+    {
+      "@id": "ko:uses",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "utilise",
+      "rdfs:comment": "L'article mobilise ce concept comme outil ou présupposé, sans le définir explicitement.",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "ko:Concept" },
+      "rdfs:subPropertyOf": { "@id": "ko:describes" }
+    },
+    {
+      "@id": "ko:critiques",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "critique",
+      "rdfs:comment": "L'article remet en question ou discute critiquement ce concept.",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "ko:Concept" },
+      "rdfs:subPropertyOf": { "@id": "ko:describes" }
+    },
+    {
+      "@id": "ko:exemplifies",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "illustre",
+      "rdfs:comment": "L'article donne un exemple concret de ce concept.",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "ko:Concept" },
+      "rdfs:subPropertyOf": { "@id": "ko:describes" }
+    },
+
+    {
+      "@id": "ko:prefLabel",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "terme préféré",
+      "rdfs:domain": { "@id": "ko:Concept" },
+      "rdfs:range": { "@id": "xsd:string" },
+      "owl:equivalentProperty": { "@id": "skos:prefLabel" }
+    },
+    {
+      "@id": "ko:altLabel",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "synonymes / termes alternatifs",
+      "rdfs:domain": { "@id": "ko:Concept" },
+      "rdfs:range": { "@id": "xsd:string" },
+      "owl:equivalentProperty": { "@id": "skos:altLabel" }
+    },
+    {
+      "@id": "ko:definition",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "définition",
+      "rdfs:domain": { "@id": "ko:Concept" },
+      "rdfs:range": { "@id": "xsd:string" },
+      "owl:equivalentProperty": { "@id": "skos:definition" }
+    },
+    {
+      "@id": "ko:example",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "exemple",
+      "rdfs:domain": { "@id": "ko:Concept" },
+      "rdfs:range": { "@id": "xsd:string" },
+      "owl:equivalentProperty": { "@id": "skos:example" }
+    },
+    {
+      "@id": "ko:domain",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "domaine",
+      "rdfs:comment": "Champ disciplinaire ou thématique (ex: informatique, philosophie, biologie).",
+      "rdfs:domain": { "@id": "ko:Concept" },
+      "rdfs:range": { "@id": "xsd:string" }
+    },
+    {
+      "@id": "ko:broader",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "concept parent",
+      "rdfs:comment": "Ce concept est une sous-catégorie du concept parent.",
+      "rdfs:domain": { "@id": "ko:Concept" },
+      "rdfs:range": { "@id": "ko:Concept" },
+      "owl:equivalentProperty": { "@id": "skos:broader" }
+    },
+    {
+      "@id": "ko:narrower",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "concept enfant",
+      "rdfs:domain": { "@id": "ko:Concept" },
+      "rdfs:range": { "@id": "ko:Concept" },
+      "owl:equivalentProperty": { "@id": "skos:narrower" },
+      "owl:inverseOf": { "@id": "ko:broader" }
+    },
+    {
+      "@id": "ko:related",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "concept lié",
+      "rdfs:domain": { "@id": "ko:Concept" },
+      "rdfs:range": { "@id": "ko:Concept" },
+      "owl:equivalentProperty": { "@id": "skos:related" },
+      "@type": "owl:SymmetricProperty"
+    },
+
+    {
+      "@id": "ko:name",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "nom",
+      "rdfs:domain": { "@id": "ko:Author" },
+      "rdfs:range": { "@id": "xsd:string" }
+    },
+    {
+      "@id": "ko:affiliation",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "affiliation",
+      "rdfs:domain": { "@id": "ko:Author" },
+      "rdfs:range": { "@id": "xsd:string" }
+    }
+
+  ]
+}

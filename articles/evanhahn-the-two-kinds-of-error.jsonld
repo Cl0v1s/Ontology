@@ -1,0 +1,93 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "ko": "http://knowledge.local/ontology#"
+    },
+    "@graph": [
+        {
+            "@id": "ko:article/evanhahn-the-two-kinds-of-error",
+            "@type": "ko:Article",
+            "title": "The two kinds of error",
+            "url": "https://evanhahn.com/the-two-kinds-of-error/",
+            "publishedDate": "2026-03-07",
+            "readDate": "2026-03-07",
+            "language": "en",
+            "abstract": "This article discusses the two categories of errors in software development: expected and unexpected. It emphasizes the importance of handling expected errors gracefully while allowing unexpected errors to crash, indicating potential bugs.",
+            "hasAuthor": "ko:author/evanhahn",
+            "introduces": ["ko:concept/expected-error", "ko:concept/unexpected-error"],
+            "uses": ["ko:concept/error-handling", "ko:concept/validation-error", "ko:concept/network-error", "ko:concept/permission-error", "ko:concept/assertion-error", "ko:concept/logic-error", "ko:concept/null-pointer-exception"],
+            "critiques": []
+        },
+        {
+            "@id": "ko:concept/expected-error",
+            "@type": "ko:Concept",
+            "prefLabel": "Expected Error",
+            "altLabel": ["Validation error", "Network error", "Permission error"],
+            "definition": "An expected error occurs during normal operation and is not the developer's fault. Examples include validation errors, network failures, or permission issues. These should be handled gracefully without crashing the program.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/unexpected-error",
+            "@type": "ko:Concept",
+            "prefLabel": "Unexpected Error",
+            "altLabel": ["Assertion error", "Logic error", "Null pointer exception"],
+            "definition": "An unexpected error should never happen and indicates a bug. Examples include assertion errors, logic errors, or null pointer exceptions. These are allowed to crash the program as they signify serious issues.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/error-handling",
+            "@type": "ko:Concept",
+            "prefLabel": "Error Handling",
+            "definition": "The process of managing errors in software development to ensure robustness and reliability. This includes logging, user notifications, and fallback mechanisms.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/validation-error",
+            "@type": "ko:Concept",
+            "prefLabel": "Validation Error",
+            "definition": "An error that occurs when user input or data does not meet the expected criteria. These are common in forms and data entry processes.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/network-error",
+            "@type": "ko:Concept",
+            "prefLabel": "Network Error",
+            "definition": "An error related to network issues, such as failed connections or slow responses. These are often beyond the control of the developer.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/permission-error",
+            "@type": "ko:Concept",
+            "prefLabel": "Permission Error",
+            "definition": "An error that occurs when a program attempts to perform an action without the necessary permissions, such as accessing restricted files or resources.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/assertion-error",
+            "@type": "ko:Concept",
+            "prefLabel": "Assertion Error",
+            "definition": "An error that occurs when a condition or assumption is violated, often due to incorrect usage of a function or API.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/logic-error",
+            "@type": "ko:Concept",
+            "prefLabel": "Logic Error",
+            "definition": "An error in the program's logic, such as incorrect initialization or dependencies not being met. These often lead to unexpected behavior.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/null-pointer-exception",
+            "@type": "ko:Concept",
+            "prefLabel": "Null Pointer Exception",
+            "definition": "An error that occurs when a program attempts to access a null reference, often indicating a bug in the code.",
+            "domain": "software engineering"
+        }
+    ]
+}

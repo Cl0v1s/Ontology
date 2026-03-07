@@ -1,0 +1,110 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "ko": "http://knowledge.local/ontology#"
+    },
+    "@graph": [
+        {
+            "@id": "ko:article/reclaim-unreasonable-software",
+            "@type": "ko:Article",
+            "title": "Reclaim Unreasonable Software",
+            "url": "https://lethain.com/reclaim-unreasonable-software/",
+            "publishedDate": "2019-07-28",
+            "readDate": "2026-03-07",
+            "language": "en",
+            "abstract": "Discusses the challenges of maintaining software that has become complex and difficult to reason about, and proposes an alternative approach to rewriting software: reclaiming it by evolving beliefs into verified behaviors and asserted properties.",
+            "hasAuthor": "ko:author/lethain",
+            "introduces": [
+                "ko:concept/big-ball-of-mud",
+                "ko:concept/golden-age-software",
+                "ko:concept/post-apocalyptic-software",
+                "ko:concept/rewrite-vs-reclaim",
+                "ko:concept/beliefs-behaviors-properties"
+            ],
+            "uses": [
+                "ko:concept/verified-behaviors",
+                "ko:concept/asserted-properties"
+            ],
+            "critiques": [
+                "ko:concept/big-ball-of-mud"
+            ]
+        },
+        {
+            "@id": "ko:concept/big-ball-of-mud",
+            "@type": "ko:Concept",
+            "prefLabel": "Big Ball of Mud",
+            "altLabel": [
+                "chaotic software architecture",
+                "unreasonable software"
+            ],
+            "definition": "A term describing software that has evolved into a chaotic, unmanageable state due to quick fixes and lack of architectural discipline.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/golden-age-software",
+            "@type": "ko:Concept",
+            "prefLabel": "Golden Age Software",
+            "altLabel": [
+                "well-maintained software"
+            ],
+            "definition": "Software that is well-maintained, familiar to its team, and solves problems effectively within its original design constraints.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/post-apocalyptic-software",
+            "@type": "ko:Concept",
+            "prefLabel": "Post-Apocalyptic Software",
+            "altLabel": [
+                "decayed software"
+            ],
+            "definition": "Software that has become complex and difficult to maintain, often due to decay over time and loss of institutional knowledge.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/rewrite-vs-reclaim",
+            "@type": "ko:Concept",
+            "prefLabel": "Rewrite vs. Reclaim",
+            "altLabel": [
+                "software reclamation"
+            ],
+            "definition": "A comparison between the traditional approach of rewriting software and the alternative approach of reclaiming it by evolving beliefs into verified behaviors and asserted properties.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/beliefs-behaviors-properties",
+            "@type": "ko:Concept",
+            "prefLabel": "Beliefs, Behaviors, and Properties",
+            "altLabel": [
+                "beliefs-to-properties"
+            ],
+            "definition": "A framework for evolving beliefs about software into verified behaviors and asserted properties to regain confidence in making changes.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/verified-behaviors",
+            "@type": "ko:Concept",
+            "prefLabel": "Verified Behaviors",
+            "altLabel": [
+                "empirically validated behaviors"
+            ],
+            "definition": "Aspects of software that can be validated empirically, such as performance metrics or error rates.",
+            "domain": "software engineering"
+        },
+        {
+            "@id": "ko:concept/asserted-properties",
+            "@type": "ko:Concept",
+            "prefLabel": "Asserted Properties",
+            "altLabel": [
+                "statically validated properties"
+            ],
+            "definition": "Aspects of software that can be validated statically or through local exercise, such as code coverage or linting rules.",
+            "domain": "software engineering"
+        }
+    ]
+}
