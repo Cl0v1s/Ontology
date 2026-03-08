@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/"
+  },
+  "@graph": [
+    {
+      "@id": "outil",
+      "@type": "Concept",
+      "label": "Outil",
+      "description": "Une entité logicielle ou matérielle servant à manipuler, analyser ou visualiser des données.",
+      "subconcepts": ["outilDeTransformation", "outilDeVisualisation", "outilDeValidation"]
+    },
+    {
+      "@id": "outilDeTransformation",
+      "@type": "Concept",
+      "label": "Outil de Transformation",
+      "description": "Un outil permettant de transformer des données (ex: compactage, expansion, canonisation)."
+    },
+    {
+      "@id": "outilDeVisualisation",
+      "@type": "Concept",
+      "label": "Outil de Visualisation",
+      "description": "Un outil permettant de représenter graphiquement des données ou des relations (ex: diagrammes, graphes)."
+    },
+    {
+      "@id": "outilDeValidation",
+      "@type": "Concept",
+      "label": "Outil de Validation",
+      "description": "Un outil permettant de valider la structure ou la cohérence des données (ex: schémas, syntaxe)."
+    },
+    {
+      "@id": "aFonctionnalite",
+      "@type": "Property",
+      "label": "a pour fonctionnalité",
+      "domain": "outil",
+      "range": "Concept"
+    },
+    {
+      "@id": "utiliseLangage",
+      "@type": "Property",
+      "label": "utilise le langage de programmation",
+      "domain": "outil",
+      "range": "Concept"
+    },
+    {
+      "@id": "aPourDomaine",
+      "@type": "Property",
+      "label": "est utilisé dans le domaine",
+      "domain": "outil",
+      "range": "Concept"
+    }
+  ]
+}

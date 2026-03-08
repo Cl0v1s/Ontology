@@ -1,7 +1,27 @@
 {
-  "title": "JSON-LD CLI - Outil en Ligne de Commande pour JSON-LD",
+  "@context": "https://www.w3.org/ns/json-ld.jsonld",
+  "@id": "_:jsonld-cli",
+  "@type": ["outil", "outilDeTransformation"],
+  "label": "JSON-LD CLI",
   "url": "https://github.com/digitalbazaar/jsonld-cli",
-  "concepts": ["JSON-LD", "Outils de Transformation", "Manipulation de Données", "RDFa", "Canonisation"],
-  "description": "L'outil en ligne de commande `jsonld` permet de manipuler des données JSON-LD. Il peut être utilisé pour vérifier, transformer (compactage, expansion, aplatissement), ou canoniser des données JSON-LD/RDFa. Il est écrit en JavaScript pour Node.js et utilise les bibliothèques `jsonld.js` et `jsonld-request`.",
-  "tags": ["outil", "JSON-LD", "transformation", "RDFa"]
+  "aFonctionnalite": [
+    {
+      "@id": "_:transformation",
+      "label": "Transformation de données JSON-LD"
+    },
+    {
+      "@id": "_:canonisation",
+      "label": "Canonisation des données"
+    }
+  ],
+  "utiliseLangage": {
+    "@id": "_:javascript",
+    "label": "JavaScript (Node.js)"
+  },
+  "aPourDomaine": {
+    "@id": "_:json-ld",
+    "label": "JSON-LD et RDFa"
+  },
+  "description": "Outil en ligne de commande pour manipuler des données JSON-LD, incluant le compactage, l'expansion, la validation et la canonisation.",
+  "tags": ["outil", "transformation", "JSON-LD"]
 }
