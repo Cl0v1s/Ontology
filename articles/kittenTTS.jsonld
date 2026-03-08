@@ -1,0 +1,39 @@
+{
+  "@context": "https://www.w3.org/ns/json-ld.jsonld",
+  "@id": "_:kittenTTS",
+  "@type": ["outil", "outilDeTransformation"],
+  "label": "KittenTTS",
+  "url": "https://github.com/KittenML/KittenTTS",
+  "aFonctionnalite": [
+    {
+      "@id": "_:text-to-speech",
+      "label": "Synthèse vocale (TTS)"
+    },
+    {
+      "@id": "_:lightweight-model",
+      "label": "Modèle léger (<25MB, 15M paramètres)"
+    }
+  ],
+  "utiliseLangage": [
+    {
+      "@id": "_:python",
+      "label": "Python"
+    },
+    {
+      "@id": "_:cpp",
+      "label": "C++ (pour l'inférence)"
+    }
+  ],
+  "aPourDomaine": [
+    {
+      "@id": "_:tts",
+      "label": "Synthèse vocale"
+    },
+    {
+      "@id": "_:real-time-processing",
+      "label": "Traitement en temps réel"
+    }
+  ],
+  "description": "KittenTTS est un modèle de synthèse vocale (TTS) léger (<25MB) avec 15 millions de paramètres, optimisé pour le CPU et le traitement en temps réel. Compatible avec Python 3.12.",
+  "tags": ["outil", "TTS", "synthèse vocale", "modèle léger"]
+}

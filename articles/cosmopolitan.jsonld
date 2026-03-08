@@ -1,0 +1,39 @@
+{
+  "@context": "https://www.w3.org/ns/json-ld.jsonld",
+  "@id": "_:cosmopolitan",
+  "@type": ["outil", "outilDeTransformation"],
+  "label": "Cosmopolitan Libc",
+  "url": "https://github.com/jart/cosmopolitan",
+  "aFonctionnalite": [
+    {
+      "@id": "_:build-once-run-anywhere",
+      "label": "Build-once, run-anywhere"
+    },
+    {
+      "@id": "_:polyglot-executables",
+      "label": "Exécutables polyglottes (Linux, macOS, Windows, etc.)"
+    }
+  ],
+  "utiliseLangage": [
+    {
+      "@id": "_:c",
+      "label": "C"
+    },
+    {
+      "@id": "_:cpp",
+      "label": "C++"
+    }
+  ],
+  "aPourDomaine": [
+    {
+      "@id": "_:cross-platform",
+      "label": "Développement multiplateforme"
+    },
+    {
+      "@id": "_:embedded-systems",
+      "label": "Systèmes embarqués"
+    }
+  ],
+  "description": "Cosmopolitan Libc est une bibliothèque C/C++ permettant de créer des exécutables polyglottes compatibles avec Linux, macOS, Windows, et d'autres systèmes. Idéal pour les projets nécessitant une portabilité maximale.",
+  "tags": ["outil", "C/C++", "polyglotte", "multiplateforme"]
+}

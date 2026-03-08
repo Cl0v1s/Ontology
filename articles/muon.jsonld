@@ -1,0 +1,39 @@
+{
+  "@context": "https://www.w3.org/ns/json-ld.jsonld",
+  "@id": "_:muon",
+  "@type": ["outil", "outilDeVisualisation"],
+  "label": "Muon",
+  "url": "https://github.com/ImVexed/muon",
+  "aFonctionnalite": [
+    {
+      "@id": "_:graph-visualization",
+      "label": "Visualisation de graphes"
+    },
+    {
+      "@id": "_:interactive-gui",
+      "label": "Interface graphique interactive"
+    }
+  ],
+  "utiliseLangage": [
+    {
+      "@id": "_:rust",
+      "label": "Rust"
+    },
+    {
+      "@id": "_:python",
+      "label": "Python (bindings)"
+    }
+  ],
+  "aPourDomaine": [
+    {
+      "@id": "_:graph-algorithms",
+      "label": "Algorithmes de graphes"
+    },
+    {
+      "@id": "_:data-visualization",
+      "label": "Visualisation de données"
+    }
+  ],
+  "description": "Muon est une bibliothèque Rust pour la visualisation interactive de graphes, avec des bindings Python. Idéal pour explorer et analyser des structures de données complexes.",
+  "tags": ["outil", "graphes", "visualisation", "Rust"]
+}

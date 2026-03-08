@@ -1,0 +1,33 @@
+{
+  "@context": "https://www.w3.org/ns/json-ld.jsonld",
+  "@id": "_:system.css",
+  "@type": ["outil", "outilDeVisualisation"],
+  "label": "System.css",
+  "url": "https://github.com/sakofchit/system.css",
+  "aFonctionnalite": [
+    {
+      "@id": "_:retro-interfaces",
+      "label": "Création d'interfaces rétro (Apple System OS)"
+    },
+    {
+      "@id": "_:css-only",
+      "label": "Basé uniquement sur CSS, sans JavaScript"
+    }
+  ],
+  "utiliseLangage": {
+    "@id": "_:css",
+    "label": "CSS"
+  },
+  "aPourDomaine": [
+    {
+      "@id": "_:design-system",
+      "label": "Design système rétro"
+    },
+    {
+      "@id": "_:front-end-frameworks",
+      "label": "Frameworks front-end (compatible avec tout)"
+    }
+  ],
+  "description": "System.css est une bibliothèque CSS pour recréer des interfaces inspirées de l'Apple System OS (1984-1991). Compatible avec n'importe quel framework front-end, sans dépendance JavaScript.",
+  "tags": ["outil", "CSS", "design rétro", "interface utilisateur"]
+}

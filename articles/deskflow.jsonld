@@ -1,0 +1,39 @@
+{
+  "@context": "https://www.w3.org/ns/json-ld.jsonld",
+  "@id": "_:deskflow",
+  "@type": ["outil", "outilDeVisualisation"],
+  "label": "Deskflow",
+  "url": "https://github.com/deskflow/deskflow",
+  "aFonctionnalite": [
+    {
+      "@id": "_:multi-computer-control",
+      "label": "Contrôle multi-ordinateurs (clavier/souris)"
+    },
+    {
+      "@id": "_:tls-encryption",
+      "label": "Chiffrement TLS"
+    }
+  ],
+  "utiliseLangage": [
+    {
+      "@id": "_:rust",
+      "label": "Rust"
+    },
+    {
+      "@id": "_:c",
+      "label": "C"
+    }
+  ],
+  "aPourDomaine": [
+    {
+      "@id": "_:multi-computer-workflow",
+      "label": "Flux de travail multi-ordinateurs"
+    },
+    {
+      "@id": "_:productivity",
+      "label": "Productivité"
+    }
+  ],
+  "description": "Deskflow est une application open-source pour partager un clavier et une souris entre plusieurs ordinateurs, avec support TLS, Wayland, et compatibilité avec Synergy/Barrier.",
+  "tags": ["outil", "multi-ordinateur", "productivité", "clavier/souris"]
+}

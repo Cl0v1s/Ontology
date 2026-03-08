@@ -1,0 +1,33 @@
+{
+  "@context": "https://www.w3.org/ns/json-ld.jsonld",
+  "@id": "_:mquickjs",
+  "@type": ["outil", "outilDeTransformation"],
+  "label": "MicroQuickJS (MQuickJS)",
+  "url": "https://github.com/bellard/mquickjs",
+  "aFonctionnalite": [
+    {
+      "@id": "_:engine-javascript",
+      "label": "Moteur JavaScript pour systèmes embarqués"
+    },
+    {
+      "@id": "_:low-memory",
+      "label": "Utilisation minimale de mémoire (10 kB RAM)"
+    }
+  ],
+  "utiliseLangage": {
+    "@id": "_:c",
+    "label": "C"
+  },
+  "aPourDomaine": [
+    {
+      "@id": "_:systemes-embarques",
+      "label": "Systèmes embarqués"
+    },
+    {
+      "@id": "_:javascript-embedded",
+      "label": "JavaScript embarqué"
+    }
+  ],
+  "description": "MicroQuickJS est un moteur JavaScript optimisé pour les systèmes embarqués, nécessitant seulement 10 kB de RAM et 100 kB de ROM. Idéal pour les environnements contraints.",
+  "tags": ["outil", "JavaScript", "systèmes embarqués", "moteur JavaScript"]
+}
