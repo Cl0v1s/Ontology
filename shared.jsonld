@@ -4,7 +4,12 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "schema": "https://schema.org/",
-    "crm": "http://www.cidoc-crm.org/cidoc-crm/"
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "ko": "http://knowledge.local/ontology#"
   },
   "@graph": [
     {
@@ -52,6 +57,64 @@
       "label": "est utilisé dans le domaine",
       "domain": "outil",
       "range": "Concept"
+    },
+    {
+      "@id": "ko:concepts",
+      "@type": "skos:ConceptScheme",
+      "rdfs:label": "Concepts de la base de connaissances"
+    },
+    {
+      "@id": "ko:author/lethain",
+      "@type": "ko:Author",
+      "name": "Lethain",
+      "affiliation": "Independent Thought Leader"
+    },
+    {
+      "@id": "ko:author/clovis",
+      "@type": "ko:Author",
+      "name": "Clovis",
+      "affiliation": "Engineer and Researcher"
+    },
+    {
+      "@id": "ko:author/noidea-dog",
+      "@type": "ko:Author",
+      "name": "No Idea Dog",
+      "affiliation": "Software Engineering Blog"
+    },
+    {
+      "@id": "ko:concept/glue-work",
+      "@type": "ko:Concept",
+      "prefLabel": "Glue Work",
+      "definition": "The role of a 'glue' in software engineering teams, involving less glamorous but essential tasks that contribute to team success.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/technical-leadership",
+      "@type": "ko:Concept",
+      "prefLabel": "Technical Leadership",
+      "definition": "Demonstrating and building strong technical leadership skills through glue work.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/career-path",
+      "@type": "ko:Concept",
+      "prefLabel": "Career Path",
+      "definition": "Ensuring that individuals choose a career path they actually want to be on.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/team-success",
+      "@type": "ko:Concept",
+      "prefLabel": "Team Success",
+      "definition": "The importance of glue work in making a team successful.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/software-engineering",
+      "@type": "ko:Concept",
+      "prefLabel": "Software Engineering",
+      "definition": "The broader context of software development and teamwork.",
+      "domain": "software engineering"
     }
   ]
 }
