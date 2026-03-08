@@ -15,28 +15,28 @@ L'objectif est de pouvoir :
 
 ## Structure
 
-The ontology is organized into two main components:
+L'ontologie est organisée en deux composants principaux :
 
 ### 1. Articles
 
-Stores parsed articles in JSON-LD format, with metadata and extracted concepts. Each article file (e.g., `noidea-dog-glue.jsonld`) contains:
-- **Title** and **URL** of the source.
-- **Extracted concepts** linked to the shared ontology.
-- **Contextual information** like author, publication date, or tags.
+Stocke les articles analysés au format JSON-LD, avec des métadonnées et des concepts extraits. Chaque fichier d'article (ex: `noidea-dog-glue.jsonld`) contient :
+- **Titre** et **URL** de la source.
+- **Concepts extraits** liés à l'ontologie partagée.
+- **Informations contextuelles** comme l'auteur, la date de publication ou les tags.
 
-Example articles:
+Exemples d'articles :
 - [Being Glue - No Idea Blog](https://www.noidea.dog/glue)
 - [The Two Kinds of Error - Evan Hahn](https://evanhahn.com/the-two-kinds-of-error/)
 
 ### 2. Concepts (`shared.jsonld`)
 
-Defines the core concepts and their relationships, such as:
-- **Glue Work**: The role of connecting teams or projects.
-- **Technical Leadership**: Skills and practices for leading technical teams.
-- **Career Path**: Evolution in software engineering roles.
-- **Team Success**: Factors contributing to effective collaboration.
+Définis les concepts clés et leurs relations, tels que :
+- **Glue Work** : Le rôle de connexion entre équipes ou projets.
+- **Leadership Technique** : Compétences et pratiques pour diriger des équipes techniques.
+- **Parcours de Carrière** : Évolution dans les rôles d'ingénierie logicielle.
+- **Succès d'Équipe** : Facteurs contribuant à une collaboration efficace.
 
-## Functionality
+## Fonctionnalités
 
 ### Intégration
 
