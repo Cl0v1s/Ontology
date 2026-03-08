@@ -20,6 +20,12 @@
             "@type": "ko:Author",
             "name": "Lethain",
             "affiliation": "Independent Thought Leader"
+        },
+        {
+            "@id": "ko:author/clovis",
+            "@type": "ko:Author",
+            "name": "Clovis",
+            "affiliation": "Engineer and Researcher"
         }
     ]
 }

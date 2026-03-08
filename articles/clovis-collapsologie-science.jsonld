@@ -1,0 +1,125 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/clovis-collapsologie-science",
+      "@type": "ko:Article",
+      "title": "La collapsologie est-elle une nouvelle science ?",
+      "url": "https://write.bdx.town/clovis/la-collapsologie-est-elle-une-nouvelle-science--1708076147005/",
+      "publishedDate": "2025-12-14",
+      "readDate": "2026-03-08",
+      "language": "fr",
+      "abstract": "Réponse détaillée à la question : La collapsologie est-elle une nouvelle science ? L'article explore les critères scientifiques, notamment la réfutabilité et la validation par les pairs.",
+      "hasAuthor": "ko:author/clovis",
+      "introduces": [
+        "ko:concept/collapsologie",
+        "ko:concept/transdisciplinarite",
+        "ko:concept/multidisciplinarite"
+      ],
+      "uses": [
+        "ko:concept/science",
+        "ko:concept/effondrement",
+        "ko:concept/consensus-scientifique",
+        "ko:concept/revue-par-les-pairs",
+        "ko:concept/ecospiritualite"
+      ],
+      "critiques": [
+        "ko:concept/collapsologie",
+        "ko:concept/science"
+      ],
+      "describes": [
+        "ko:concept/effondrement-systemique",
+        "ko:concept/axiomes-collapsologie"
+      ]
+    },
+    {
+      "@id": "ko:concept/collapsologie",
+      "@type": "ko:Concept",
+      "prefLabel": "Collapsology",
+      "altLabel": ["collapsologie", "science de l'effondrement"],
+      "definition": "Exercice transdisciplinaire visant à l’étude de l’effondrement de la société thermo-industrielle et de ce qui pourrait lui succéder.",
+      "domain": "ecology, sociology"
+    },
+    {
+      "@id": "ko:concept/transdisciplinarite",
+      "@type": "ko:Concept",
+      "prefLabel": "Transdisciplinarity",
+      "altLabel": ["transdisciplinarité"],
+      "definition": "Approche qui dépasse les frontières des disciplines spécialisées pour construire de nouvelles connaissances.",
+      "domain": "science"
+    },
+    {
+      "@id": "ko:concept/multidisciplinarite",
+      "@type": "ko:Concept",
+      "prefLabel": "Multidisciplinary Approach",
+      "altLabel": ["multidisciplinarité"],
+      "definition": "Approche centrée sur plusieurs disciplines sans les intégrer pour construire de nouvelles connaissances.",
+      "domain": "science"
+    },
+    {
+      "@id": "ko:concept/science",
+      "@type": "ko:Concept",
+      "prefLabel": "Science",
+      "altLabel": ["science"],
+      "definition": "Ensemble de connaissances valides produites par des méthodes rigoureuses, validées par les pairs et soumises au consensus scientifique.",
+      "domain": "philosophy of science"
+    },
+    {
+      "@id": "ko:concept/effondrement",
+      "@type": "ko:Concept",
+      "prefLabel": "Collapse",
+      "altLabel": ["effondrement", "collapsology collapse"],
+      "definition": "Concept lié à la disparition massive d’espèces, notamment l’humanité, en raison du changement climatique.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/consensus-scientifique",
+      "@type": "ko:Concept",
+      "prefLabel": "Scientific Consensus",
+      "altLabel": ["consensus scientifique"],
+      "definition": "Accord d'un nombre suffisamment important de scientifiques sur une connaissance, validant sa validité.",
+      "domain": "science"
+    },
+    {
+      "@id": "ko:concept/revue-par-les-pairs",
+      "@type": "ko:Concept",
+      "prefLabel": "Peer Review",
+      "altLabel": ["revue par les pairs"],
+      "definition": "Processus de validation de la rigueur méthodologique et des raisonnements scientifiques.",
+      "domain": "science"
+    },
+    {
+      "@id": "ko:concept/ecospiritualite",
+      "@type": "ko:Concept",
+      "prefLabel": "Ecospirituality",
+      "altLabel": ["écospiritualité"],
+      "definition": "Lien entre la spiritualité et l'écologie, souvent associé à la collapsologie.",
+      "domain": "ecology, spirituality"
+    },
+    {
+      "@id": "ko:concept/effondrement-systemique",
+      "@type": "ko:Concept",
+      "prefLabel": "Systemic Collapse",
+      "altLabel": ["effondrement systémique"],
+      "definition": "Disparition massive d’espèces et impact durable sur la vie sur Terre, souvent liée au changement climatique.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/axiomes-collapsologie",
+      "@type": "ko:Concept",
+      "prefLabel": "Axioms of Collapsology",
+      "altLabel": ["axiomes de la collapsologie"],
+      "definition": "Présupposés non prouvés spécifiques à la collapsologie, comme l’inévitabilité de l’effondrement.",
+      "domain": "collapsology"
+    }
+  ]
+}
