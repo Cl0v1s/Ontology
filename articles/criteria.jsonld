@@ -1,0 +1,7 @@
+{
+  "title": "CRITERIA - Outil de Visualisation d'Ontologies CIDOC-CRM",
+  "url": "https://github.com/chin-rcip/CRITERIA",
+  "concepts": ["CIDOC-CRM", "Visualisation d'Ontologie", "Mermaid", "Diagrammes Entité-Relation", "Ontologie Culturelle"],
+  "description": "CRITERIA est un outil pour générer des diagrammes Mermaid à partir de données CIDOC-CRM. Il permet de visualiser les relations entre entités culturelles, comme les œuvres, événements ou personnes, sous forme de graphes ou de diagrammes. Idéal pour explorer et documenter des ontologies complexes.",
+  "tags": ["outil", "CIDOC-CRM", "Mermaid", "visualisation", "ontologie"]
+}
