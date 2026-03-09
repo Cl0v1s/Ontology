@@ -115,6 +115,48 @@
       "prefLabel": "Software Engineering",
       "definition": "The broader context of software development and teamwork.",
       "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/layers-of-context",
+      "@type": "ko:Concept",
+      "prefLabel": "Layers of Context",
+      "definition": "The different perspectives or dimensions involved in evaluating a problem, such as technical, organizational, financial, and leadership.",
+      "domain": "engineering strategy"
+    },
+    {
+      "@id": "ko:concept/curiosity-over-conviction",
+      "@type": "ko:Concept",
+      "prefLabel": "Curiosity Over Conviction",
+      "definition": "Approach problems with curiosity rather than conviction to better understand missing context layers.",
+      "domain": "leadership"
+    },
+    {
+      "@id": "ko:concept/contextual-awareness",
+      "@type": "ko:Concept",
+      "prefLabel": "Contextual Awareness",
+      "definition": "The ability to perceive and reason across multiple context layers to make informed decisions.",
+      "domain": "leadership"
+    },
+    {
+      "@id": "ko:concept/leadership-perspective",
+      "@type": "ko:Concept",
+      "prefLabel": "Leadership Perspective",
+      "definition": "Understanding the goals, constraints, and priorities of leadership in decision-making.",
+      "domain": "leadership"
+    },
+    {
+      "@id": "ko:concept/product-vs-infrastructure-perspectives",
+      "@type": "ko:Concept",
+      "prefLabel": "Product vs. Infrastructure Perspectives",
+      "definition": "Balancing the needs and viewpoints of product engineering and infrastructure teams.",
+      "domain": "engineering strategy"
+    },
+    {
+      "@id": "ko:concept/networking-for-context",
+      "@type": "ko:Concept",
+      "prefLabel": "Networking for Context",
+      "definition": "Building a broad network to borrow hard-won context from others without organizational politics.",
+      "domain": "leadership"
     }
   ]
 }
