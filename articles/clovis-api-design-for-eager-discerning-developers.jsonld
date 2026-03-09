@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/api-design-for-eager-discerning-developers",
+      "@type": "ko:Article",
+      "title": "Eagerly discerning, discerningly eager - API Design for Developers",
+      "url": "https://increment.com/apis/api-design-for-eager-discerning-developers/",
+      "publishedDate": "2026-03-09",
+      "readDate": "2026-03-09",
+      "language": "en",
+      "abstract": "Discusses the balance between convenience and power in API design, targeting both eager and discerning developers.",
+      "hasAuthor": "ko:author/clovis",
+      "introduces": [
+        "ko:concept/api-design",
+        "ko:concept/eager-developer",
+        "ko:concept/discerning-developer",
+        "ko:concept/convenience-vs-power",
+        "ko:concept/integration-guide",
+        "ko:concept/pits-of-success",
+        "ko:concept/naming-conventions",
+        "ko:concept/error-messages",
+        "ko:concept/domain-specific-jargon",
+        "ko:concept/future-proof-apis"
+      ]
+    },
+    {
+      "@id": "ko:concept/api-design",
+      "@type": "ko:Concept",
+      "prefLabel": "API Design",
+      "definition": "The process of designing APIs that balance convenience and power for developers.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/eager-developer",
+      "@type": "ko:Concept",
+      "prefLabel": "Eager Developer",
+      "definition": "A developer who prioritizes speed and ease of integration, often at the expense of deeper customization.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/discerning-developer",
+      "@type": "ko:Concept",
+      "prefLabel": "Discerning Developer",
+      "definition": "A developer who seeks APIs that offer reliability, expressiveness, and customization for long-term needs.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/convenience-vs-power",
+      "@type": "ko:Concept",
+      "prefLabel": "Convenience vs. Power",
+      "definition": "The trade-off between ease of use and the depth of functionality in API design.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/integration-guide",
+      "@type": "ko:Concept",
+      "prefLabel": "Integration Guide",
+      "definition": "A guide that helps developers quickly integrate an API by providing runnable code snippets and minimal documentation.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/pits-of-success",
+      "@type": "ko:Concept",
+      "prefLabel": "Pits of Success",
+      "definition": "Design patterns that guide developers toward correct usage, even when they encounter errors or bugs.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/naming-conventions",
+      "@type": "ko:Concept",
+      "prefLabel": "Naming Conventions",
+      "definition": "Consistent and intuitive naming of parameters, functions, or objects to improve usability.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/error-messages",
+      "@type": "ko:Concept",
+      "prefLabel": "Error Messages",
+      "definition": "Informative error messages that guide developers toward correct usage and troubleshooting.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/domain-specific-jargon",
+      "@type": "ko:Concept",
+      "prefLabel": "Domain-Specific Jargon",
+      "definition": "Technical terminology specific to a domain, which can be avoided in favor of simpler or more intuitive terms.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/future-proof-apis",
+      "@type": "ko:Concept",
+      "prefLabel": "Future-Proof APIs",
+      "definition": "APIs designed to evolve with minimal disruption, anticipating future needs and changes.",
+      "domain": "software engineering"
+    }
+  ]
+}
