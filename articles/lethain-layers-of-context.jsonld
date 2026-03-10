@@ -42,5 +42,6 @@
       "description": "Building a broad network to borrow hard-won context from others without organizational politics."
     }
   ],
-  "tags": ["Leadership", "Engineering Strategy", "Contextual Reasoning", "Organizational Dynamics"]
+  "tags": ["Leadership", "Engineering Strategy", "Contextual Reasoning", "Organizational Dynamics"],
+      "relatedTo": ["ko:concept/layers-of-context", "ko:concept/curiosity-over-conviction", "ko:concept/contextual-awareness"]
 }

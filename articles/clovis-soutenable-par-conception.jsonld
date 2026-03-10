@@ -21,7 +21,8 @@
       "abstract": "L'article explore les principes de l'éco-conception et comment ils peuvent être appliqués pour réduire l'impact environnemental des systèmes numériques.",
       "hasAuthor": "ko:author/clovis",
       "introduces": ["ko:concept/eco-conception", "ko:concept/simplicite-logicielle", "ko:concept/gouvernance-soutenable"],
-      "uses": ["ko:concept/mesure-impact-ecologique", "ko:concept/taux-de-rebond", "ko:concept/pue"]
+      "uses": ["ko:concept/mesure-impact-ecologique", "ko:concept/taux-de-rebond", "ko:concept/pue"],
+      "relatedTo": ["ko:concept/eco-conception", "ko:concept/simplicite-logicielle"]
     }
   ]
 }
