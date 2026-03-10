@@ -1,4 +1,4 @@
-# Mon Ontology: Base de Connaissances pour la Réflexion et l'Organisation du Travail
+# Ontologie personnelle
 
 ## Objectif
 
@@ -24,10 +24,6 @@ Stocke les articles analysés au format JSON-LD, avec des métadonnées et des c
 - **Concepts extraits** liés à l'ontologie partagée.
 - **Informations contextuelles** comme l'auteur, la date de publication ou les tags.
 
-Exemples d'articles :
-- [Being Glue - No Idea Blog](https://www.noidea.dog/glue)
-- [The Two Kinds of Error - Evan Hahn](https://evanhahn.com/the-two-kinds-of-error/)
-
 ### 2. Concepts (`shared.jsonld`)
 
 Définis les concepts clés et leurs relations, tels que :
@@ -36,28 +32,9 @@ Définis les concepts clés et leurs relations, tels que :
 - **Parcours de Carrière** : Évolution dans les rôles d'ingénierie logicielle.
 - **Succès d'Équipe** : Facteurs contribuant à une collaboration efficace.
 
-## Fonctionnalités
-
-### Intégration
-
-Les articles sont analysés et leurs concepts liés à l'ontologie partagée. Je peux ajouter de nouveaux articles en utilisant la compétence `ontology`, qui :
-1. Récupère le contenu de l'article.
-2. Extrait les concepts clés et entités.
-3. Les lie aux concepts existants ou en crée de nouveaux.
-4. Valide et commette les changements.
-
 ### Exemples d'Utilisation
 
 - **Pratique Réflexive** : Interroger l'ontologie pour obtenir des insights sur un sujet spécifique (ex: "Comment le 'Glue Work' impacte-t-il la réussite d'une équipe ?").
 - **Organisation du Travail** : Récupérer les meilleures pratiques ou schémas à partir d'articles liés à mes tâches actuelles.
 - **Exploration des Concepts** : Naviguer dans les relations entre concepts pour découvrir des connexions plus profondes.
 
-
-
-#
-
-## Perspectives d'Évolution
-
-Je prévois d'élargir cette ontologie pour inclure d'autres domaines pertinents, comme la gestion de projet ou l'éthique. À terme, je souhaite ajouter des capacités de requête pour extraire des insights ou générer des synthèses à partir de cette base de connaissances.
-
----
