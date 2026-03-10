@@ -1,39 +1,49 @@
 {
-  "@context": "https://www.w3.org/ns/json-ld.jsonld",
-  "@id": "_:cosmopolitan",
-  "@type": ["outil", "outilDeTransformation"],
-  "label": "Cosmopolitan Libc",
-  "url": "https://github.com/jart/cosmopolitan",
-  "aFonctionnalite": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
     {
-      "@id": "_:build-once-run-anywhere",
-      "label": "Build-once, run-anywhere"
+      "@id": "ko:article/cosmopolitan-libc",
+      "@type": "ko:Article",
+      "title": "Cosmopolitan Libc",
+      "url": "https://github.com/jart/cosmopolitan",
+      "readDate": "2026-03-10",
+      "language": "en",
+      "abstract": "Bibliothèque C/C++ permettant de créer des exécutables polyglottes fonctionnant sur Linux, macOS, Windows et d'autres systèmes sans recompilation.",
+      "uses": ["ko:concept/outil-de-transformation", "ko:concept/embedded-systems", "ko:concept/cross-platform-development"],
+      "hasFeature": ["ko:concept/build-once-run-anywhere", "ko:concept/polyglot-executables"],
+      "usesLanguage": ["ko:concept/language-c", "ko:concept/language-cpp"]
     },
     {
-      "@id": "_:polyglot-executables",
-      "label": "Exécutables polyglottes (Linux, macOS, Windows, etc.)"
-    }
-  ],
-  "utiliseLangage": [
-    {
-      "@id": "_:c",
-      "label": "C"
+      "@id": "ko:concept/build-once-run-anywhere",
+      "@type": "ko:Concept",
+      "prefLabel": "Build-once, run-anywhere",
+      "definition": "Capacité à compiler un exécutable unique fonctionnant sur plusieurs systèmes d'exploitation sans recompilation.",
+      "domain": "cross-platform development"
     },
     {
-      "@id": "_:cpp",
-      "label": "C++"
-    }
-  ],
-  "aPourDomaine": [
-    {
-      "@id": "_:cross-platform",
-      "label": "Développement multiplateforme"
+      "@id": "ko:concept/polyglot-executables",
+      "@type": "ko:Concept",
+      "prefLabel": "Exécutables polyglottes",
+      "definition": "Fichiers binaires valides simultanément pour plusieurs systèmes d'exploitation (Linux, macOS, Windows, etc.).",
+      "domain": "cross-platform development",
+      "related": ["ko:concept/build-once-run-anywhere"]
     },
     {
-      "@id": "_:embedded-systems",
-      "label": "Systèmes embarqués"
+      "@id": "ko:concept/cross-platform-development",
+      "@type": "ko:Concept",
+      "prefLabel": "Développement multiplateforme",
+      "altLabel": ["cross-platform development"],
+      "definition": "Développement de logiciels compatibles avec plusieurs systèmes d'exploitation ou environnements d'exécution.",
+      "domain": "software engineering"
     }
-  ],
-  "description": "Cosmopolitan Libc est une bibliothèque C/C++ permettant de créer des exécutables polyglottes compatibles avec Linux, macOS, Windows, et d'autres systèmes. Idéal pour les projets nécessitant une portabilité maximale.",
-  "tags": ["outil", "C/C++", "polyglotte", "multiplateforme"]
+  ]
 }

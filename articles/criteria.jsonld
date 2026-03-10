@@ -1,33 +1,57 @@
 {
-  "@context": "https://www.w3.org/ns/json-ld.jsonld",
-  "@id": "_:criteria",
-  "@type": ["outil", "outilDeVisualisation"],
-  "label": "CRITERIA",
-  "url": "https://github.com/chin-rcip/CRITERIA",
-  "aFonctionnalite": [
-    {
-      "@id": "_:generation-diagrammes",
-      "label": "Génération de diagrammes Mermaid"
-    },
-    {
-      "@id": "_:visualisation-graphes",
-      "label": "Visualisation de graphes CIDOC-CRM"
-    }
-  ],
-  "utiliseLangage": {
-    "@id": "_:mermaid",
-    "label": "Mermaid (pour diagrammes)"
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
   },
-  "aPourDomaine": [
+  "@graph": [
     {
-      "@id": "_:cidoc-crm",
-      "label": "CIDOC-CRM et ontologies culturelles"
+      "@id": "ko:article/criteria",
+      "@type": "ko:Article",
+      "title": "CRITERIA",
+      "url": "https://github.com/chin-rcip/CRITERIA",
+      "readDate": "2026-03-10",
+      "language": "en",
+      "abstract": "Outil pour générer des diagrammes Mermaid à partir de données CIDOC-CRM, permettant d'explorer et documenter des ontologies culturelles.",
+      "uses": ["ko:concept/outil-de-visualisation", "ko:concept/data-visualization", "ko:concept/cidoc-crm"],
+      "hasFeature": ["ko:concept/mermaid-diagram-generation", "ko:concept/cidoc-crm-visualization"],
+      "usesLanguage": ["ko:concept/language-mermaid"]
     },
     {
-      "@id": "_:mon-ontology",
-      "label": "Mon Ontology (base de connaissances personnelle)"
+      "@id": "ko:concept/mermaid-diagram-generation",
+      "@type": "ko:Concept",
+      "prefLabel": "Génération de diagrammes Mermaid",
+      "definition": "Production automatique de diagrammes au format Mermaid à partir de données structurées.",
+      "domain": "data visualization",
+      "broader": "ko:concept/data-visualization"
+    },
+    {
+      "@id": "ko:concept/cidoc-crm-visualization",
+      "@type": "ko:Concept",
+      "prefLabel": "Visualisation CIDOC-CRM",
+      "definition": "Représentation graphique de données modélisées selon l'ontologie CIDOC-CRM.",
+      "domain": "cultural heritage informatics",
+      "broader": "ko:concept/data-visualization"
+    },
+    {
+      "@id": "ko:concept/language-mermaid",
+      "@type": "ko:Concept",
+      "prefLabel": "Mermaid",
+      "definition": "Langage de description de diagrammes basé sur du texte, rendu en SVG dans les navigateurs.",
+      "domain": "programming languages"
+    },
+    {
+      "@id": "ko:concept/cidoc-crm",
+      "@type": "ko:Concept",
+      "prefLabel": "CIDOC-CRM",
+      "altLabel": ["Conceptual Reference Model", "ISO 21127"],
+      "definition": "Ontologie de référence pour l'échange d'informations dans le domaine du patrimoine culturel.",
+      "domain": "cultural heritage informatics"
     }
-  ],
-  "description": "Outil pour générer des diagrammes Mermaid à partir de données CIDOC-CRM, permettant d'explorer et documenter des ontologies complexes.",
-  "tags": ["outil", "visualisation", "CIDOC-CRM"]
+  ]
 }

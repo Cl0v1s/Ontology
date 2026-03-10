@@ -1,39 +1,51 @@
 {
-  "@context": "https://www.w3.org/ns/json-ld.jsonld",
-  "@id": "_:muon",
-  "@type": ["outil", "outilDeVisualisation"],
-  "label": "Muon",
-  "url": "https://github.com/ImVexed/muon",
-  "aFonctionnalite": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
     {
-      "@id": "_:graph-visualization",
-      "label": "Visualisation de graphes"
+      "@id": "ko:article/muon",
+      "@type": "ko:Article",
+      "title": "Muon",
+      "url": "https://github.com/ImVexed/muon",
+      "readDate": "2026-03-10",
+      "language": "en",
+      "abstract": "Bibliothèque Rust pour la visualisation interactive de graphes, avec des bindings Python.",
+      "uses": ["ko:concept/outil-de-visualisation", "ko:concept/data-visualization", "ko:concept/graph-algorithms"],
+      "hasFeature": ["ko:concept/interactive-graph-visualization", "ko:concept/interactive-gui"],
+      "usesLanguage": ["ko:concept/language-rust", "ko:concept/language-python"]
     },
     {
-      "@id": "_:interactive-gui",
-      "label": "Interface graphique interactive"
-    }
-  ],
-  "utiliseLangage": [
-    {
-      "@id": "_:rust",
-      "label": "Rust"
+      "@id": "ko:concept/interactive-graph-visualization",
+      "@type": "ko:Concept",
+      "prefLabel": "Visualisation interactive de graphes",
+      "altLabel": ["interactive graph visualization"],
+      "definition": "Représentation visuelle de graphes (nœuds et arêtes) avec interaction en temps réel.",
+      "domain": "data visualization",
+      "broader": "ko:concept/data-visualization"
     },
     {
-      "@id": "_:python",
-      "label": "Python (bindings)"
-    }
-  ],
-  "aPourDomaine": [
-    {
-      "@id": "_:graph-algorithms",
-      "label": "Algorithmes de graphes"
+      "@id": "ko:concept/interactive-gui",
+      "@type": "ko:Concept",
+      "prefLabel": "Interface graphique interactive",
+      "altLabel": ["interactive GUI"],
+      "definition": "Interface utilisateur permettant des interactions directes via des éléments visuels.",
+      "domain": "software engineering"
     },
     {
-      "@id": "_:data-visualization",
-      "label": "Visualisation de données"
+      "@id": "ko:concept/graph-algorithms",
+      "@type": "ko:Concept",
+      "prefLabel": "Algorithmes de graphes",
+      "altLabel": ["graph algorithms"],
+      "definition": "Ensemble de techniques algorithmiques pour analyser, traverser et manipuler des structures de graphes.",
+      "domain": "computer science"
     }
-  ],
-  "description": "Muon est une bibliothèque Rust pour la visualisation interactive de graphes, avec des bindings Python. Idéal pour explorer et analyser des structures de données complexes.",
-  "tags": ["outil", "graphes", "visualisation", "Rust"]
+  ]
 }

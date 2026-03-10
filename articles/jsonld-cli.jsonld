@@ -1,27 +1,57 @@
 {
-  "@context": "https://www.w3.org/ns/json-ld.jsonld",
-  "@id": "_:jsonld-cli",
-  "@type": ["outil", "outilDeTransformation"],
-  "label": "JSON-LD CLI",
-  "url": "https://github.com/digitalbazaar/jsonld-cli",
-  "aFonctionnalite": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
     {
-      "@id": "_:transformation",
-      "label": "Transformation de données JSON-LD"
+      "@id": "ko:article/jsonld-cli",
+      "@type": "ko:Article",
+      "title": "JSON-LD CLI",
+      "url": "https://github.com/digitalbazaar/jsonld-cli",
+      "readDate": "2026-03-10",
+      "language": "en",
+      "abstract": "Outil en ligne de commande pour manipuler des données JSON-LD : compactage, expansion, validation et canonisation.",
+      "uses": ["ko:concept/outil-de-transformation", "ko:concept/json-ld"],
+      "hasFeature": ["ko:concept/jsonld-transformation", "ko:concept/data-canonization"],
+      "usesLanguage": ["ko:concept/language-javascript"]
     },
     {
-      "@id": "_:canonisation",
-      "label": "Canonisation des données"
+      "@id": "ko:concept/jsonld-transformation",
+      "@type": "ko:Concept",
+      "prefLabel": "Transformation JSON-LD",
+      "definition": "Opérations sur des documents JSON-LD : compactage, expansion, aplatissement, conversion en RDF.",
+      "domain": "semantic web"
+    },
+    {
+      "@id": "ko:concept/data-canonization",
+      "@type": "ko:Concept",
+      "prefLabel": "Canonisation de données",
+      "altLabel": ["data canonization", "RDF dataset normalization"],
+      "definition": "Processus produisant une représentation normalisée et déterministe d'un graphe RDF.",
+      "domain": "semantic web"
+    },
+    {
+      "@id": "ko:concept/language-javascript",
+      "@type": "ko:Concept",
+      "prefLabel": "JavaScript",
+      "altLabel": ["JS", "Node.js"],
+      "definition": "Langage de programmation interprété, initialement conçu pour le web, aussi utilisé côté serveur via Node.js.",
+      "domain": "programming languages"
+    },
+    {
+      "@id": "ko:concept/json-ld",
+      "@type": "ko:Concept",
+      "prefLabel": "JSON-LD",
+      "altLabel": ["JSON for Linked Data"],
+      "definition": "Format de données basé sur JSON pour représenter des données liées selon les principes du web sémantique.",
+      "domain": "semantic web"
     }
-  ],
-  "utiliseLangage": {
-    "@id": "_:javascript",
-    "label": "JavaScript (Node.js)"
-  },
-  "aPourDomaine": {
-    "@id": "_:json-ld",
-    "label": "JSON-LD et RDFa"
-  },
-  "description": "Outil en ligne de commande pour manipuler des données JSON-LD, incluant le compactage, l'expansion, la validation et la canonisation.",
-  "tags": ["outil", "transformation", "JSON-LD"]
+  ]
 }

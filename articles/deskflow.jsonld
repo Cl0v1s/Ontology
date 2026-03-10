@@ -1,39 +1,57 @@
 {
-  "@context": "https://www.w3.org/ns/json-ld.jsonld",
-  "@id": "_:deskflow",
-  "@type": ["outil", "outilDeVisualisation"],
-  "label": "Deskflow",
-  "url": "https://github.com/deskflow/deskflow",
-  "aFonctionnalite": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
     {
-      "@id": "_:multi-computer-control",
-      "label": "Contrôle multi-ordinateurs (clavier/souris)"
+      "@id": "ko:article/deskflow",
+      "@type": "ko:Article",
+      "title": "Deskflow",
+      "url": "https://github.com/deskflow/deskflow",
+      "readDate": "2026-03-10",
+      "language": "en",
+      "abstract": "Application open-source pour partager un clavier et une souris entre plusieurs ordinateurs, avec support TLS, Wayland, et compatibilité avec Synergy/Barrier.",
+      "uses": ["ko:concept/outil", "ko:concept/multi-computer-workflow", "ko:concept/productivity"],
+      "hasFeature": ["ko:concept/multi-computer-control", "ko:concept/tls-encryption"],
+      "usesLanguage": ["ko:concept/language-rust", "ko:concept/language-c"]
     },
     {
-      "@id": "_:tls-encryption",
-      "label": "Chiffrement TLS"
-    }
-  ],
-  "utiliseLangage": [
-    {
-      "@id": "_:rust",
-      "label": "Rust"
+      "@id": "ko:concept/multi-computer-control",
+      "@type": "ko:Concept",
+      "prefLabel": "Contrôle multi-ordinateurs",
+      "altLabel": ["KVM software", "input sharing"],
+      "definition": "Partage d'un clavier et d'une souris entre plusieurs ordinateurs via un logiciel.",
+      "domain": "productivity"
     },
     {
-      "@id": "_:c",
-      "label": "C"
-    }
-  ],
-  "aPourDomaine": [
-    {
-      "@id": "_:multi-computer-workflow",
-      "label": "Flux de travail multi-ordinateurs"
+      "@id": "ko:concept/tls-encryption",
+      "@type": "ko:Concept",
+      "prefLabel": "Chiffrement TLS",
+      "altLabel": ["TLS encryption", "Transport Layer Security"],
+      "definition": "Protocole de chiffrement des communications réseau garantissant confidentialité et intégrité.",
+      "domain": "security"
     },
     {
-      "@id": "_:productivity",
-      "label": "Productivité"
+      "@id": "ko:concept/multi-computer-workflow",
+      "@type": "ko:Concept",
+      "prefLabel": "Flux de travail multi-ordinateurs",
+      "definition": "Organisation du travail impliquant plusieurs machines physiques utilisées simultanément.",
+      "domain": "productivity"
+    },
+    {
+      "@id": "ko:concept/productivity",
+      "@type": "ko:Concept",
+      "prefLabel": "Productivité",
+      "altLabel": ["productivity", "efficacité de travail"],
+      "definition": "Capacité à accomplir des tâches de manière efficace et fluide.",
+      "domain": "software engineering"
     }
-  ],
-  "description": "Deskflow est une application open-source pour partager un clavier et une souris entre plusieurs ordinateurs, avec support TLS, Wayland, et compatibilité avec Synergy/Barrier.",
-  "tags": ["outil", "multi-ordinateur", "productivité", "clavier/souris"]
+  ]
 }

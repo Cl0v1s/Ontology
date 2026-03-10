@@ -19,7 +19,6 @@
       "readDate": "2026-03-09",
       "language": "en",
       "abstract": "Discusses the balance between convenience and power in API design, targeting both eager and discerning developers.",
-      ,
       "introduces": [
         "ko:concept/api-design",
         "ko:concept/eager-developer",

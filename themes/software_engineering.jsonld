@@ -11,85 +11,42 @@
   },
   "@graph": [
     {
-      "@id": "outil",
-      "@type": "Concept",
-      "label": "Outil",
-      "description": "Une entité logicielle ou matérielle servant à manipuler, analyser ou visualiser des données.",
-      "subconcepts": ["outilDeTransformation", "outilDeVisualisation", "outilDeValidation"]
-    },
-    {
-      "@id": "outilDeTransformation",
-      "@type": "Concept",
-      "label": "Outil de Transformation",
-      "description": "Un outil permettant de transformer des données (ex: compactage, expansion, canonisation)."
-    },
-    {
-      "@id": "outilDeVisualisation",
-      "@type": "Concept",
-      "label": "Outil de Visualisation",
-      "description": "Un outil permettant de représenter graphiquement des données ou des relations (ex: diagrammes, graphes)."
-    },
-    {
-      "@id": "outilDeValidation",
-      "@type": "Concept",
-      "label": "Outil de Validation",
-      "description": "Un outil permettant de valider la structure ou la cohérence des données (ex: schémas, syntaxe)."
+      "@id": "ko:concept/software-engineering",
+      "@type": "ko:Concept",
+      "prefLabel": "Software Engineering",
+      "definition": "The broader context of software development, teamwork, and engineering practices.",
+      "domain": "software engineering"
     },
     {
       "@id": "ko:concept/glue-work",
       "@type": "ko:Concept",
       "prefLabel": "Glue Work",
-      "definition": "The role of a 'glue' in software engineering teams, involving less glamorous but essential tasks that contribute to team success.",
-      "domain": "software engineering"
+      "definition": "The role of essential but less visible tasks in software engineering teams that contribute to team success.",
+      "domain": "software engineering",
+      "related": ["ko:concept/technical-leadership", "ko:concept/team-success"]
     },
     {
       "@id": "ko:concept/technical-leadership",
       "@type": "ko:Concept",
       "prefLabel": "Technical Leadership",
-      "definition": "Demonstrating and building strong technical leadership skills through glue work.",
-      "domain": "software engineering"
+      "definition": "Demonstrating and building strong technical leadership skills, often through coordination and glue work.",
+      "domain": "software engineering",
+      "related": ["ko:concept/glue-work"]
     },
     {
       "@id": "ko:concept/career-path",
       "@type": "ko:Concept",
       "prefLabel": "Career Path",
-      "definition": "Ensuring that individuals choose a career path they actually want to be on.",
+      "definition": "The trajectory chosen by an individual in their professional development.",
       "domain": "software engineering"
     },
     {
       "@id": "ko:concept/team-success",
       "@type": "ko:Concept",
       "prefLabel": "Team Success",
-      "definition": "The importance of glue work in making a team successful.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/software-engineering",
-      "@type": "ko:Concept",
-      "prefLabel": "Software Engineering",
-      "definition": "The broader context of software development and teamwork.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "aFonctionnalite",
-      "@type": "Property",
-      "label": "a pour fonctionnalité",
-      "domain": "outil",
-      "range": "Concept"
-    },
-    {
-      "@id": "utiliseLangage",
-      "@type": "Property",
-      "label": "utilise le langage de programmation",
-      "domain": "outil",
-      "range": "Concept"
-    },
-    {
-      "@id": "aPourDomaine",
-      "@type": "Property",
-      "label": "est utilisé dans le domaine",
-      "domain": "outil",
-      "range": "Concept"
+      "definition": "The collective achievement of a team's goals, enabled by visible and invisible contributions.",
+      "domain": "software engineering",
+      "related": ["ko:concept/glue-work"]
     }
   ]
 }

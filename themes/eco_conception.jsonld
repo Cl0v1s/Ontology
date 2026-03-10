@@ -16,21 +16,24 @@
       "prefLabel": "Simplicité logicielle",
       "altLabel": ["simplicity in software", "minimalism"],
       "definition": "La notion que plus un système est simple, moins il consomme d'énergie.",
-      "domain": "software engineering"
+      "domain": "software engineering",
+      "related": ["ko:concept/gouvernance-soutenable"]
     },
     {
       "@id": "ko:concept/gouvernance-soutenable",
       "@type": "ko:Concept",
       "prefLabel": "Gouvernance soutenable",
       "definition": "L'intégration de pratiques durables dans la gouvernance des projets.",
-      "domain": "sustainability"
+      "domain": "sustainability",
+      "related": ["ko:concept/simplicite-logicielle"]
     },
     {
       "@id": "ko:concept/mesure-impact-ecologique",
       "@type": "ko:Concept",
       "prefLabel": "Mesure de l'impact écologique",
       "definition": "Évaluer et mesurer l'impact environnemental des systèmes.",
-      "domain": "sustainability"
+      "domain": "sustainability",
+      "related": ["ko:concept/taux-de-rebond"]
     },
     {
       "@id": "ko:concept/pue",
@@ -46,7 +49,8 @@
       "prefLabel": "Taux de rebond",
       "altLabel": ["bounce rate", "user engagement metric"],
       "definition": "Un indicateur utilisé pour adapter une page web et réduire son impact énergétique.",
-      "domain": "sustainability"
+      "domain": "sustainability",
+      "related": ["ko:concept/mesure-impact-ecologique"]
     }
   ]
 }

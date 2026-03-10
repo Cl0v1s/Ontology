@@ -1,33 +1,67 @@
 {
-  "@context": "https://www.w3.org/ns/json-ld.jsonld",
-  "@id": "_:system.css",
-  "@type": ["outil", "outilDeVisualisation"],
-  "label": "System.css",
-  "url": "https://github.com/sakofchit/system.css",
-  "aFonctionnalite": [
-    {
-      "@id": "_:retro-interfaces",
-      "label": "Création d'interfaces rétro (Apple System OS)"
-    },
-    {
-      "@id": "_:css-only",
-      "label": "Basé uniquement sur CSS, sans JavaScript"
-    }
-  ],
-  "utiliseLangage": {
-    "@id": "_:css",
-    "label": "CSS"
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
   },
-  "aPourDomaine": [
+  "@graph": [
     {
-      "@id": "_:design-system",
-      "label": "Design système rétro"
+      "@id": "ko:article/system-css",
+      "@type": "ko:Article",
+      "title": "System.css",
+      "url": "https://github.com/sakofchit/system.css",
+      "readDate": "2026-03-10",
+      "language": "en",
+      "abstract": "Bibliothèque CSS pour recréer des interfaces inspirées de l'Apple System OS (1984-1991), sans dépendance JavaScript.",
+      "uses": ["ko:concept/outil-de-visualisation", "ko:concept/design-system", "ko:concept/front-end-development"],
+      "introduces": ["ko:concept/retro-ui-design"],
+      "hasFeature": ["ko:concept/retro-ui-design", "ko:concept/css-only-approach"],
+      "usesLanguage": ["ko:concept/language-css"]
     },
     {
-      "@id": "_:front-end-frameworks",
-      "label": "Frameworks front-end (compatible avec tout)"
+      "@id": "ko:concept/retro-ui-design",
+      "@type": "ko:Concept",
+      "prefLabel": "Design d'interface rétro",
+      "altLabel": ["retro UI design", "skeuomorphic design"],
+      "definition": "Conception d'interfaces imitant l'esthétique des systèmes informatiques anciens.",
+      "domain": "UI design"
+    },
+    {
+      "@id": "ko:concept/css-only-approach",
+      "@type": "ko:Concept",
+      "prefLabel": "Approche CSS-only",
+      "altLabel": ["CSS-only", "no-JavaScript"],
+      "definition": "Implémentation d'interfaces ou de fonctionnalités visuelles en utilisant uniquement CSS, sans JavaScript.",
+      "domain": "front-end development"
+    },
+    {
+      "@id": "ko:concept/language-css",
+      "@type": "ko:Concept",
+      "prefLabel": "CSS",
+      "altLabel": ["Cascading Style Sheets"],
+      "definition": "Langage de feuilles de style pour décrire la présentation de documents HTML.",
+      "domain": "programming languages"
+    },
+    {
+      "@id": "ko:concept/design-system",
+      "@type": "ko:Concept",
+      "prefLabel": "Système de design",
+      "altLabel": ["design system"],
+      "definition": "Ensemble de composants, règles et guidelines visuelles réutilisables pour construire des interfaces cohérentes.",
+      "domain": "UI design"
+    },
+    {
+      "@id": "ko:concept/front-end-development",
+      "@type": "ko:Concept",
+      "prefLabel": "Développement front-end",
+      "altLabel": ["front-end development", "client-side development"],
+      "definition": "Développement de la partie visible d'une application web, exécutée dans le navigateur.",
+      "domain": "software engineering"
     }
-  ],
-  "description": "System.css est une bibliothèque CSS pour recréer des interfaces inspirées de l'Apple System OS (1984-1991). Compatible avec n'importe quel framework front-end, sans dépendance JavaScript.",
-  "tags": ["outil", "CSS", "design rétro", "interface utilisateur"]
+  ]
 }

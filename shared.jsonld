@@ -10,85 +10,13 @@
     "ko": "http://knowledge.local/ontology#"
   },
   "@graph": [
-    {
-      "@id": "outil",
-      "@type": "Concept",
-      "label": "Outil",
-      "description": "Une entité logicielle ou matérielle servant à manipuler, analyser ou visualiser des données.",
-      "subconcepts": ["outilDeTransformation", "outilDeVisualisation", "outilDeValidation"]
-    },
-    {
-      "@id": "outilDeTransformation",
-      "@type": "Concept",
-      "label": "Outil de Transformation",
-      "description": "Un outil permettant de transformer des données (ex: compactage, expansion, canonisation)."
-    },
-    {
-      "@id": "outilDeVisualisation",
-      "@type": "Concept",
-      "label": "Outil de Visualisation",
-      "description": "Un outil permettant de représenter graphiquement des données ou des relations (ex: diagrammes, graphes)."
-    },
-    {
-      "@id": "outilDeValidation",
-      "@type": "Concept",
-      "label": "Outil de Validation",
-      "description": "Un outil permettant de valider la structure ou la cohérence des données (ex: schémas, syntaxe)."
-    },
-    {
-      "@id": "aFonctionnalite",
-      "@type": "Property",
-      "label": "a pour fonctionnalité",
-      "domain": "outil",
-      "range": "Concept"
-    },
-    {
-      "@id": "utiliseLangage",
-      "@type": "Property",
-      "label": "utilise le langage de programmation",
-      "domain": "outil",
-      "range": "Concept"
-    },
-    {
-      "@id": "aPourDomaine",
-      "@type": "Property",
-      "label": "est utilisé dans le domaine",
-      "domain": "outil",
-      "range": "Concept"
-    },
-    {
-      "@id": "contribueA",
-      "@type": "Property",
-      "label": "contribue à",
-      "domain": "ko:concept/glue-work",
-      "range": "Concept"
-    },
-    {
-      "@id": "appliqueDans",
-      "@type": "Property",
-      "label": "s'applique dans",
-      "domain": "ko:concept/layers-of-context",
-      "range": "Concept"
-    },
-    {
-      "@id": "favorise",
-      "@type": "Property",
-      "label": "favorise",
-      "domain": "ko:concept/simplicite-logicielle",
-      "range": "Concept"
-    },
-    {
-      "@id": "optimise",
-      "@type": "Property",
-      "label": "optimise",
-      "domain": "ko:concept/taux-de-rebond",
-      "range": "Concept"
-    },
+
     {
       "@id": "ko:concepts",
       "@type": "skos:ConceptScheme",
       "rdfs:label": "Concepts de la base de connaissances"
     },
+
     {
       "@id": "ko:author/lethain",
       "@type": "ko:Author",
@@ -106,6 +34,102 @@
       "@type": "ko:Author",
       "name": "No Idea Dog",
       "affiliation": "Software Engineering Blog"
+    },
+    {
+      "@id": "ko:author/evan-hahn",
+      "@type": "ko:Author",
+      "name": "Evan Hahn",
+      "affiliation": "Independent Software Developer"
+    },
+
+    {
+      "@id": "ko:concept/outil",
+      "@type": "ko:Concept",
+      "prefLabel": "Outil logiciel",
+      "altLabel": ["software tool", "outil"],
+      "definition": "Une entité logicielle servant à manipuler, analyser, visualiser ou transformer des données.",
+      "domain": "software engineering",
+      "narrower": [
+        "ko:concept/outil-de-transformation",
+        "ko:concept/outil-de-visualisation",
+        "ko:concept/outil-de-validation"
+      ]
+    },
+    {
+      "@id": "ko:concept/outil-de-transformation",
+      "@type": "ko:Concept",
+      "prefLabel": "Outil de transformation",
+      "altLabel": ["transformation tool"],
+      "definition": "Outil permettant de transformer des données (ex : compactage, expansion, canonisation, compilation).",
+      "domain": "software engineering",
+      "broader": "ko:concept/outil"
+    },
+    {
+      "@id": "ko:concept/outil-de-visualisation",
+      "@type": "ko:Concept",
+      "prefLabel": "Outil de visualisation",
+      "altLabel": ["visualization tool"],
+      "definition": "Outil permettant de représenter graphiquement des données ou des relations (ex : diagrammes, graphes, interfaces).",
+      "domain": "software engineering",
+      "broader": "ko:concept/outil"
+    },
+    {
+      "@id": "ko:concept/outil-de-validation",
+      "@type": "ko:Concept",
+      "prefLabel": "Outil de validation",
+      "altLabel": ["validation tool"],
+      "definition": "Outil permettant de valider la structure ou la cohérence des données (ex : schémas, syntaxe, tests).",
+      "domain": "software engineering",
+      "broader": "ko:concept/outil"
+    },
+
+    {
+      "@id": "ko:concept/language-c",
+      "@type": "ko:Concept",
+      "prefLabel": "C",
+      "definition": "Langage de programmation bas niveau, utilisé pour les systèmes embarqués et les bibliothèques système.",
+      "domain": "programming languages"
+    },
+    {
+      "@id": "ko:concept/language-cpp",
+      "@type": "ko:Concept",
+      "prefLabel": "C++",
+      "altLabel": ["C plus plus"],
+      "definition": "Extension orientée objet du langage C, utilisée pour les systèmes hautes performances.",
+      "domain": "programming languages",
+      "broader": "ko:concept/language-c"
+    },
+    {
+      "@id": "ko:concept/language-rust",
+      "@type": "ko:Concept",
+      "prefLabel": "Rust",
+      "definition": "Langage de programmation système axé sur la sécurité mémoire et la concurrence sans garbage collector.",
+      "domain": "programming languages"
+    },
+    {
+      "@id": "ko:concept/language-python",
+      "@type": "ko:Concept",
+      "prefLabel": "Python",
+      "definition": "Langage de programmation interprété à typage dynamique, très utilisé en data science et scripting.",
+      "domain": "programming languages"
+    },
+
+    {
+      "@id": "ko:concept/embedded-systems",
+      "@type": "ko:Concept",
+      "prefLabel": "Systèmes embarqués",
+      "altLabel": ["embedded systems", "systèmes contraints"],
+      "definition": "Environnements informatiques à ressources limitées (RAM, ROM) intégrés dans des dispositifs matériels.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/data-visualization",
+      "@type": "ko:Concept",
+      "prefLabel": "Visualisation de données",
+      "altLabel": ["data visualization"],
+      "definition": "Représentation graphique de données ou de structures pour en faciliter l'exploration et la compréhension.",
+      "domain": "software engineering"
     }
+
   ]
 }

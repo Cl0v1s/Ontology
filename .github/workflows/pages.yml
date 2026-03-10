@@ -1,0 +1,232 @@
+name: Generate & Deploy Ontology Graph
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Graphviz
+        run: sudo apt-get install -y graphviz
+
+      - name: Generate SVGs
+        run: |
+          mkdir -p dist
+          node generate-mermaid.mjs                  | dot -Tsvg -o dist/graph-all.svg
+          node generate-mermaid.mjs --mode concepts  | dot -Tsvg -o dist/graph-concepts.svg
+          node generate-mermaid.mjs --mode articles  | dot -Tsvg -o dist/graph-articles.svg
+
+      - name: Generate index.html
+        run: |
+          cat > dist/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="fr">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ontology Graph</title>
+            <style>
+              *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+              body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                background: #f8fafc;
+                color: #1e293b;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+              }
+
+              header {
+                padding: 1rem 1.5rem;
+                background: white;
+                border-bottom: 1px solid #e2e8f0;
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+              }
+
+              header h1 { font-size: 1.1rem; font-weight: 600; color: #0f172a; }
+
+              nav { display: flex; gap: 0.25rem; }
+
+              nav button {
+                padding: 0.4rem 1rem;
+                border: 1px solid #e2e8f0;
+                border-radius: 6px;
+                background: white;
+                cursor: pointer;
+                font-size: 0.875rem;
+                color: #64748b;
+                transition: all 0.15s;
+              }
+              nav button:hover { background: #f1f5f9; color: #1e293b; }
+              nav button.active {
+                background: #0f172a;
+                color: white;
+                border-color: #0f172a;
+              }
+
+              .hint {
+                margin-left: auto;
+                font-size: 0.75rem;
+                color: #94a3b8;
+              }
+
+              .legend {
+                display: flex;
+                gap: 1.25rem;
+                padding: 0.6rem 1.5rem;
+                background: white;
+                border-bottom: 1px solid #e2e8f0;
+                flex-wrap: wrap;
+              }
+              .legend-item {
+                display: flex;
+                align-items: center;
+                gap: 0.4rem;
+                font-size: 0.75rem;
+                color: #475569;
+              }
+              .dot {
+                width: 12px; height: 12px; border-radius: 50%;
+                flex-shrink: 0;
+              }
+
+              #viewport {
+                flex: 1;
+                overflow: hidden;
+                position: relative;
+                cursor: grab;
+              }
+              #viewport.grabbing { cursor: grabbing; }
+
+              #viewport img {
+                position: absolute;
+                transform-origin: 0 0;
+                user-select: none;
+              }
+            </style>
+          </head>
+          <body>
+            <header>
+              <h1>Ontology Graph</h1>
+              <nav>
+                <button class="active" onclick="load('all', this)">Tout</button>
+                <button onclick="load('concepts', this)">Concepts</button>
+                <button onclick="load('articles', this)">Articles</button>
+              </nav>
+              <span class="hint">Scroll pour zoomer · Glisser pour déplacer</span>
+            </header>
+
+            <div class="legend">
+              <div class="legend-item"><div class="dot" style="background:#dbeafe;border:2px solid #3b82f6"></div> Article</div>
+              <div class="legend-item"><div class="dot" style="background:#dcfce7;border:2px solid #22c55e"></div> Concept</div>
+              <div class="legend-item"><div class="dot" style="background:#fef9c3;border:2px solid #eab308;border-radius:2px;transform:rotate(45deg)"></div> Auteur</div>
+              <div class="legend-item"><span style="color:#2563eb;font-weight:700">—</span> introduces</div>
+              <div class="legend-item"><span style="color:#6b7280">- -</span> uses</div>
+              <div class="legend-item"><span style="color:#0891b2">—</span> hasFeature</div>
+              <div class="legend-item"><span style="color:#059669">—</span> usesLanguage</div>
+              <div class="legend-item"><span style="color:#6d28d9">···</span> related</div>
+              <div class="legend-item"><span style="color:#92400e">—</span> broader/narrower</div>
+            </div>
+
+            <div id="viewport">
+              <img id="graph" src="graph-all.svg" draggable="false">
+            </div>
+
+            <script>
+              const viewport = document.getElementById('viewport');
+              const img = document.getElementById('graph');
+
+              let scale = 1, ox = 0, oy = 0;
+              let dragging = false, lastX, lastY;
+
+              function applyTransform() {
+                img.style.transform = `translate(${ox}px, ${oy}px) scale(${scale})`;
+              }
+
+              function fitToView() {
+                img.onload = () => {
+                  const vw = viewport.clientWidth, vh = viewport.clientHeight;
+                  const iw = img.naturalWidth, ih = img.naturalHeight;
+                  scale = Math.min(vw / iw, vh / ih, 1);
+                  ox = (vw - iw * scale) / 2;
+                  oy = (vh - ih * scale) / 2;
+                  applyTransform();
+                };
+              }
+
+              viewport.addEventListener('wheel', e => {
+                e.preventDefault();
+                const rect = viewport.getBoundingClientRect();
+                const mx = e.clientX - rect.left;
+                const my = e.clientY - rect.top;
+                const factor = e.deltaY < 0 ? 1.1 : 0.9;
+                ox = mx - (mx - ox) * factor;
+                oy = my - (my - oy) * factor;
+                scale *= factor;
+                applyTransform();
+              }, { passive: false });
+
+              viewport.addEventListener('mousedown', e => {
+                dragging = true; lastX = e.clientX; lastY = e.clientY;
+                viewport.classList.add('grabbing');
+              });
+              window.addEventListener('mousemove', e => {
+                if (!dragging) return;
+                ox += e.clientX - lastX; oy += e.clientY - lastY;
+                lastX = e.clientX; lastY = e.clientY;
+                applyTransform();
+              });
+              window.addEventListener('mouseup', () => {
+                dragging = false;
+                viewport.classList.remove('grabbing');
+              });
+
+              function load(mode, btn) {
+                document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                scale = 1; ox = 0; oy = 0;
+                img.src = `graph-${mode}.svg`;
+                fitToView();
+              }
+
+              fitToView();
+            </script>
+          </body>
+          </html>
+          EOF
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

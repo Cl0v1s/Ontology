@@ -147,6 +147,24 @@
       "rdfs:range": { "@id": "ko:Concept" },
       "rdfs:subPropertyOf": { "@id": "ko:describes" }
     },
+    {
+      "@id": "ko:hasFeature",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "a pour fonctionnalité",
+      "rdfs:comment": "L'article (décrivant un outil) possède cette fonctionnalité comme capacité centrale.",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "ko:Concept" },
+      "rdfs:subPropertyOf": { "@id": "ko:describes" }
+    },
+    {
+      "@id": "ko:usesLanguage",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "utilise le langage",
+      "rdfs:comment": "L'article (décrivant un outil) est implémenté dans ce langage de programmation.",
+      "rdfs:domain": { "@id": "ko:Article" },
+      "rdfs:range": { "@id": "ko:Concept" },
+      "rdfs:subPropertyOf": { "@id": "ko:describes" }
+    },
 
     {
       "@id": "ko:prefLabel",

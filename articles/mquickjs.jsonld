@@ -1,33 +1,53 @@
 {
-  "@context": "https://www.w3.org/ns/json-ld.jsonld",
-  "@id": "_:mquickjs",
-  "@type": ["outil", "outilDeTransformation"],
-  "label": "MicroQuickJS (MQuickJS)",
-  "url": "https://github.com/bellard/mquickjs",
-  "aFonctionnalite": [
-    {
-      "@id": "_:engine-javascript",
-      "label": "Moteur JavaScript pour systèmes embarqués"
-    },
-    {
-      "@id": "_:low-memory",
-      "label": "Utilisation minimale de mémoire (10 kB RAM)"
-    }
-  ],
-  "utiliseLangage": {
-    "@id": "_:c",
-    "label": "C"
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
   },
-  "aPourDomaine": [
+  "@graph": [
     {
-      "@id": "_:systemes-embarques",
-      "label": "Systèmes embarqués"
+      "@id": "ko:article/mquickjs",
+      "@type": "ko:Article",
+      "title": "MicroQuickJS (MQuickJS)",
+      "url": "https://github.com/bellard/mquickjs",
+      "readDate": "2026-03-10",
+      "language": "en",
+      "abstract": "Moteur JavaScript optimisé pour les systèmes embarqués, nécessitant seulement 10 kB de RAM et 100 kB de ROM.",
+      "uses": ["ko:concept/outil-de-transformation", "ko:concept/embedded-systems", "ko:concept/javascript-embedded"],
+      "introduces": ["ko:concept/javascript-engine", "ko:concept/low-memory-runtime"],
+      "hasFeature": ["ko:concept/javascript-engine", "ko:concept/low-memory-runtime"],
+      "usesLanguage": ["ko:concept/language-c"]
     },
     {
-      "@id": "_:javascript-embedded",
-      "label": "JavaScript embarqué"
+      "@id": "ko:concept/javascript-engine",
+      "@type": "ko:Concept",
+      "prefLabel": "Moteur JavaScript",
+      "altLabel": ["JavaScript engine", "JS runtime"],
+      "definition": "Interpréteur ou compilateur exécutant du code JavaScript, souvent intégré dans un navigateur ou un environnement embarqué.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/low-memory-runtime",
+      "@type": "ko:Concept",
+      "prefLabel": "Runtime à faible empreinte mémoire",
+      "altLabel": ["low-memory runtime", "minimal footprint"],
+      "definition": "Environnement d'exécution conçu pour fonctionner avec une quantité extrêmement limitée de RAM et de ROM.",
+      "domain": "embedded systems",
+      "related": ["ko:concept/embedded-systems"]
+    },
+    {
+      "@id": "ko:concept/javascript-embedded",
+      "@type": "ko:Concept",
+      "prefLabel": "JavaScript embarqué",
+      "altLabel": ["embedded JavaScript"],
+      "definition": "Utilisation du langage JavaScript dans des environnements à ressources contraintes, hors des navigateurs web.",
+      "domain": "embedded systems",
+      "related": ["ko:concept/javascript-engine", "ko:concept/embedded-systems"]
     }
-  ],
-  "description": "MicroQuickJS est un moteur JavaScript optimisé pour les systèmes embarqués, nécessitant seulement 10 kB de RAM et 100 kB de ROM. Idéal pour les environnements contraints.",
-  "tags": ["outil", "JavaScript", "systèmes embarqués", "moteur JavaScript"]
+  ]
 }
