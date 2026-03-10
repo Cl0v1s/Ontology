@@ -15,7 +15,8 @@
       "@type": "Concept",
       "label": "Outil",
       "description": "Une entité logicielle ou matérielle servant à manipuler, analyser ou visualiser des données.",
-      "subconcepts": ["outilDeTransformation", "outilDeVisualisation", "outilDeValidation"]
+      "subconcepts": ["outilDeTransformation", "outilDeVisualisation", "outilDeValidation"],
+      "aPourDomaine": "ko:concept/software-engineering"
     },
     {
       "@id": "outilDeTransformation",
@@ -57,6 +58,34 @@
       "range": "Concept"
     },
     {
+      "@id": "contribueA",
+      "@type": "Property",
+      "label": "contribue à",
+      "domain": "ko:concept/glue-work",
+      "range": "Concept"
+    },
+    {
+      "@id": "appliqueDans",
+      "@type": "Property",
+      "label": "s'applique dans",
+      "domain": "ko:concept/layers-of-context",
+      "range": "Concept"
+    },
+    {
+      "@id": "favorise",
+      "@type": "Property",
+      "label": "favorise",
+      "domain": "ko:concept/simplicite-logicielle",
+      "range": "Concept"
+    },
+    {
+      "@id": "optimise",
+      "@type": "Property",
+      "label": "optimise",
+      "domain": "ko:concept/taux-de-rebond",
+      "range": "Concept"
+    },
+    {
       "@id": "ko:concepts",
       "@type": "skos:ConceptScheme",
       "rdfs:label": "Concepts de la base de connaissances"
@@ -84,7 +113,8 @@
       "@type": "ko:Concept",
       "prefLabel": "Glue Work",
       "definition": "The role of a 'glue' in software engineering teams, involving less glamorous but essential tasks that contribute to team success.",
-      "domain": "software engineering"
+      "domain": "software engineering",
+      "contribueA": "ko:concept/technical-leadership"
     },
     {
       "@id": "ko:concept/technical-leadership",
@@ -119,7 +149,8 @@
       "@type": "ko:Concept",
       "prefLabel": "Layers of Context",
       "definition": "The different perspectives or dimensions involved in evaluating a problem, such as technical, organizational, financial, and leadership.",
-      "domain": "engineering strategy"
+      "domain": "engineering strategy",
+      "appliqueDans": "ko:concept/eco-conception"
     },
     {
       "@id": "ko:concept/curiosity-over-conviction",
@@ -170,7 +201,8 @@
       "prefLabel": "Simplicité logicielle",
       "altLabel": ["simplicity in software", "minimalism"],
       "definition": "La notion que plus un système est simple, moins il consomme d'énergie.",
-      "domain": "software engineering"
+      "domain": "software engineering",
+      "favorise": "ko:concept/gouvernance-soutenable"
     },
     {
       "@id": "ko:concept/gouvernance-soutenable",
@@ -194,7 +226,8 @@
       "prefLabel": "Taux de rebond",
       "altLabel": ["bounce rate", "user engagement metric"],
       "definition": "Un indicateur utilisé pour adapter une page web et réduire son impact énergétique.",
-      "domain": "software engineering"
+      "domain": "software engineering",
+      "optimise": "ko:concept/mesure-impact-ecologique"
     },
     {
       "@id": "ko:concept/pue",
@@ -202,7 +235,8 @@
       "prefLabel": "PUE (Indicateur d'efficacité énergétique)",
       "altLabel": ["Power Usage Effectiveness", "energy efficiency metric"],
       "definition": "Mesure de l'efficacité énergétique des centres de données.",
-      "domain": "software engineering"
+      "domain": "software engineering",
+      "aPourDomaine": "ko:concept/gouvernance-soutenable"
     }
   ]
 }
