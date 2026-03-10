@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/simplicite-logicielle",
+      "@type": "ko:Concept",
+      "prefLabel": "Simplicité logicielle",
+      "altLabel": ["simplicity in software", "minimalism"],
+      "definition": "La notion que plus un système est simple, moins il consomme d'énergie.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/gouvernance-soutenable",
+      "@type": "ko:Concept",
+      "prefLabel": "Gouvernance soutenable",
+      "definition": "L'intégration de pratiques durables dans la gouvernance des projets.",
+      "domain": "sustainability"
+    },
+    {
+      "@id": "ko:concept/mesure-impact-ecologique",
+      "@type": "ko:Concept",
+      "prefLabel": "Mesure de l'impact écologique",
+      "definition": "Évaluer et mesurer l'impact environnemental des systèmes.",
+      "domain": "sustainability"
+    },
+    {
+      "@id": "ko:concept/pue",
+      "@type": "ko:Concept",
+      "prefLabel": "PUE (Indicateur d'efficacité énergétique)",
+      "altLabel": ["Power Usage Effectiveness", "energy efficiency metric"],
+      "definition": "Mesure de l'efficacité énergétique des centres de données.",
+      "domain": "sustainability"
+    },
+    {
+      "@id": "ko:concept/taux-de-rebond",
+      "@type": "ko:Concept",
+      "prefLabel": "Taux de rebond",
+      "altLabel": ["bounce rate", "user engagement metric"],
+      "definition": "Un indicateur utilisé pour adapter une page web et réduire son impact énergétique.",
+      "domain": "sustainability"
+    }
+  ]
+}
