@@ -13,6 +13,10 @@ L'objectif est de pouvoir :
 2. Organiser mes tâches de travail en m'appuyant sur les schémas ou meilleures pratiques apprises.
 3. Obtenir des synthèses structurées ou des recommandations actionnables à partir de cette connaissance.
 
+## Visualisation interractive 
+
+https://cl0v1s.github.io/Ontology/
+
 ## Structure
 
 L'ontologie est organisée en deux composants principaux :
