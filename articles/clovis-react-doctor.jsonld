@@ -1,0 +1,147 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/react-doctor",
+      "@type": "ko:Article",
+      "title": "React Doctor - Diagnostic Tool for React Code",
+      "url": "https://github.com/millionco/react-doctor",
+      "publishedDate": "2026-03-10",
+      "readDate": "2026-03-10",
+      "language": "en",
+      "abstract": "A tool that diagnoses and fixes React code, providing actionable diagnostics for security, performance, correctness, and architecture issues.",
+      "hasAuthor": "ko:author/clovis",
+      "introduces": [
+        "ko:concept/react-doctor",
+        "ko:concept/coding-agent",
+        "ko:concept/diagnostic-tool",
+        "ko:concept/react-code-analysis",
+        "ko:concept/linting",
+        "ko:concept/dead-code-detection",
+        "ko:concept/performance-optimization",
+        "ko:concept/security-analysis",
+        "ko:concept/correctness",
+        "ko:concept/accessibility",
+        "ko:concept/framework-specific-rules",
+        "ko:concept/health-score",
+        "ko:concept/actionable-diagnostics",
+        "ko:concept/cli-integration",
+        "ko:concept/configuration-customization"
+      ]
+    },
+    {
+      "@id": "ko:concept/react-doctor",
+      "@type": "ko:Concept",
+      "prefLabel": "React Doctor",
+      "definition": "A tool that diagnoses and fixes React code, providing actionable diagnostics for security, performance, correctness, and architecture issues.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/coding-agent",
+      "@type": "ko:Concept",
+      "prefLabel": "Coding Agent",
+      "definition": "An AI-powered agent that assists in coding tasks, such as diagnosing and fixing code.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/diagnostic-tool",
+      "@type": "ko:Concept",
+      "prefLabel": "Diagnostic Tool",
+      "definition": "A tool that analyzes code for issues like security vulnerabilities, performance bottlenecks, and correctness errors.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/react-code-analysis",
+      "@type": "ko:Concept",
+      "prefLabel": "React Code Analysis",
+      "definition": "The process of analyzing React code to identify potential issues, performance bottlenecks, or security vulnerabilities.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/linting",
+      "@type": "ko:Concept",
+      "prefLabel": "Linting",
+      "definition": "The process of checking code for potential errors, bugs, stylistic issues, and inconsistencies.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/dead-code-detection",
+      "@type": "ko:Concept",
+      "prefLabel": "Dead Code Detection",
+      "definition": "Identifying unused files, exports, types, or code that can be removed to improve performance and maintainability.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/performance-optimization",
+      "@type": "ko:Concept",
+      "prefLabel": "Performance Optimization",
+      "definition": "Improving the speed, efficiency, and responsiveness of code or applications.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/security-analysis",
+      "@type": "ko:Concept",
+      "prefLabel": "Security Analysis",
+      "definition": "Analyzing code for security vulnerabilities, such as injection attacks, improper authentication, or sensitive data exposure.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/correctness",
+      "@type": "ko:Concept",
+      "prefLabel": "Correctness",
+      "definition": "Ensuring that code behaves as intended and adheres to specifications, without logical errors or bugs.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/accessibility",
+      "@type": "ko:Concept",
+      "prefLabel": "Accessibility",
+      "definition": "Designing applications that are usable by people with disabilities, including visual, auditory, motor, and cognitive impairments.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/framework-specific-rules",
+      "@type": "ko:Concept",
+      "prefLabel": "Framework-Specific Rules",
+      "definition": "Rules tailored to specific frameworks like Next.js or React Native, addressing their unique requirements and best practices.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/health-score",
+      "@type": "ko:Concept",
+      "prefLabel": "Health Score",
+      "definition": "A numerical score (0-100) representing the overall health of a codebase, based on diagnostics for errors, warnings, and other issues.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/actionable-diagnostics",
+      "@type": "ko:Concept",
+      "prefLabel": "Actionable Diagnostics",
+      "definition": "Diagnostics that provide clear, actionable insights to fix issues in the codebase.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/cli-integration",
+      "@type": "ko:Concept",
+      "prefLabel": "CLI Integration",
+      "definition": "Integrating tools or features into a command-line interface for easier access and automation.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/configuration-customization",
+      "@type": "ko:Concept",
+      "prefLabel": "Configuration Customization",
+      "definition": "Customizing tool configurations to suit specific project needs, such as ignoring certain rules or files.",
+      "domain": "software engineering"
+    }
+  ]
+}
