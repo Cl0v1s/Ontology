@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/clovis-exigence-ingenierie",
+      "@type": "ko:Article",
+      "title": "Exigence (ingénierie)",
+      "url": "https://fr.wikipedia.org/wiki/Exigence_(ing%C3%A9nierie)",
+      "publishedDate": "2026-03-11",
+      "readDate": "2026-03-11",
+      "language": "fr",
+      "abstract": "A requirement in engineering defines the necessary attributes, conditions, or capabilities that a product or system must meet to satisfy stakeholders.",
+      "hasAuthor": "ko:author/clovis",
+      "introduces": ["ko:concept/requirement-engineering", "ko:concept/stakeholder-needs"],
+      "uses": ["ko:concept/analysis-requirements", "ko:concept/validation-process"],
+      "exemplifies": ["ko:concept/engineering-design"],
+      "hasFeature": ["ko:concept/formal-specification"],
+      "usesLanguage": ["ko:concept/french"]
+    }
+  ]
+}

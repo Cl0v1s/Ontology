@@ -11,45 +11,45 @@
   },
   "@graph": [
     {
-      "@id": "ko:concept/technical-specification",
+      "@id": "ko:concept/requirement-engineering",
       "@type": "ko:Concept",
-      "prefLabel": "Technical Specification",
-      "definition": "A formal document that defines the requirements, characteristics, and standards for a product or system.",
+      "prefLabel": "Requirement Engineering",
+      "definition": "The process of defining, documenting, and maintaining requirements for a product or system.",
       "domain": "engineering"
     },
     {
-      "@id": "ko:concept/norme-technique",
+      "@id": "ko:concept/stakeholder-needs",
       "@type": "ko:Concept",
-      "prefLabel": "Norme Technique",
-      "definition": "A technical standard or guideline that defines the requirements for a product, process, or system.",
+      "prefLabel": "Stakeholder Needs",
+      "definition": "The needs, expectations, or constraints expressed by stakeholders in an engineering project.",
       "domain": "engineering"
     },
     {
-      "@id": "ko:concept/standardization",
+      "@id": "ko:concept/analysis-requirements",
       "@type": "ko:Concept",
-      "prefLabel": "Standardization",
-      "definition": "The process of establishing standards for products, processes, or systems to ensure consistency and quality.",
+      "prefLabel": "Analysis of Requirements",
+      "definition": "The process of analyzing and refining requirements to ensure they are clear, feasible, and aligned with stakeholder needs.",
       "domain": "engineering"
     },
     {
-      "@id": "ko:concept/quality-control",
+      "@id": "ko:concept/validation-process",
       "@type": "ko:Concept",
-      "prefLabel": "Quality Control",
-      "definition": "The process of ensuring that a product or system meets specified quality standards.",
+      "prefLabel": "Validation Process",
+      "definition": "A systematic process to verify that a product or system meets specified requirements and stakeholder expectations.",
       "domain": "engineering"
     },
     {
-      "@id": "ko:concept/engineering-documentation",
+      "@id": "ko:concept/engineering-design",
       "@type": "ko:Concept",
-      "prefLabel": "Engineering Documentation",
-      "definition": "Documentation that describes the design, development, and maintenance of a product or system.",
+      "prefLabel": "Engineering Design",
+      "definition": "The process of designing and developing a product or system to meet specified requirements.",
       "domain": "engineering"
     },
     {
-      "@id": "ko:concept/formal-requirements",
+      "@id": "ko:concept/formal-specification",
       "@type": "ko:Concept",
-      "prefLabel": "Formal Requirements",
-      "definition": "A set of formal, often written, requirements that define the functionality and constraints of a product or system.",
+      "prefLabel": "Formal Specification",
+      "definition": "A formal, often mathematical, description of the requirements or behavior of a product or system.",
       "domain": "engineering"
     },
     {
