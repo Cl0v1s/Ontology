@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/language-rust",
+      "@type": "ko:Concept",
+      "prefLabel": "Rust",
+      "definition": "A systems programming language known for its performance, memory safety, and concurrency features.",
+      "domain": "programming"
+    },
+    {
+      "@id": "ko:concept/language-c",
+      "@type": "ko:Concept",
+      "prefLabel": "C",
+      "definition": "A general-purpose programming language known for its performance and widespread use in system/software development.",
+      "domain": "programming"
+    },
+    {
+      "@id": "ko:concept/language-python",
+      "@type": "ko:Concept",
+      "prefLabel": "Python",
+      "definition": "A high-level, interpreted programming language known for its readability and versatility in web development, data analysis, and scripting.",
+      "domain": "programming"
+    }
+  ]
+}
