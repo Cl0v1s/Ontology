@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/increment-in-praise-of-property-based-testing",
+      "@type": "ko:Article",
+      "title": "In praise of property-based testing",
+      "url": "https://increment.com/testing/in-praise-of-property-based-testing/",
+      "publishedDate": "2026-03-11",
+      "readDate": "2026-03-11",
+      "language": "en",
+      "abstract": "Property-based testing is a style of testing that improves on example-based tests by focusing on general claims about software behavior, uncovering bugs more effectively.",
+      "introduces": [
+        "ko:concept/property-based-testing",
+        "ko:concept/shrinking",
+        "ko:concept/round-tripping"
+      ],
+      "uses": [
+        "ko:concept/example-based-testing",
+        "ko:concept/hypothesis-library",
+        "ko:concept/bug-detection"
+      ],
+      "exemplifies": [
+        "ko:concept/property-based-testing"
+      ]
+    },
+    {
+      "@id": "ko:concept/property-based-testing",
+      "@type": "ko:Concept",
+      "prefLabel": "Property-Based Testing",
+      "altLabel": ["property testing", "generative testing"],
+      "definition": "A testing technique that generalizes concrete scenarios to focus on essential features, improving bug detection and test robustness.",
+      "domain": "software engineering",
+      "broader": "ko:concept/software-testing"
+    },
+    {
+      "@id": "ko:concept/shrinking",
+      "@type": "ko:Concept",
+      "prefLabel": "Shrinking",
+      "altLabel": ["test shrinking", "shrinkwrap"],
+      "definition": "A technique used in property-based testing to reduce complex failing inputs to simpler, more understandable examples for debugging.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/round-tripping",
+      "@type": "ko:Concept",
+      "prefLabel": "Round-Tripping",
+      "altLabel": ["encode-decode test", "serialization test"],
+      "definition": "A property-based test that verifies data consistency when converting between formats (e.g., serialization and deserialization).",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/example-based-testing",
+      "@type": "ko:Concept",
+      "prefLabel": "Example-Based Testing",
+      "altLabel": ["fixture testing", "concrete scenario testing"],
+      "definition": "A traditional testing approach that uses specific, concrete scenarios to validate software behavior.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/hypothesis-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Hypothesis Library",
+      "altLabel": ["Hypothesis (Python)"],
+      "definition": "A Python library for property-based testing, enabling generation of test data and shrinking failing examples.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/bug-detection",
+      "@type": "ko:Concept",
+      "prefLabel": "Bug Detection",
+      "altLabel": ["error detection", "fault detection"],
+      "definition": "The process of identifying defects or errors in software, often through systematic testing techniques.",
+      "domain": "software engineering"
+    }
+  ]
+}
