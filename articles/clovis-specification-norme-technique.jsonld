@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/clovis-specification-norme-technique",
+      "@type": "ko:Article",
+      "title": "Spécification (norme technique)",
+      "url": "https://fr.wikipedia.org/wiki/Sp%C3%A9cification_(norme_technique)",
+      "publishedDate": "2026-03-11",
+      "readDate": "2026-03-11",
+      "language": "fr",
+      "abstract": "A technical specification defines the requirements, characteristics, and standards for a product or system. It serves as a formal document that guides development and ensures consistency.",
+      "hasAuthor": "ko:author/clovis",
+      "introduces": ["ko:concept/technical-specification", "ko:concept/norme-technique"],
+      "uses": ["ko:concept/standardization", "ko:concept/quality-control"],
+      "exemplifies": ["ko:concept/engineering-documentation"],
+      "hasFeature": ["ko:concept/formal-requirements"],
+      "usesLanguage": ["ko:concept/french"]
+    }
+  ]
+}
