@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/clovis-okmain",
+      "@type": "ko:Article",
+      "title": "Okmain: Finding the Main Color of an Image",
+      "url": "https://dgroshev.com/blog/okmain/",
+      "publishedDate": "2026-03-11",
+      "readDate": "2026-03-11",
+      "language": "en",
+      "abstract": "A library for finding the main color of an image using advanced techniques like colour clustering and Oklab calculations.",
+      "hasAuthor": "ko:author/clovis",
+      "introduces": ["ko:concept/colour-clustering", "ko:concept/oklab-calculations"],
+      "uses": ["ko:concept/k-means-clustering", "ko:concept/rust-implementation", "ko:concept/python-wrapper"],
+      "exemplifies": ["ko:concept/image-color-extraction"],
+      "hasFeature": ["ko:concept/perceptual-colour-mixing"],
+      "usesLanguage": ["ko:concept/english"]
+    }
+  ]
+}

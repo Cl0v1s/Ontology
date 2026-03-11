@@ -11,53 +11,53 @@
   },
   "@graph": [
     {
-      "@id": "ko:concept/structured-text-extraction",
+      "@id": "ko:concept/colour-clustering",
       "@type": "ko:Concept",
-      "prefLabel": "Structured Text Extraction",
-      "definition": "The process of extracting structured information from unstructured text using advanced techniques like LLMs.",
-      "domain": "text-processing"
+      "prefLabel": "Colour Clustering",
+      "definition": "A technique to group similar colours in an image, often using algorithms like K-means clustering.",
+      "domain": "image-processing"
     },
     {
-      "@id": "ko:concept/source-grounding",
+      "@id": "ko:concept/oklab-calculations",
       "@type": "ko:Concept",
-      "prefLabel": "Source Grounding",
-      "definition": "Mapping extracted information to its exact location in the source text for traceability and verification.",
-      "domain": "text-processing"
+      "prefLabel": "Oklab Calculations",
+      "definition": "A method for calculating and manipulating colours in the Oklab colour space, which is perceptually uniform.",
+      "domain": "image-processing"
     },
     {
-      "@id": "ko:concept/python-library",
+      "@id": "ko:concept/k-means-clustering",
       "@type": "ko:Concept",
-      "prefLabel": "Python Library",
-      "definition": "A reusable collection of Python modules and functions designed for a specific purpose, such as text extraction.",
+      "prefLabel": "K-means Clustering",
+      "definition": "A popular algorithm for partitioning data into K clusters, often used in colour clustering.",
+      "domain": "machine-learning"
+    },
+    {
+      "@id": "ko:concept/rust-implementation",
+      "@type": "ko:Concept",
+      "prefLabel": "Rust Implementation",
+      "definition": "A library or tool implemented in Rust, known for its performance and safety.",
       "domain": "software-development"
     },
     {
-      "@id": "ko:concept/llm-integration",
+      "@id": "ko:concept/python-wrapper",
       "@type": "ko:Concept",
-      "prefLabel": "LLM Integration",
-      "definition": "Integration of Large Language Models (LLMs) into applications or workflows for advanced tasks like text extraction.",
-      "domain": "ai"
+      "prefLabel": "Python Wrapper",
+      "definition": "A Python library that provides a high-level interface to a lower-level implementation, such as Rust.",
+      "domain": "software-development"
     },
     {
-      "@id": "ko:concept/gemini-models",
+      "@id": "ko:concept/image-color-extraction",
       "@type": "ko:Concept",
-      "prefLabel": "Gemini Models",
-      "definition": "A family of AI models developed by Google, used for tasks like text extraction and generation.",
-      "domain": "ai"
+      "prefLabel": "Image Color Extraction",
+      "definition": "The process of extracting dominant or representative colours from an image.",
+      "domain": "image-processing"
     },
     {
-      "@id": "ko:concept/long-document-processing",
+      "@id": "ko:concept/perceptual-colour-mixing",
       "@type": "ko:Concept",
-      "prefLabel": "Long Document Processing",
-      "definition": "Processing large or long documents efficiently, often using techniques like chunking and parallel processing.",
-      "domain": "text-processing"
-    },
-    {
-      "@id": "ko:concept/interactive-visualization",
-      "@type": "ko:Concept",
-      "prefLabel": "Interactive Visualization",
-      "definition": "A method to visualize extracted data interactively, allowing users to explore and review results in context.",
-      "domain": "data-visualization"
+      "prefLabel": "Perceptual Colour Mixing",
+      "definition": "Mixing colours in a perceptually uniform colour space to achieve smoother and more visually pleasing results.",
+      "domain": "image-processing"
     }
   ]
 }
