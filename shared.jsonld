@@ -11,53 +11,53 @@
   },
   "@graph": [
     {
-      "@id": "ko:concept/haptic-feedback",
+      "@id": "ko:concept/structured-text-extraction",
       "@type": "ko:Concept",
-      "prefLabel": "Haptic Feedback",
-      "definition": "Tactile feedback provided by a device (e.g., smartphone) to enhance user interaction, often used in mobile applications.",
-      "domain": "mobile-development"
+      "prefLabel": "Structured Text Extraction",
+      "definition": "The process of extracting structured information from unstructured text using advanced techniques like LLMs.",
+      "domain": "text-processing"
     },
     {
-      "@id": "ko:concept/web-haptics-library",
+      "@id": "ko:concept/source-grounding",
       "@type": "ko:Concept",
-      "prefLabel": "Web Haptics Library",
-      "definition": "A library for adding haptic feedback to mobile web applications, supporting frameworks like React, Vue, and Svelte.",
-      "domain": "mobile-development"
+      "prefLabel": "Source Grounding",
+      "definition": "Mapping extracted information to its exact location in the source text for traceability and verification.",
+      "domain": "text-processing"
     },
     {
-      "@id": "ko:concept/react",
+      "@id": "ko:concept/python-library",
       "@type": "ko:Concept",
-      "prefLabel": "React",
-      "definition": "A JavaScript library for building user interfaces, developed by Facebook.",
-      "domain": "web-development"
+      "prefLabel": "Python Library",
+      "definition": "A reusable collection of Python modules and functions designed for a specific purpose, such as text extraction.",
+      "domain": "software-development"
     },
     {
-      "@id": "ko:concept/vue",
+      "@id": "ko:concept/llm-integration",
       "@type": "ko:Concept",
-      "prefLabel": "Vue",
-      "definition": "A progressive framework for building user interfaces, known for its simplicity and flexibility.",
-      "domain": "web-development"
+      "prefLabel": "LLM Integration",
+      "definition": "Integration of Large Language Models (LLMs) into applications or workflows for advanced tasks like text extraction.",
+      "domain": "ai"
     },
     {
-      "@id": "ko:concept/svelte",
+      "@id": "ko:concept/gemini-models",
       "@type": "ko:Concept",
-      "prefLabel": "Svelte",
-      "definition": "A radical new way to build user interfaces, focusing on simplicity and performance.",
-      "domain": "web-development"
+      "prefLabel": "Gemini Models",
+      "definition": "A family of AI models developed by Google, used for tasks like text extraction and generation.",
+      "domain": "ai"
     },
     {
-      "@id": "ko:concept/mobile-web-enhancement",
+      "@id": "ko:concept/long-document-processing",
       "@type": "ko:Concept",
-      "prefLabel": "Mobile Web Enhancement",
-      "definition": "Techniques and tools to enhance the mobile web experience, such as haptic feedback.",
-      "domain": "mobile-development"
+      "prefLabel": "Long Document Processing",
+      "definition": "Processing large or long documents efficiently, often using techniques like chunking and parallel processing.",
+      "domain": "text-processing"
     },
     {
-      "@id": "ko:concept/cross-framework-support",
+      "@id": "ko:concept/interactive-visualization",
       "@type": "ko:Concept",
-      "prefLabel": "Cross-Framework Support",
-      "definition": "Support for multiple frameworks (e.g., React, Vue, Svelte) in a single library or tool.",
-      "domain": "web-development"
+      "prefLabel": "Interactive Visualization",
+      "definition": "A method to visualize extracted data interactively, allowing users to explore and review results in context.",
+      "domain": "data-visualization"
     }
   ]
 }
