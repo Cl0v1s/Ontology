@@ -58,6 +58,13 @@
       "prefLabel": "French",
       "definition": "The French language, used in this article.",
       "domain": "language"
+    },
+    {
+      "@id": "ko:concept/language-rust",
+      "@type": "ko:Concept",
+      "prefLabel": "Rust",
+      "definition": "A systems programming language known for its performance, memory safety, and concurrency features.",
+      "domain": "programming"
     }
   ]
 }
