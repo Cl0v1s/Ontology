@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/clovis-ingenierie-concourante",
+      "@type": "ko:Article",
+      "title": "Ingénierie concurrente",
+      "url": "https://fr.wikipedia.org/wiki/Ing%C3%A9nierie_concourante",
+      "publishedDate": "2026-03-11",
+      "readDate": "2026-03-11",
+      "language": "fr",
+      "abstract": "Concurrent engineering is a method of developing products where different disciplines work together simultaneously to design and develop a product.",
+      "hasAuthor": "ko:author/clovis",
+      "introduces": ["ko:concept/concurrent-engineering", "ko:concept/cross-functional-teams"],
+      "uses": ["ko:concept/parallel-development", "ko:concept/integration-management"],
+      "exemplifies": ["ko:concept/product-development-process"],
+      "hasFeature": ["ko:concept/collaborative-design"],
+      "usesLanguage": ["ko:concept/french"]
+    }
+  ]
+}
