@@ -10,126 +10,61 @@
     "ko": "http://knowledge.local/ontology#"
   },
   "@graph": [
-
     {
-      "@id": "ko:concepts",
-      "@type": "skos:ConceptScheme",
-      "rdfs:label": "Concepts de la base de connaissances"
-    },
-
-    {
-      "@id": "ko:author/lethain",
-      "@type": "ko:Author",
-      "name": "Lethain",
-      "affiliation": "Independent Thought Leader"
-    },
-    {
-      "@id": "ko:author/clovis",
-      "@type": "ko:Author",
-      "name": "Clovis",
-      "affiliation": "Engineer and Researcher"
-    },
-    {
-      "@id": "ko:author/noidea-dog",
-      "@type": "ko:Author",
-      "name": "No Idea Dog",
-      "affiliation": "Software Engineering Blog"
-    },
-    {
-      "@id": "ko:author/evan-hahn",
-      "@type": "ko:Author",
-      "name": "Evan Hahn",
-      "affiliation": "Independent Software Developer"
-    },
-
-    {
-      "@id": "ko:concept/outil",
+      "@id": "ko:concept/solar-power-system",
       "@type": "ko:Concept",
-      "prefLabel": "Outil logiciel",
-      "altLabel": ["software tool", "outil"],
-      "definition": "Une entité logicielle servant à manipuler, analyser, visualiser ou transformer des données.",
-      "domain": "software engineering",
-      "narrower": [
-        "ko:concept/outil-de-transformation",
-        "ko:concept/outil-de-visualisation",
-        "ko:concept/outil-de-validation"
-      ]
+      "prefLabel": "Solar Power System",
+      "definition": "A system that converts solar energy into electrical energy, typically using photovoltaic panels.",
+      "domain": "renewable-energy"
     },
     {
-      "@id": "ko:concept/outil-de-transformation",
+      "@id": "ko:concept/low-voltage-dc-systems",
       "@type": "ko:Concept",
-      "prefLabel": "Outil de transformation",
-      "altLabel": ["transformation tool"],
-      "definition": "Outil permettant de transformer des données (ex : compactage, expansion, canonisation, compilation).",
-      "domain": "software engineering",
-      "broader": "ko:concept/outil"
+      "prefLabel": "Low-Voltage DC Systems",
+      "definition": "Electrical systems that operate on direct current (DC) at low voltage, typically used in off-grid applications.",
+      "domain": "renewable-energy"
     },
     {
-      "@id": "ko:concept/outil-de-visualisation",
+      "@id": "ko:concept/charge-controller",
       "@type": "ko:Concept",
-      "prefLabel": "Outil de visualisation",
-      "altLabel": ["visualization tool"],
-      "definition": "Outil permettant de représenter graphiquement des données ou des relations (ex : diagrammes, graphes, interfaces).",
-      "domain": "software engineering",
-      "broader": "ko:concept/outil"
+      "prefLabel": "Charge Controller",
+      "definition": "A device that regulates the voltage and current coming from a solar panel to a battery, preventing overcharging.",
+      "domain": "renewable-energy"
     },
     {
-      "@id": "ko:concept/outil-de-validation",
+      "@id": "ko:concept/battery-explosion-prevention",
       "@type": "ko:Concept",
-      "prefLabel": "Outil de validation",
-      "altLabel": ["validation tool"],
-      "definition": "Outil permettant de valider la structure ou la cohérence des données (ex : schémas, syntaxe, tests).",
-      "domain": "software engineering",
-      "broader": "ko:concept/outil"
-    },
-
-    {
-      "@id": "ko:concept/language-c",
-      "@type": "ko:Concept",
-      "prefLabel": "C",
-      "definition": "Langage de programmation bas niveau, utilisé pour les systèmes embarqués et les bibliothèques système.",
-      "domain": "programming languages"
+      "prefLabel": "Battery Explosion Prevention",
+      "definition": "Measures and practices to prevent battery explosions, such as proper ventilation and avoiding short circuits.",
+      "domain": "safety"
     },
     {
-      "@id": "ko:concept/language-cpp",
+      "@id": "ko:concept/solar-panel-installation",
       "@type": "ko:Concept",
-      "prefLabel": "C++",
-      "altLabel": ["C plus plus"],
-      "definition": "Extension orientée objet du langage C, utilisée pour les systèmes hautes performances.",
-      "domain": "programming languages",
-      "broader": "ko:concept/language-c"
+      "prefLabel": "Solar Panel Installation",
+      "definition": "The process of installing solar panels, including mounting and wiring.",
+      "domain": "renewable-energy"
     },
     {
-      "@id": "ko:concept/language-rust",
+      "@id": "ko:concept/decentralized-power-production",
       "@type": "ko:Concept",
-      "prefLabel": "Rust",
-      "definition": "Langage de programmation système axé sur la sécurité mémoire et la concurrence sans garbage collector.",
-      "domain": "programming languages"
+      "prefLabel": "Decentralized Power Production",
+      "definition": "The production of electricity in small, distributed systems rather than large centralized plants.",
+      "domain": "renewable-energy"
     },
     {
-      "@id": "ko:concept/language-python",
+      "@id": "ko:concept/off-grid-solar-setup",
       "@type": "ko:Concept",
-      "prefLabel": "Python",
-      "definition": "Langage de programmation interprété à typage dynamique, très utilisé en data science et scripting.",
-      "domain": "programming languages"
-    },
-
-    {
-      "@id": "ko:concept/embedded-systems",
-      "@type": "ko:Concept",
-      "prefLabel": "Systèmes embarqués",
-      "altLabel": ["embedded systems", "systèmes contraints"],
-      "definition": "Environnements informatiques à ressources limitées (RAM, ROM) intégrés dans des dispositifs matériels.",
-      "domain": "software engineering"
+      "prefLabel": "Off-Grid Solar Setup",
+      "definition": "A solar power system designed to operate independently of the electrical grid.",
+      "domain": "renewable-energy"
     },
     {
-      "@id": "ko:concept/data-visualization",
+      "@id": "ko:concept/english",
       "@type": "ko:Concept",
-      "prefLabel": "Visualisation de données",
-      "altLabel": ["data visualization"],
-      "definition": "Représentation graphique de données ou de structures pour en faciliter l'exploration et la compréhension.",
-      "domain": "software engineering"
+      "prefLabel": "English",
+      "definition": "The English language.",
+      "domain": "language"
     }
-
   ]
 }

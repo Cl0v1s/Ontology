@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/clovis-small-solar-power-system",
+      "@type": "ko:Article",
+      "title": "How to Build a Small Solar Power System",
+      "url": "https://solar.lowtechmagazine.com/2023/12/how-to-build-a-small-solar-power-system/",
+      "publishedDate": "2023-12-01",
+      "readDate": "2026-03-11",
+      "language": "en",
+      "abstract": "A guide to building small-scale solar power systems, covering component selection, wiring, safety, and design choices. It focuses on low-voltage DC systems for off-grid applications.",
+      "hasAuthor": "ko:author/clovis",
+      "introduces": ["ko:concept/solar-power-system", "ko:concept/low-voltage-dc-systems"],
+      "uses": ["ko:concept/charge-controller", "ko:concept/battery-explosion-prevention", "ko:concept/solar-panel-installation"],
+      "exemplifies": ["ko:concept/decentralized-power-production"],
+      "hasFeature": ["ko:concept/off-grid-solar-setup"],
+      "usesLanguage": ["ko:concept/english"]
+    }
+  ]
+}
