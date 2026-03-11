@@ -39,13 +39,6 @@
       "definition": "Interface utilisateur permettant des interactions directes via des éléments visuels.",
       "domain": "software engineering"
     },
-    {
-      "@id": "ko:concept/graph-algorithms",
-      "@type": "ko:Concept",
-      "prefLabel": "Algorithmes de graphes",
-      "altLabel": ["graph algorithms"],
-      "definition": "Ensemble de techniques algorithmiques pour analyser, traverser et manipuler des structures de graphes.",
-      "domain": "computer science"
-    }
+
   ]
 }

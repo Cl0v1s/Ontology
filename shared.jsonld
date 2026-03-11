@@ -65,6 +65,49 @@
       "prefLabel": "Rust",
       "definition": "A systems programming language known for its performance, memory safety, and concurrency features.",
       "domain": "programming"
+    },
+    {
+      "@id": "ko:concept/outil",
+      "@type": "ko:Concept",
+      "prefLabel": "Outil",
+      "definition": "Un logiciel ou une bibliothèque conçu pour faciliter une tâche spécifique, souvent dans le contexte du développement ou de la productivité.",
+      "domain": "software"
+    },
+    {
+      "@id": "ko:concept/language-c",
+      "@type": "ko:Concept",
+      "prefLabel": "C",
+      "definition": "A general-purpose programming language known for its performance and widespread use in system/software development.",
+      "domain": "programming"
+    },
+    {
+      "@id": "ko:concept/language-python",
+      "@type": "ko:Concept",
+      "prefLabel": "Python",
+      "definition": "A high-level, interpreted programming language known for its readability and versatility in web development, data analysis, and scripting.",
+      "domain": "programming"
+    },
+    {
+      "@id": "ko:concept/outil-de-visualisation",
+      "@type": "ko:Concept",
+      "prefLabel": "Outil de Visualisation",
+      "definition": "Un outil conçu pour représenter des données ou des processus sous une forme visuelle, facilitant l'analyse et la compréhension.",
+      "domain": "software"
+    },
+    {
+      "@id": "ko:concept/data-visualization",
+      "@type": "ko:Concept",
+      "prefLabel": "Data Visualization",
+      "definition": "The graphical representation of data to facilitate understanding, analysis, and communication of insights.",
+      "domain": "data"
+    },
+    {
+      "@id": "ko:concept/graph-algorithms",
+      "@type": "ko:Concept",
+      "prefLabel": "Graph Algorithms",
+      "altLabel": ["algorithmes de graphes"],
+      "definition": "Ensemble de techniques algorithmiques pour analyser, traverser et manipuler des structures de graphes.",
+      "domain": "computer science"
     }
   ]
 }
