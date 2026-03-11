@@ -11,60 +11,53 @@
   },
   "@graph": [
     {
-      "@id": "ko:concept/solar-power-system",
+      "@id": "ko:concept/haptic-feedback",
       "@type": "ko:Concept",
-      "prefLabel": "Solar Power System",
-      "definition": "A system that converts solar energy into electrical energy, typically using photovoltaic panels.",
-      "domain": "renewable-energy"
+      "prefLabel": "Haptic Feedback",
+      "definition": "Tactile feedback provided by a device (e.g., smartphone) to enhance user interaction, often used in mobile applications.",
+      "domain": "mobile-development"
     },
     {
-      "@id": "ko:concept/low-voltage-dc-systems",
+      "@id": "ko:concept/web-haptics-library",
       "@type": "ko:Concept",
-      "prefLabel": "Low-Voltage DC Systems",
-      "definition": "Electrical systems that operate on direct current (DC) at low voltage, typically used in off-grid applications.",
-      "domain": "renewable-energy"
+      "prefLabel": "Web Haptics Library",
+      "definition": "A library for adding haptic feedback to mobile web applications, supporting frameworks like React, Vue, and Svelte.",
+      "domain": "mobile-development"
     },
     {
-      "@id": "ko:concept/charge-controller",
+      "@id": "ko:concept/react",
       "@type": "ko:Concept",
-      "prefLabel": "Charge Controller",
-      "definition": "A device that regulates the voltage and current coming from a solar panel to a battery, preventing overcharging.",
-      "domain": "renewable-energy"
+      "prefLabel": "React",
+      "definition": "A JavaScript library for building user interfaces, developed by Facebook.",
+      "domain": "web-development"
     },
     {
-      "@id": "ko:concept/battery-explosion-prevention",
+      "@id": "ko:concept/vue",
       "@type": "ko:Concept",
-      "prefLabel": "Battery Explosion Prevention",
-      "definition": "Measures and practices to prevent battery explosions, such as proper ventilation and avoiding short circuits.",
-      "domain": "safety"
+      "prefLabel": "Vue",
+      "definition": "A progressive framework for building user interfaces, known for its simplicity and flexibility.",
+      "domain": "web-development"
     },
     {
-      "@id": "ko:concept/solar-panel-installation",
+      "@id": "ko:concept/svelte",
       "@type": "ko:Concept",
-      "prefLabel": "Solar Panel Installation",
-      "definition": "The process of installing solar panels, including mounting and wiring.",
-      "domain": "renewable-energy"
+      "prefLabel": "Svelte",
+      "definition": "A radical new way to build user interfaces, focusing on simplicity and performance.",
+      "domain": "web-development"
     },
     {
-      "@id": "ko:concept/decentralized-power-production",
+      "@id": "ko:concept/mobile-web-enhancement",
       "@type": "ko:Concept",
-      "prefLabel": "Decentralized Power Production",
-      "definition": "The production of electricity in small, distributed systems rather than large centralized plants.",
-      "domain": "renewable-energy"
+      "prefLabel": "Mobile Web Enhancement",
+      "definition": "Techniques and tools to enhance the mobile web experience, such as haptic feedback.",
+      "domain": "mobile-development"
     },
     {
-      "@id": "ko:concept/off-grid-solar-setup",
+      "@id": "ko:concept/cross-framework-support",
       "@type": "ko:Concept",
-      "prefLabel": "Off-Grid Solar Setup",
-      "definition": "A solar power system designed to operate independently of the electrical grid.",
-      "domain": "renewable-energy"
-    },
-    {
-      "@id": "ko:concept/english",
-      "@type": "ko:Concept",
-      "prefLabel": "English",
-      "definition": "The English language.",
-      "domain": "language"
+      "prefLabel": "Cross-Framework Support",
+      "definition": "Support for multiple frameworks (e.g., React, Vue, Svelte) in a single library or tool.",
+      "domain": "web-development"
     }
   ]
 }
