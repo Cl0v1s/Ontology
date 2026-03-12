@@ -205,6 +205,55 @@
       "altLabel": ["System error", "Unresolvable error"],
       "definition": "An error that the user cannot resolve, often indicating a system issue or failure. These errors typically require intervention from developers or administrators to address.",
       "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/software-simplification",
+      "@type": "ko:Concept",
+      "prefLabel": "Software Simplification",
+      "definition": "The historical attempts to simplify software creation, making it accessible to non-programmers.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/cobol",
+      "@type": "ko:Concept",
+      "prefLabel": "COBOL",
+      "definition": "A programming language designed for business, data processing, and its enduring legacy in critical systems.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/ai-hype-cycle",
+      "@type": "ko:Concept",
+      "prefLabel": "AI Hype Cycle",
+      "definition": "The recurring pattern of overpromising AI capabilities and the reality gap.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/programming-democratization",
+      "@type": "ko:Concept",
+      "prefLabel": "Programming Democratization",
+      "definition": "The idea that non-programmers could write software without specialized skills.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/expert-systems",
+      "@type": "ko:Concept",
+      "prefLabel": "Expert Systems",
+      "definition": "Early AI systems designed to mimic human expertise in rule-based engines.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/automatic-programming",
+      "@type": "ko:Concept",
+      "prefLabel": "Automatic Programming",
+      "definition": "Systems that translate natural language specifications into working code.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/ai-winter",
+      "@type": "ko:Concept",
+      "prefLabel": "AI Winter",
+      "definition": "Periods of reduced funding and interest in AI due to unmet expectations.",
+      "domain": "software engineering"
     }
   ]
 }
