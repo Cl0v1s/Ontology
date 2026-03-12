@@ -203,6 +203,62 @@
       "altLabel": ["système solaire de puissance"],
       "definition": "Système conçu pour capturer l'énergie solaire et la convertir en électricité utilisable, souvent utilisé pour des applications hors réseau.",
       "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/low-voltage-dc-systems",
+      "@type": "ko:Concept",
+      "prefLabel": "Low-Voltage DC Systems",
+      "altLabel": ["systèmes basse tension continue"],
+      "definition": "Systèmes électriques fonctionnant en courant continu à faible voltage, souvent utilisés dans les applications solaires.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/charge-controller",
+      "@type": "ko:Concept",
+      "prefLabel": "Charge Controller",
+      "altLabel": ["régulateur de charge"],
+      "definition": "Dispositif qui régule le courant Coming from the solar panels to prevent overcharging or undercharging of batteries.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/battery-explosion-prevention",
+      "@type": "ko:Concept",
+      "prefLabel": "Battery Explosion Prevention",
+      "altLabel": ["prévention des explosions de batteries"],
+      "definition": "Techniques et mesures pour éviter les risques d'explosion ou de surchauffe des batteries.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/solar-panel-installation",
+      "@type": "ko:Concept",
+      "prefLabel": "Solar Panel Installation",
+      "altLabel": ["installation de panneaux solaires"],
+      "definition": "Processus d'installation des panneaux solaires pour une production d'énergie optimale.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/decentralized-power-production",
+      "@type": "ko:Concept",
+      "prefLabel": "Decentralized Power Production",
+      "altLabel": ["production décentralisée d'énergie"],
+      "definition": "Approche de production d'énergie locale, réduisant la dépendance aux réseaux centralisés.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/off-grid-solar-setup",
+      "@type": "ko:Concept",
+      "prefLabel": "Off-Grid Solar Setup",
+      "altLabel": ["installation solaire hors réseau"],
+      "definition": "Système solaire conçu pour fonctionner indépendamment du réseau électrique public.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/english",
+      "@type": "ko:Concept",
+      "prefLabel": "English",
+      "altLabel": ["anglais"],
+      "definition": "Langue utilisée dans les documents techniques ou scientifiques.",
+      "domain": "ecology"
     }
   ]
 }
