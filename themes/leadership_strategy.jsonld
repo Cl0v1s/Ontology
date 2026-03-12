@@ -37,6 +37,102 @@
       "prefLabel": "Leadership Perspective",
       "definition": "The ability to see the bigger picture and guide teams effectively.",
       "domain": "leadership"
+    },
+    {
+      "@id": "ko:concept/requirement-engineering",
+      "@type": "ko:Concept",
+      "prefLabel": "Requirement Engineering",
+      "altLabel": ["ingénierie des exigences"],
+      "definition": "Processus de définition des attributs, conditions ou capacités nécessaires qu'un produit ou système doit satisfaire pour répondre aux besoins des parties prenantes.",
+      "domain": "engineering"
+    },
+    {
+      "@id": "ko:concept/stakeholder-needs",
+      "@type": "ko:Concept",
+      "prefLabel": "Stakeholder Needs",
+      "altLabel": ["besoins des parties prenantes"],
+      "definition": "Les besoins, attentes et contraintes exprimées ou implicites par les parties prenantes d'un projet ou système.",
+      "domain": "engineering"
+    },
+    {
+      "@id": "ko:concept/analysis-requirements",
+      "@type": "ko:Concept",
+      "prefLabel": "Analysis Requirements",
+      "altLabel": ["analyse des exigences"],
+      "definition": "Processus d'analyse et de documentation des besoins pour garantir qu'ils sont clairs, complets et cohérents.",
+      "domain": "engineering"
+    },
+    {
+      "@id": "ko:concept/validation-process",
+      "@type": "ko:Concept",
+      "prefLabel": "Validation Process",
+      "altLabel": ["processus de validation"],
+      "definition": "Processus systématique pour vérifier qu'un produit ou système répond aux exigences définies.",
+      "domain": "engineering"
+    },
+    {
+      "@id": "ko:concept/engineering-design",
+      "@type": "ko:Concept",
+      "prefLabel": "Engineering Design",
+      "altLabel": ["conception en ingénierie"],
+      "definition": "Processus de création et d'optimisation des solutions techniques pour répondre aux exigences.",
+      "domain": "engineering"
+    },
+    {
+      "@id": "ko:concept/formal-specification",
+      "@type": "ko:Concept",
+      "prefLabel": "Formal Specification",
+      "altLabel": ["spécification formelle"],
+      "definition": "Document ou ensemble de documents qui définissent précisément les exigences techniques d'un produit ou système.",
+      "domain": "engineering"
+    },
+    {
+      "@id": "ko:concept/concurrent-engineering",
+      "@type": "ko:Concept",
+      "prefLabel": "Concurrent Engineering",
+      "altLabel": ["ingénierie concurrente"],
+      "definition": "Méthode de développement de produits où différentes disciplines travaillent simultanément pour concevoir et développer un produit.",
+      "domain": "engineering"
+    },
+    {
+      "@id": "ko:concept/cross-functional-teams",
+      "@type": "ko:Concept",
+      "prefLabel": "Cross-Functional Teams",
+      "altLabel": ["équipes pluridisciplinaires"],
+      "definition": "Équipes composées de membres de différentes disciplines travaillant ensemble pour atteindre un objectif commun.",
+      "domain": "leadership"
+    },
+    {
+      "@id": "ko:concept/parallel-development",
+      "@type": "ko:Concept",
+      "prefLabel": "Parallel Development",
+      "altLabel": ["développement parallèle"],
+      "definition": "Approche de développement où plusieurs aspects d'un produit sont travaillés simultanément pour réduire les délais.",
+      "domain": "engineering"
+    },
+    {
+      "@id": "ko:concept/integration-management",
+      "@type": "ko:Concept",
+      "prefLabel": "Integration Management",
+      "altLabel": ["gestion de l'intégration"],
+      "definition": "Processus de coordination et d'intégration des différentes parties d'un produit ou système pour assurer leur cohérence.",
+      "domain": "engineering"
+    },
+    {
+      "@id": "ko:concept/product-development-process",
+      "@type": "ko:Concept",
+      "prefLabel": "Product Development Process",
+      "altLabel": ["processus de développement de produit"],
+      "definition": "Processus structuré pour concevoir, développer et livrer un produit, souvent basé sur des méthodologies comme l'ingénierie concurrente.",
+      "domain": "engineering"
+    },
+    {
+      "@id": "ko:concept/collaborative-design",
+      "@type": "ko:Concept",
+      "prefLabel": "Collaborative Design",
+      "altLabel": ["conception collaborative"],
+      "definition": "Approche de conception où les équipes collaborent étroitement pour optimiser les solutions techniques.",
+      "domain": "engineering"
     }
   ]
 }

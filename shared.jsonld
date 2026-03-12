@@ -16,6 +16,13 @@
       "prefLabel": "French",
       "definition": "The French language, used in this article.",
       "domain": "language"
+    },
+    {
+      "@id": "ko:concept/outil",
+      "@type": "ko:Concept",
+      "prefLabel": "Outil",
+      "definition": "Un logiciel ou une bibliothèque conçu pour faciliter une tâche spécifique, souvent dans le contexte du développement ou de la productivité.",
+      "domain": "software"
     }
   ]
 }
