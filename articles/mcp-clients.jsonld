@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/mcp-clients",
+      "@type": "ko:Article",
+      "title": "Understanding MCP clients - Model Context Protocol",
+      "url": "https://modelcontextprotocol.io/docs/learn/client-concepts",
+      "publishedDate": "2026-03-13",
+      "readDate": "2026-03-13",
+      "language": "en",
+      "abstract": "Article explaining MCP clients in the context of Model Context Protocol.",
+      "introduces": ["ko:concept/mcp-client"],
+      "uses": ["ko:concept/model-context-protocol"]
+    },
+    {
+      "@id": "ko:concept/mcp-client",
+      "@type": "ko:Concept",
+      "prefLabel": "MCP Client",
+      "definition": "A client implementation of the Model Context Protocol, used for interacting with context models.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/model-context-protocol",
+      "@type": "ko:Concept",
+      "prefLabel": "Model Context Protocol",
+      "definition": "A protocol for managing and interacting with context models in software systems.",
+      "domain": "software engineering"
+    }
+  ]
+}
