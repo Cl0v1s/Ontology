@@ -1,0 +1,28 @@
+{
+  "title": "abyss * tree-style_invite_systems_reduce_AI_slop",
+  "description": "Discusses the effectiveness of Lobste.rs's invite-only membership system in reducing AI-generated content (AI slop) and maintaining a human-centric community.",
+  "concepts": [
+    {
+      "name": "AI Slop",
+      "definition": "Low-quality or unqualified AI-generated content or PRs that inundate platforms like GitHub."
+    },
+    {
+      "name": "Lobste.rs Membership System",
+      "description": "An invite-only registration system where users can send invites after 70 days, emphasizing trust-based growth."
+    },
+    {
+      "name": "Tree of Trust",
+      "definition": "A metaphorical representation of the Lobste.rs community structure based on invitations and trust."
+    },
+    {
+      "name": "Moderation Efficiency",
+      "description": "The ability to easily identify and prune AI-sloppy accounts or branches, raising the cost for such campaigns."
+    },
+    {
+      "name": "Eternal September",
+      "definition": "Preserving a site's early, human-centric nature and preventing it from becoming dominated by machines."
+    }
+  ],
+  "related_articles": [],
+  "tags": ["AI Slop", "Community Moderation", "Trust-Based Systems", "Lobste.rs"]
+}
