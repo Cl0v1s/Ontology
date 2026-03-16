@@ -23,6 +23,6 @@
       "definition": "Preserving a site's early, human-centric nature and preventing it from becoming dominated by machines."
     }
   ],
-  "related_articles": [],
+  "related_articles": ["leadership_strategy", "software_engineering"],
   "tags": ["AI Slop", "Community Moderation", "Trust-Based Systems", "Lobste.rs"]
 }
