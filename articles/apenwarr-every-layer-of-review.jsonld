@@ -11,25 +11,28 @@
   },
   "@graph": [
     {
-      "@id": "ko:author/apenwarr",
-      "@type": "ko:Person",
-      "prefLabel": "apenwarr",
-      "definition": "Auteur du blog apenwarr.ca, spécialisé dans les sujets de sécurité informatique et d'ingénierie logicielle.",
-      "domain": "author"
-    },
-    {
-      "@id": "ko:concept/french",
-      "@type": "ko:Concept",
-      "prefLabel": "French",
-      "definition": "The French language, used in this article.",
-      "domain": "language"
-    },
-    {
-      "@id": "ko:concept/outil",
-      "@type": "ko:Concept",
-      "prefLabel": "Outil",
-      "definition": "Un logiciel ou une bibliothèque conçu pour faciliter une tâche spécifique, souvent dans le contexte du développement ou de la productivité.",
-      "domain": "software"
+      "@id": "ko:article/apenwarr-every-layer-of-review",
+      "@type": "ko:Article",
+      "title": "Every layer of review makes you 10x slower",
+      "url": "https://apenwarr.ca/log/20260316",
+      "publishedDate": "2026-03-16",
+      "readDate": "2026-03-18",
+      "language": "en",
+      "abstract": "Critique des couches d'approbation dans les processus de développement logiciel qui ajoutent des délais significatifs sans résoudre les causes racines de la latence.",
+      "hasAuthor": "ko:author/apenwarr",
+      "introduces": [
+        "ko:concept/network-effect-laws",
+        "ko:concept/coordination-overhead",
+        "ko:concept/layers-of-approval",
+        "ko:concept/ai-limited-impact",
+        "ko:concept/systems-design-challenges",
+        "ko:concept/latency-as-bottleneck",
+        "ko:concept/ai-developer-descent-into-madness"
+      ],
+      "critiques": [
+        "ko:concept/ai-hype",
+        "ko:concept/organizational-design-flaws"
+      ]
     },
     {
       "@id": "ko:concept/network-effect-laws",
