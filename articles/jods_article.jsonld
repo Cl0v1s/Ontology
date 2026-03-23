@@ -1,13 +1,33 @@
 {
-  "@context": "https://schema.org",
-  "@type": "ScholarlyArticle",
-  "headline": "Death Star Thinking and Government Reform",
-  "url": "https://jods.mitpress.mit.edu/pub/issue3-pahlka/release/2",
-  "author": {
-    "@type": "Person",
-    "name": "Mina Hsiang"
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
   },
-  "datePublished": "2016-09-01",
-  "description": "The article discusses the complexities of government reform and critiques the 'Death Star thinking' approach, which assumes that problems can be solved with a single, well-placed solution. It explores real-world examples and suggests alternative approaches to government reform.",
-  "keywords": ["government reform", "Death Star thinking", "complex systems", "bureaucracy", "technology in government"]
+  "@graph": [
+    {
+      "@id": "ko:article/jods-death-star-thinking",
+      "@type": "ko:Article",
+      "title": "Death Star Thinking and Government Reform",
+      "url": "https://jods.mitpress.mit.edu/pub/issue3-pahlka/release/2",
+      "publishedDate": "2016-09-01",
+      "readDate": "2026-03-18",
+      "language": "en",
+      "abstract": "The article discusses the complexities of government reform and critiques the 'Death Star thinking' approach, which assumes that problems can be solved with a single, well-placed solution. It explores real-world examples and suggests alternative approaches to government reform.",
+      "hasAuthor": "ko:author/mina-hsiang",
+      "introduces": [
+        "ko:concept/death-star-thinking"
+      ],
+      "relatedTo": [
+        "ko:concept/complex-systems",
+        "ko:concept/bureaucracy",
+        "ko:concept/technology-in-government"
+      ]
+    }
+  ]
 }

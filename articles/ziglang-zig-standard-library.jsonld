@@ -1,0 +1,126 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/ziglang-zig-standard-library",
+      "@type": "ko:Article",
+      "title": "Zig Standard Library Documentation",
+      "url": "https://ziglang.org/documentation/0.15.2/std/",
+      "publishedDate": "2024-01-01",
+      "readDate": "2026-03-20",
+      "language": "en",
+      "abstract": "Documentation de la bibliothèque standard de Zig, contenant des algorithmes, structures de données et définitions couramment utilisés pour construire des programmes ou bibliothèques robustes, optimales et réutilisables.",
+      "hasAuthor": "ko:author/ziglang-team",
+      "introduces": [
+        "ko:concept/zig-standard-library",
+        "ko:concept/robust-software",
+        "ko:concept/optimal-code",
+        "ko:concept/reusable-code",
+        "ko:concept/maintainable-code"
+      ],
+      "uses": [
+        "ko:concept/programming-language",
+        "ko:concept/data-structure",
+        "ko:concept/algorithms",
+        "ko:concept/software-library",
+        "ko:concept/toolchain"
+      ]
+    },
+    {
+      "@id": "ko:author/ziglang-team",
+      "@type": "ko:Organization",
+      "prefLabel": "Zig Lang Team",
+      "definition": "Équipe de développement du langage Zig, spécialisée dans la création d'outils pour maintenir un logiciel robuste, optimal et réutilisable.",
+      "domain": "author"
+    },
+    {
+      "@id": "ko:concept/zig-standard-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Zig Standard Library",
+      "altLabel": ["zig std", "Zig standard library"],
+      "definition": "Bibliothèque standard de Zig contenant des algorithmes, structures de données et définitions couramment utilisés pour construire des programmes ou bibliothèques.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/robust-software",
+      "@type": "ko:Concept",
+      "prefLabel": "Logiciel robuste",
+      "altLabel": ["robust software"],
+      "definition": "Code qui se comporte correctement même dans des cas limites comme la gestion de la mémoire épuisée.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/optimal-code",
+      "@type": "ko:Concept",
+      "prefLabel": "Code optimal",
+      "altLabel": ["optimal code"],
+      "definition": "Programmes qui se comportent et performent de la meilleure manière possible.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/reusable-code",
+      "@type": "ko:Concept",
+      "prefLabel": "Code réutilisable",
+      "altLabel": ["reusable code"],
+      "definition": "Même code qui fonctionne dans de nombreux environnements ayant des contraintes différentes.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/maintainable-code",
+      "@type": "ko:Concept",
+      "prefLabel": "Code maintenable",
+      "altLabel": ["maintainable code"],
+      "definition": "Code qui communique précisément l'intention au compilateur et autres programmeurs, avec une faible surcharge de lecture.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/programming-language",
+      "@type": "ko:Concept",
+      "prefLabel": "Langage de programmation",
+      "altLabel": ["programming language"],
+      "definition": "Système formel pour exprimer des algorithmes et programmes informatiques.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/data-structure",
+      "@type": "ko:Concept",
+      "prefLabel": "Structure de données",
+      "altLabel": ["data structure"],
+      "definition": "Méthode d'organisation et de stockage des données pour un accès et une modification efficaces.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/algorithms",
+      "@type": "ko:Concept",
+      "prefLabel": "Algorithmes",
+      "altLabel": ["algorithms"],
+      "definition": "Ensemble fini d'instructions pour résoudre un problème spécifique.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/software-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Bibliothèque logicielle",
+      "altLabel": ["software library"],
+      "definition": "Collection de code réutilisable pour construire des programmes ou bibliothèques.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/toolchain",
+      "@type": "ko:Concept",
+      "prefLabel": "Chaîne d'outils",
+      "altLabel": ["toolchain"],
+      "definition": "Ensemble d'outils utilisés pour développer, compiler et déployer un logiciel.",
+      "domain": "software engineering"
+    }
+  ]
+}

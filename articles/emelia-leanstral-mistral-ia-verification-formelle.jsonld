@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/emelia-leanstral-mistral-ia-verification-formelle",
+      "@type": "ko:Article",
+      "title": "Leanstral par Mistral AI : l'IA qui prouve que votre code est correct",
+      "url": "https://emelia.io/fr/hub/leanstral-mistral-ia-verification-formelle",
+      "publishedDate": "2026-03-18",
+      "readDate": "2026-03-18",
+      "language": "fr",
+      "abstract": "Leanstral est un modèle Mixture-of-Experts spécialisé dans la vérification formelle de code Lean 4. Il permet aux agents IA d'écrire du code et de produire des preuves formelles de correction, vérifiées par le compilateur Lean 4 via MCP.",
+      "hasAuthor": "ko:author/emelia",
+      "introduces": [
+        "ko:concept/leanstral",
+        "ko:concept/formal-verification",
+        "ko:concept/lean-4",
+        "ko:concept/mcp-protocol",
+        "ko:concept/sparse-mixture-of-experts"
+      ],
+      "uses": [
+        "ko:concept/ai-code-generation",
+        "ko:concept/software-quality-assurance",
+        "ko:concept/mathematical-proofs"
+      ]
+    }
+  ]
+}

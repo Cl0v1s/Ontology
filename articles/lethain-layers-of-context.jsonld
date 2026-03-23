@@ -1,47 +1,35 @@
 {
   "@context": {
-    "schema": "https://schema.org/",
-    "name": "schema:name",
-    "description": "schema:description",
-    "url": "schema:url",
-    "author": "schema:author",
-    "datePublished": "schema:datePublished"
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
   },
-  "@type": "Article",
-  "title": "Layers of context | Irrational Exuberance",
-  "url": "https://lethain.com/layers-of-context/",
-  "author": {
-    "@type": "Person",
-    "name": "Lethain"
-  },
-  "datePublished": "2024-01-15",
-  "description": "Discusses the importance of perceiving and reasoning across multiple layers of context in problem-solving, particularly in engineering and leadership roles.",
-  "concepts": [
+  "@graph": [
     {
-      "name": "Layers of Context",
-      "description": "The different perspectives or dimensions involved in evaluating a problem, such as technical, organizational, financial, and leadership."
-    },
-    {
-      "name": "Curiosity Over Conviction",
-      "description": "Approach problems with curiosity rather than conviction to better understand missing context layers."
-    },
-    {
-      "name": "Contextual Awareness",
-      "description": "The ability to perceive and reason across multiple context layers to make informed decisions."
-    },
-    {
-      "name": "Leadership Perspective",
-      "description": "Understanding the goals, constraints, and priorities of leadership in decision-making."
-    },
-    {
-      "name": "Product vs. Infrastructure Perspectives",
-      "description": "Balancing the needs and viewpoints of product engineering and infrastructure teams."
-    },
-    {
-      "name": "Networking for Context",
-      "description": "Building a broad network to borrow hard-won context from others without organizational politics."
+      "@id": "ko:article/lethain-layers-of-context",
+      "@type": "ko:Article",
+      "title": "Layers of context | Irrational Exuberance",
+      "url": "https://lethain.com/layers-of-context/",
+      "publishedDate": "2024-01-15",
+      "readDate": "2026-03-18",
+      "language": "en",
+      "abstract": "Discusses the importance of perceiving and reasoning across multiple layers of context in problem-solving, particularly in engineering and leadership roles.",
+      "hasAuthor": "ko:author/lethain",
+      "introduces": [
+        "ko:concept/layers-of-context",
+        "ko:concept/curiosity-over-conviction",
+        "ko:concept/contextual-awareness"
+      ],
+      "relatedTo": [
+        "ko:concept/leadership-perspective",
+        "ko:concept/product-vs-infrastructure-perspectives",
+        "ko:concept/networking-for-context"
+      ]
     }
-  ],
-  "tags": ["Leadership", "Engineering Strategy", "Contextual Reasoning", "Organizational Dynamics"],
-      "relatedTo": ["ko:concept/layers-of-context", "ko:concept/curiosity-over-conviction", "ko:concept/contextual-awareness"]
+  ]
 }
