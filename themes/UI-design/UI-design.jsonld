@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/retro-ui-design",
+      "@type": "ko:Concept",
+      "prefLabel": "Design d'interface r\u00e9tro",
+      "altLabel": [
+        "retro UI design",
+        "skeuomorphic design"
+      ],
+      "definition": "Conception d'interfaces imitant l'esth\u00e9tique des syst\u00e8mes informatiques anciens.",
+      "domain": "UI design"
+    },
+    {
+      "@id": "ko:concept/design-system",
+      "@type": "ko:Concept",
+      "prefLabel": "Syst\u00e8me de design",
+      "altLabel": [
+        "design system"
+      ],
+      "definition": "Ensemble de composants, r\u00e8gles et guidelines visuelles r\u00e9utilisables pour construire des interfaces coh\u00e9rentes.",
+      "domain": "UI design"
+    }
+  ]
+}

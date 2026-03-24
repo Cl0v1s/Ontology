@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/science",
+      "@type": "ko:Concept",
+      "prefLabel": "Science",
+      "altLabel": [
+        "science"
+      ],
+      "definition": "Ensemble de connaissances valides produites par des m\u00e9thodes rigoureuses, valid\u00e9es par les pairs et soumises au consensus scientifique.",
+      "domain": "philosophy of science"
+    }
+  ]
+}

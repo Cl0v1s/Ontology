@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/webgpu",
+      "@type": "ko:Concept",
+      "prefLabel": "WebGPU",
+      "altLabel": [
+        "Web Graphics Platform"
+      ],
+      "definition": "API graphique moderne pour le rendu 3D haute performance dans les navigateurs et applications natives, permettant un acc\u00e8s direct au GPU.",
+      "domain": "graphics programming"
+    },
+    {
+      "@id": "ko:concept/webgl-shaders",
+      "@type": "ko:Concept",
+      "prefLabel": "WebGL Shaders",
+      "altLabel": [
+        "WebGL shaders"
+      ],
+      "definition": "Programmation graphique via WebGL pour appliquer des effets post-traitement en temps r\u00e9el sur les canvas.",
+      "domain": "graphics programming"
+    }
+  ]
+}

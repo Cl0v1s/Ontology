@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/notion-ai",
+      "@type": "ko:Concept",
+      "prefLabel": "Notion AI",
+      "definition": "An AI feature integrated in Notion used to assist with documentation tasks such as summarization and search.",
+      "domain": "knowledge management"
+    },
+    {
+      "@id": "ko:concept/documentation-duplication",
+      "@type": "ko:Concept",
+      "prefLabel": "Documentation Duplication",
+      "altLabel": [
+        "duplicate docs"
+      ],
+      "definition": "The presence of redundant or conflicting documentation pages covering the same topic, leading to confusion and maintenance overhead.",
+      "domain": "knowledge management"
+    },
+    {
+      "@id": "ko:concept/archive-teamspace",
+      "@type": "ko:Concept",
+      "prefLabel": "Archive Teamspace",
+      "definition": "A dedicated Notion teamspace used to store deprecated or outdated documentation rather than deleting it outright.",
+      "domain": "knowledge management"
+    },
+    {
+      "@id": "ko:concept/stale-hierarchies",
+      "@type": "ko:Concept",
+      "prefLabel": "Stale Hierarchies",
+      "definition": "Outdated organizational structures in documentation systems that no longer reflect the current state of the organization or product.",
+      "domain": "knowledge management"
+    },
+    {
+      "@id": "ko:concept/verified-documentation",
+      "@type": "ko:Concept",
+      "prefLabel": "Verified Documentation",
+      "definition": "Documentation that has been explicitly reviewed and confirmed to be accurate and up-to-date.",
+      "domain": "knowledge management"
+    },
+    {
+      "@id": "ko:concept/notion-api-limitation",
+      "@type": "ko:Concept",
+      "prefLabel": "Notion API Limitation",
+      "definition": "Constraints of the Notion API that restrict automated bulk operations such as moving or archiving pages programmatically.",
+      "domain": "knowledge management"
+    },
+    {
+      "@id": "ko:concept/manual-review",
+      "@type": "ko:Concept",
+      "prefLabel": "Manual Review",
+      "definition": "A process requiring human judgment to evaluate and act on documentation pages individually, as opposed to automated bulk operations.",
+      "domain": "knowledge management"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/mermaid-diagram-generation",
+      "@type": "ko:Concept",
+      "prefLabel": "G\u00e9n\u00e9ration de diagrammes Mermaid",
+      "definition": "Production automatique de diagrammes au format Mermaid \u00e0 partir de donn\u00e9es structur\u00e9es.",
+      "domain": "data visualization",
+      "broader": "ko:concept/data-visualization"
+    },
+    {
+      "@id": "ko:concept/interactive-graph-visualization",
+      "@type": "ko:Concept",
+      "prefLabel": "Visualisation interactive de graphes",
+      "altLabel": [
+        "interactive graph visualization"
+      ],
+      "definition": "Repr\u00e9sentation visuelle de graphes (n\u0153uds et ar\u00eates) avec interaction en temps r\u00e9el.",
+      "domain": "data visualization",
+      "broader": "ko:concept/data-visualization"
+    }
+  ]
+}

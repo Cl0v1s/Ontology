@@ -1,0 +1,117 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/text-to-speech",
+      "@type": "ko:Concept",
+      "prefLabel": "Synth\u00e8se vocale",
+      "altLabel": [
+        "text-to-speech",
+        "TTS"
+      ],
+      "definition": "Conversion automatique de texte \u00e9crit en parole audio.",
+      "domain": "machine learning"
+    },
+    {
+      "@id": "ko:concept/lightweight-ml-model",
+      "@type": "ko:Concept",
+      "prefLabel": "Mod\u00e8le ML l\u00e9ger",
+      "altLabel": [
+        "lightweight model",
+        "small model"
+      ],
+      "definition": "Mod\u00e8le de machine learning con\u00e7u pour fonctionner avec un minimum de m\u00e9moire et de ressources de calcul.",
+      "domain": "machine learning"
+    },
+    {
+      "@id": "ko:concept/pre-training",
+      "@type": "ko:Concept",
+      "prefLabel": "Pre-training",
+      "altLabel": [
+        "pretraining"
+      ],
+      "definition": "Entra\u00eenement initial d'un mod\u00e8le sur de grands datasets internes pour construire des mod\u00e8les domain-aware.",
+      "domain": "machine learning"
+    },
+    {
+      "@id": "ko:concept/post-training",
+      "@type": "ko:Concept",
+      "prefLabel": "Post-training",
+      "altLabel": [
+        "posttraining"
+      ],
+      "definition": "M\u00e9thodes permettant d'affiner le comportement d'un mod\u00e8le pour des t\u00e2ches et environnements sp\u00e9cifiques.",
+      "domain": "machine learning"
+    },
+    {
+      "@id": "ko:concept/reinforcement-learning",
+      "@type": "ko:Concept",
+      "prefLabel": "Reinforcement Learning",
+      "altLabel": [
+        "RL"
+      ],
+      "definition": "Apprentissage par renforcement permettant d'aligner les mod\u00e8les et agents avec des politiques internes, crit\u00e8res d'\u00e9valuation et objectifs op\u00e9rationnels.",
+      "domain": "machine learning"
+    },
+    {
+      "@id": "ko:concept/dense-models",
+      "@type": "ko:Concept",
+      "prefLabel": "Dense Models",
+      "altLabel": [
+        "dense models"
+      ],
+      "definition": "Mod\u00e8les denses fournissant de fortes capacit\u00e9s g\u00e9n\u00e9rales \u00e0 travers une large gamme de t\u00e2ches d'entreprise.",
+      "domain": "machine learning"
+    },
+    {
+      "@id": "ko:concept/mixture-of-experts",
+      "@type": "ko:Concept",
+      "prefLabel": "Mixture of Experts",
+      "altLabel": [
+        "MoE",
+        "mixture-of-experts"
+      ],
+      "definition": "Architecture permettant \u00e0 de tr\u00e8s grands mod\u00e8les de s'ex\u00e9cuter efficacement avec une latence et un co\u00fbt de calcul inf\u00e9rieurs.",
+      "domain": "machine learning"
+    },
+    {
+      "@id": "ko:concept/multimodal-inputs",
+      "@type": "ko:Concept",
+      "prefLabel": "Multimodal Inputs",
+      "altLabel": [
+        "multimodal"
+      ],
+      "definition": "Support d'entr\u00e9es multimodales permettant aux mod\u00e8les d'apprendre \u00e0 partir de texte, images et autres formats de donn\u00e9es.",
+      "domain": "machine learning"
+    },
+    {
+      "@id": "ko:concept/continuous-improvement",
+      "@type": "ko:Concept",
+      "prefLabel": "Continuous Improvement",
+      "altLabel": [
+        "ongoing improvement"
+      ],
+      "definition": "Adaptation continue des mod\u00e8les via des pipelines d'apprentissage par renforcement utilisant le feedback de \u00e9valuations internes et workflows op\u00e9rationnels.",
+      "domain": "machine learning"
+    },
+    {
+      "@id": "ko:concept/evaluation-frameworks",
+      "@type": "ko:Concept",
+      "prefLabel": "Evaluation Frameworks",
+      "altLabel": [
+        "evaluation frameworks"
+      ],
+      "definition": "Cadres permettant aux entreprises de tester les mod\u00e8les contre des benchmarks internes, r\u00e8gles de conformit\u00e9 et t\u00e2ches domain-sp\u00e9cifiques.",
+      "domain": "machine learning"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/vector-mode",
+      "@type": "ko:Concept",
+      "prefLabel": "Vector Mode",
+      "altLabel": [
+        "vector display mode"
+      ],
+      "definition": "Mode d'affichage phosphor CRT avec multi-pass bloom, pistes de persistance par canal, aberration chromatique et grain.",
+      "domain": "display technology"
+    },
+    {
+      "@id": "ko:concept/crt-mode",
+      "@type": "ko:Concept",
+      "prefLabel": "CRT Mode",
+      "altLabel": [
+        "crt simulation mode"
+      ],
+      "definition": "Mode de simulation NTSC 256\u00d7224 avec lignes de balayage gaussiennes, grille d'aperture Trinitron, halation, temp\u00e9rature de couleur chaude et interlace flicker.",
+      "domain": "display technology"
+    },
+    {
+      "@id": "ko:concept/phosphor-glow",
+      "@type": "ko:Concept",
+      "prefLabel": "Phosphor Glow",
+      "altLabel": [
+        "phosphor glow effect"
+      ],
+      "definition": "Effet de lueur phosphore simul\u00e9 via des passes de rendu multiples pour imiter les \u00e9crans CRT.",
+      "domain": "display technology"
+    },
+    {
+      "@id": "ko:concept/scanlines",
+      "@type": "ko:Concept",
+      "prefLabel": "Scanlines",
+      "altLabel": [
+        "scanline effect"
+      ],
+      "definition": "Lignes de balayage simul\u00e9es avec flou gaussien pour imiter les \u00e9crans CRT analogiques.",
+      "domain": "display technology"
+    },
+    {
+      "@id": "ko:concept/bloom-effect",
+      "@type": "ko:Concept",
+      "prefLabel": "Bloom Effect",
+      "altLabel": [
+        "bloom",
+        "glow bloom"
+      ],
+      "definition": "Effet de flou lumineux multi-pass pour simuler la diffusion de lumi\u00e8re sur les \u00e9crans phosphor.",
+      "domain": "display technology"
+    },
+    {
+      "@id": "ko:concept/barrel-distortion",
+      "@type": "ko:Concept",
+      "prefLabel": "Barrel Distortion",
+      "altLabel": [
+        "barrel distortion effect"
+      ],
+      "definition": "Distortion en barillet pour simuler les \u00e9crans CRT avec lentilles courb\u00e9es.",
+      "domain": "display technology"
+    },
+    {
+      "@id": "ko:concept/per-pixel-persistence-trails",
+      "@type": "ko:Concept",
+      "prefLabel": "Per-Pixel Persistence Trails",
+      "altLabel": [
+        "persistence trails"
+      ],
+      "definition": "Effet de tra\u00een\u00e9es de persistance par pixel pour imiter la d\u00e9charge progressive des phosphores CRT.",
+      "domain": "display technology"
+    },
+    {
+      "@id": "ko:concept/chromatic-aberration",
+      "@type": "ko:Concept",
+      "prefLabel": "Chromatic Aberration",
+      "altLabel": [
+        "chromatic aberration effect"
+      ],
+      "definition": "D\u00e9calage chromatique simul\u00e9 pour imiter les d\u00e9fauts optiques des \u00e9crans CRT anciens.",
+      "domain": "display technology"
+    },
+    {
+      "@id": "ko:concept/grain-texture",
+      "@type": "ko:Concept",
+      "prefLabel": "Grain Texture",
+      "altLabel": [
+        "grain",
+        "film grain"
+      ],
+      "definition": "Texture de grain ajout\u00e9e pour simuler le bruit des \u00e9crans CRT et l'aspect analogique.",
+      "domain": "display technology"
+    }
+  ]
+}
