@@ -38,7 +38,6 @@
       "altLabel": ["interactive GUI"],
       "definition": "Interface utilisateur permettant des interactions directes via des éléments visuels.",
       "domain": "software engineering"
-    },
-
+    }
   ]
 }
