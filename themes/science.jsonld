@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/transdisciplinarite",
+      "@type": "ko:Concept",
+      "prefLabel": "Transdisciplinarity",
+      "altLabel": [
+        "transdisciplinarité"
+      ],
+      "definition": "Approche qui dépasse les frontières des disciplines spécialisées pour construire de nouvelles connaissances.",
+      "domain": "science"
+    },
+    {
+      "@id": "ko:concept/multidisciplinarite",
+      "@type": "ko:Concept",
+      "prefLabel": "Multidisciplinary Approach",
+      "altLabel": [
+        "multidisciplinarité"
+      ],
+      "definition": "Approche centrée sur plusieurs disciplines sans les intégrer pour construire de nouvelles connaissances.",
+      "domain": "science"
+    },
+    {
+      "@id": "ko:concept/consensus-scientifique",
+      "@type": "ko:Concept",
+      "prefLabel": "Scientific Consensus",
+      "altLabel": [
+        "consensus scientifique"
+      ],
+      "definition": "Accord d'un nombre suffisamment important de scientifiques sur une connaissance, validant sa validité.",
+      "domain": "science"
+    },
+    {
+      "@id": "ko:concept/revue-par-les-pairs",
+      "@type": "ko:Concept",
+      "prefLabel": "Peer Review",
+      "altLabel": [
+        "revue par les pairs"
+      ],
+      "definition": "Processus de validation de la rigueur méthodologique et des raisonnements scientifiques.",
+      "domain": "science"
+    }
+  ]
+}

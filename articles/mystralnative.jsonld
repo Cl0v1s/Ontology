@@ -1,1 +1,64 @@
-{"@context": {"owl": "http://www.w3.org/2002/07/owl#", "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", "rdfs": "http://www.w3.org/2000/01/rdf-schema#", "skos": "http://www.w3.org/2004/02/skos/core#", "dc": "http://purl.org/dc/elements/1.1/", "dcterms": "http://purl.org/dc/terms/", "xsd": "http://www.w3.org/2001/XMLSchema#", "ko": "http://knowledge.local/ontology#"}, "@graph": [{"@id": "ko:article/mystralnative", "@type": "ko:Article", "title": "Mystral Native - Native WebGPU JS runtime with SDL3", "url": "https://github.com/mystralengine/mystralnative", "publishedDate": "2026-03-21", "readDate": "2026-03-23", "language": "en", "abstract": "Runtime natif WebGPU JS avec SDL3 qui permet d'exécuter des jeux JavaScript/TypeScript comme applications natives sur macOS, Windows et Linux. Think of it as 'Electron for games' but without Chromium — just your game code, a JS engine, and native WebGPU rendering.", "hasAuthor": "ko:author/mystralengine", "introduces": ["ko:concept/mystral-native"], "uses": ["ko:concept/native-development", "ko:concept/webgpu", "ko:concept/js-engine-runtime"]}, {"@id": "ko:author/mystralengine", "@type": "ko:Person", "prefLabel": "mystralengine", "definition": "Développeur de Mystral Native, runtime natif WebGPU JS avec SDL3.", "domain": "software engineering"}, {"@id": "ko:concept/mystral-native", "@type": "ko:Concept", "prefLabel": "Mystral Native", "altLabel": ["Mystral Native.js", "mystral"], "definition": "Runtime léger qui permet d'écrire des jeux en utilisant les API Web familières (WebGPU, Canvas, Audio, fetch) et de les exécuter comme applications natives de bureau sur macOS, Windows et Linux. Think of it as 'Electron for games' but without Chromium — just your game code, a JS engine, and native WebGPU rendering.", "domain": "software engineering"}, {"@id": "ko:concept/native-development", "@type": "ko:Concept", "prefLabel": "Native Development", "altLabel": ["native app development"], "definition": "Développement d'applications qui s'exécutent directement sur le système d'exploitation sans sandboxing du navigateur.", "domain": "software engineering"}, {"@id": "ko:concept/webgpu", "@type": "ko:Concept", "prefLabel": "WebGPU", "altLabel": ["Web Graphics Platform"], "definition": "API graphique moderne pour le rendu 3D haute performance dans les navigateurs et applications natives, permettant un accès direct au GPU.", "domain": "graphics programming"}]}
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/mystralnative",
+      "@type": "ko:Article",
+      "title": "Mystral Native - Native WebGPU JS runtime with SDL3",
+      "url": "https://github.com/mystralengine/mystralnative",
+      "publishedDate": "2026-03-21",
+      "readDate": "2026-03-23",
+      "language": "en",
+      "abstract": "Runtime natif WebGPU JS avec SDL3 qui permet d'exécuter des jeux JavaScript/TypeScript comme applications natives sur macOS, Windows et Linux. Think of it as 'Electron for games' but without Chromium — just your game code, a JS engine, and native WebGPU rendering.",
+      "hasAuthor": "ko:author/mystralengine",
+      "introduces": [
+        "ko:concept/mystral-native"
+      ],
+      "uses": [
+        "ko:concept/native-development",
+        "ko:concept/webgpu",
+        "ko:concept/js-engine-runtime"
+      ]
+    },
+    {
+      "@id": "ko:concept/mystral-native",
+      "@type": "ko:Concept",
+      "prefLabel": "Mystral Native",
+      "altLabel": [
+        "Mystral Native.js",
+        "mystral"
+      ],
+      "definition": "Runtime léger qui permet d'écrire des jeux en utilisant les API Web familières (WebGPU, Canvas, Audio, fetch) et de les exécuter comme applications natives de bureau sur macOS, Windows et Linux. Think of it as 'Electron for games' but without Chromium — just your game code, a JS engine, and native WebGPU rendering.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/native-development",
+      "@type": "ko:Concept",
+      "prefLabel": "Native Development",
+      "altLabel": [
+        "native app development"
+      ],
+      "definition": "Développement d'applications qui s'exécutent directement sur le système d'exploitation sans sandboxing du navigateur.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/webgpu",
+      "@type": "ko:Concept",
+      "prefLabel": "WebGPU",
+      "altLabel": [
+        "Web Graphics Platform"
+      ],
+      "definition": "API graphique moderne pour le rendu 3D haute performance dans les navigateurs et applications natives, permettant un accès direct au GPU.",
+      "domain": "graphics programming"
+    }
+  ]
+}

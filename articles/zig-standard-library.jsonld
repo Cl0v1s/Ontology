@@ -1,1 +1,63 @@
-{"@context": {"owl": "http://www.w3.org/2002/07/owl#", "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", "rdfs": "http://www.w3.org/2000/01/rdf-schema#", "skos": "http://www.w3.org/2004/02/skos/core#", "dc": "http://purl.org/dc/elements/1.1/", "dcterms": "http://purl.org/dc/terms/", "xsd": "http://www.w3.org/2001/XMLSchema#", "ko": "http://knowledge.local/ontology#"}, "@graph": [{"@id": "ko:article/zig-standard-library", "@type": "ko:Article", "title": "Zig Standard Library - Documentation 0.15.2", "url": "https://ziglang.org/documentation/0.15.2/#Zig-Standard-Library", "publishedDate": "2026-03-20", "readDate": "2026-03-23", "language": "en", "abstract": "La Standard Library de Zig contient des algorithmes, structures de données et définitions couramment utilisés pour aider à construire des programmes ou bibliothèques robustes, optimaux et réutilisables.", "hasAuthor": "ko:author/ziglang", "introduces": ["ko:concept/zig-standard-library"], "uses": ["ko:concept/memory-safety", "ko:concept/zero-cost-abstractions"]}, {"@id": "ko:author/ziglang", "@type": "ko:Person", "prefLabel": "ZigLang Team", "definition": "Équipe de développement du langage Zig et de sa Standard Library.", "domain": "software engineering"}, {"@id": "ko:concept/zig-standard-library", "@type": "ko:Concept", "prefLabel": "Zig Standard Library", "altLabel": ["std", "zig std"], "definition": "Bibliothèque standard de Zig contenant des algorithmes, structures de données et définitions couramment utilisés pour aider à construire des programmes ou bibliothèques. Robust, optimal, et reusable.", "domain": "software engineering"}, {"@id": "ko:concept/memory-safety", "@type": "ko:Concept", "prefLabel": "Memory Safety", "altLabel": ["memory safety"], "definition": "Approche de Zig pour équilibrer sécurité et performance via une gestion explicite de la mémoire.", "domain": "computer science"}, {"@id": "ko:concept/zero-cost-abstractions", "@type": "ko:Concept", "prefLabel": "Zero-cost Abstractions", "altLabel": ["zero-cost abstractions"], "definition": "Optimisations au moment de la compilation qui n'ajoutent pas d'overhead en temps d'exécution.", "domain": "software engineering"}]}
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/zig-standard-library",
+      "@type": "ko:Article",
+      "title": "Zig Standard Library - Documentation 0.15.2",
+      "url": "https://ziglang.org/documentation/0.15.2/#Zig-Standard-Library",
+      "publishedDate": "2026-03-20",
+      "readDate": "2026-03-23",
+      "language": "en",
+      "abstract": "La Standard Library de Zig contient des algorithmes, structures de données et définitions couramment utilisés pour aider à construire des programmes ou bibliothèques robustes, optimaux et réutilisables.",
+      "hasAuthor": "ko:author/ziglang",
+      "introduces": [
+        "ko:concept/zig-standard-library"
+      ],
+      "uses": [
+        "ko:concept/memory-safety",
+        "ko:concept/zero-cost-abstractions"
+      ]
+    },
+    {
+      "@id": "ko:concept/zig-standard-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Zig Standard Library",
+      "altLabel": [
+        "std",
+        "zig std"
+      ],
+      "definition": "Bibliothèque standard de Zig contenant des algorithmes, structures de données et définitions couramment utilisés pour aider à construire des programmes ou bibliothèques. Robust, optimal, et reusable.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/memory-safety",
+      "@type": "ko:Concept",
+      "prefLabel": "Memory Safety",
+      "altLabel": [
+        "memory safety"
+      ],
+      "definition": "Approche de Zig pour équilibrer sécurité et performance via une gestion explicite de la mémoire.",
+      "domain": "computer science"
+    },
+    {
+      "@id": "ko:concept/zero-cost-abstractions",
+      "@type": "ko:Concept",
+      "prefLabel": "Zero-cost Abstractions",
+      "altLabel": [
+        "zero-cost abstractions"
+      ],
+      "definition": "Optimisations au moment de la compilation qui n'ajoutent pas d'overhead en temps d'exécution.",
+      "domain": "software engineering"
+    }
+  ]
+}

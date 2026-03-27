@@ -1,0 +1,938 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/network-effect-laws",
+      "@type": "ko:Concept",
+      "prefLabel": "Lois d'effet de réseau",
+      "altLabel": [
+        "network effect laws"
+      ],
+      "definition": "Les lois selon lesquelles la valeur ou le coût de communication dans un réseau évolue avec le nombre de membres (ex: valeur ∝ n²).",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/coordination-overhead",
+      "@type": "ko:Concept",
+      "prefLabel": "Surcoût de coordination",
+      "altLabel": [
+        "coordination overhead"
+      ],
+      "definition": "Le temps et les ressources supplémentaires nécessaires pour coordonner plusieurs personnes ou équipes, qui augmente non-linéairement avec la taille du groupe.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/layers-of-approval",
+      "@type": "ko:Concept",
+      "prefLabel": "Couches d'approbation",
+      "altLabel": [
+        "layers of review",
+        "layers of approval"
+      ],
+      "definition": "Les multiples niveaux de validation ou d'approbation dans un processus, qui ajoutent des délais exponentiels (chaque couche ×10).",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/ai-limited-impact",
+      "@type": "ko:Concept",
+      "prefLabel": "Impact limité de l'IA",
+      "altLabel": [
+        "AI's limited impact"
+      ],
+      "definition": "Le fait que l'IA peut accélérer le codage mais ne réduit pas les temps d'attente ou les cycles de revue.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/systems-design-challenges",
+      "@type": "ko:Concept",
+      "prefLabel": "Défis de conception système",
+      "altLabel": [
+        "systems design challenges"
+      ],
+      "definition": "Les goulots d'étranglement dans les grands projets dus aux cycles de revue et à l'absence d'architecture intentionnelle.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/latency-as-bottleneck",
+      "@type": "ko:Concept",
+      "prefLabel": "Latence comme goulot d'étranglement",
+      "altLabel": [
+        "latency as a bottleneck"
+      ],
+      "definition": "La majorité du temps dans les processus est passée en attente plutôt qu'en travail actif.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/ai-developer-descent-into-madness",
+      "@type": "ko:Concept",
+      "prefLabel": "Descente de l'IA Developer dans la folie",
+      "altLabel": [
+        "AI developer's descent into madness"
+      ],
+      "definition": "Le cycle où le code généré par IA conduit à plus de bugs, nécessitant une intervention supplémentaire d'IA.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/ai-hype",
+      "@type": "ko:Concept",
+      "prefLabel": "Hype sur l'IA",
+      "altLabel": [
+        "AI hype"
+      ],
+      "definition": "Les exagérations autour des capacités de l'IA, notamment sa capacité à résoudre les problèmes de latence ou de revue.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/organizational-design-flaws",
+      "@type": "ko:Concept",
+      "prefLabel": "Défauts de conception organisationnelle",
+      "altLabel": [
+        "organizational design flaws"
+      ],
+      "definition": "L'ajout de couches de revue sans adresser les causes racines des délais dans les organisations.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/capacitor-secure-storage-plugin",
+      "@type": "ko:Concept",
+      "prefLabel": "Capacitor Secure Storage Plugin",
+      "altLabel": [
+        "capacitor-secure-storage-plugin"
+      ],
+      "definition": "A Capacitor plugin for securely storing string values on iOS and Android, using platform-specific secure storage mechanisms like SwiftKeychainWrapper and AndroidKeyStore.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/secure-keychain-wrapper",
+      "@type": "ko:Concept",
+      "prefLabel": "Secure Keychain Wrapper",
+      "altLabel": [
+        "SwiftKeychainWrapper"
+      ],
+      "definition": "A wrapper around iOS's Keychain services, providing a secure way to store sensitive data like passwords and tokens.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/androidkeystore",
+      "@type": "ko:Concept",
+      "prefLabel": "AndroidKeyStore",
+      "altLabel": [
+        "Android KeyStore"
+      ],
+      "definition": "A security module in Android for securely storing cryptographic keys and sensitive data, compliant with hardware-backed storage requirements.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/swiftkeychainwrapper",
+      "@type": "ko:Concept",
+      "prefLabel": "SwiftKeychainWrapper",
+      "altLabel": [
+        "iOS Keychain Wrapper"
+      ],
+      "definition": "A Swift library that simplifies interaction with the iOS Keychain, providing a secure storage solution for sensitive data.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/sharedpreferences",
+      "@type": "ko:Concept",
+      "prefLabel": "SharedPreferences",
+      "altLabel": [
+        "Android SharedPreferences"
+      ],
+      "definition": "A mechanism in Android for storing persistent key-value pairs, often used for configuration settings or simple data storage.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/capacitor-plugin-architecture",
+      "@type": "ko:Concept",
+      "prefLabel": "Capacitor Plugin Architecture",
+      "altLabel": [
+        "Capacitor Plugins"
+      ],
+      "definition": "The architecture and design principles for creating plugins in Capacitor, enabling cross-platform functionality in mobile applications.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/secure-storage-implementation",
+      "@type": "ko:Concept",
+      "prefLabel": "Secure Storage Implementation",
+      "altLabel": [
+        "Secure Data Storage"
+      ],
+      "definition": "A technical implementation for securely storing sensitive data, often involving encryption and platform-specific secure storage mechanisms.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/api-design",
+      "@type": "ko:Concept",
+      "prefLabel": "API Design",
+      "definition": "The process of designing APIs that balance convenience and power for developers.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/eager-developer",
+      "@type": "ko:Concept",
+      "prefLabel": "Eager Developer",
+      "definition": "A developer who prioritizes speed and ease of integration, often at the expense of deeper customization.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/discerning-developer",
+      "@type": "ko:Concept",
+      "prefLabel": "Discerning Developer",
+      "definition": "A developer who seeks APIs that offer reliability, expressiveness, and customization for long-term needs.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/convenience-vs-power",
+      "@type": "ko:Concept",
+      "prefLabel": "Convenience vs. Power",
+      "definition": "The trade-off between ease of use and the depth of functionality in API design.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/integration-guide",
+      "@type": "ko:Concept",
+      "prefLabel": "Integration Guide",
+      "definition": "A guide that helps developers quickly integrate an API by providing runnable code snippets and minimal documentation.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/pits-of-success",
+      "@type": "ko:Concept",
+      "prefLabel": "Pits of Success",
+      "definition": "Design patterns that guide developers toward correct usage, even when they encounter errors or bugs.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/naming-conventions",
+      "@type": "ko:Concept",
+      "prefLabel": "Naming Conventions",
+      "definition": "Consistent and intuitive naming of parameters, functions, or objects to improve usability.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/error-messages",
+      "@type": "ko:Concept",
+      "prefLabel": "Error Messages",
+      "definition": "Informative error messages that guide developers toward correct usage and troubleshooting.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/domain-specific-jargon",
+      "@type": "ko:Concept",
+      "prefLabel": "Domain-Specific Jargon",
+      "definition": "Technical terminology specific to a domain, which can be avoided in favor of simpler or more intuitive terms.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/future-proof-apis",
+      "@type": "ko:Concept",
+      "prefLabel": "Future-Proof APIs",
+      "definition": "APIs designed to evolve with minimal disruption, anticipating future needs and changes.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/error-user-information",
+      "@type": "ko:Concept",
+      "prefLabel": "Error User Information",
+      "altLabel": [
+        "User error communication",
+        "Error message for user"
+      ],
+      "definition": "The process of providing clear and actionable information to the user when an error occurs, ensuring they understand what went wrong and how to resolve it.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/error-developer-information",
+      "@type": "ko:Concept",
+      "prefLabel": "Error Developer Information",
+      "altLabel": [
+        "Developer error logging",
+        "Error debugging"
+      ],
+      "definition": "The process of capturing and logging errors for developers to analyze, ensuring that unexpected issues are identified and resolved.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/error-system-protection",
+      "@type": "ko:Concept",
+      "prefLabel": "Error System Protection",
+      "altLabel": [
+        "System error isolation",
+        "Secure error handling"
+      ],
+      "definition": "The practice of ensuring that errors do not expose sensitive information or compromise the system's integrity, protecting both users and developers.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/actionable-error",
+      "@type": "ko:Concept",
+      "prefLabel": "Actionable Error",
+      "altLabel": [
+        "User-controllable error",
+        "Resolvable error"
+      ],
+      "definition": "An error that the user can take action to resolve, such as correcting input or retrying an operation.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/non-actionable-error",
+      "@type": "ko:Concept",
+      "prefLabel": "Non-Actionable Error",
+      "altLabel": [
+        "System error",
+        "Unresolvable error"
+      ],
+      "definition": "An error that the user cannot resolve, often indicating a system issue or failure. These errors typically require intervention from developers or administrators to address.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/react-doctor",
+      "@type": "ko:Concept",
+      "prefLabel": "React Doctor",
+      "definition": "A tool that diagnoses and fixes React code, providing actionable diagnostics for security, performance, correctness, and architecture issues.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/coding-agent",
+      "@type": "ko:Concept",
+      "prefLabel": "Coding Agent",
+      "definition": "An AI-powered agent that assists in coding tasks, such as diagnosing and fixing code.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/diagnostic-tool",
+      "@type": "ko:Concept",
+      "prefLabel": "Diagnostic Tool",
+      "definition": "A tool that analyzes code for issues like security vulnerabilities, performance bottlenecks, and correctness errors.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/react-code-analysis",
+      "@type": "ko:Concept",
+      "prefLabel": "React Code Analysis",
+      "definition": "The process of analyzing React code to identify potential issues, performance bottlenecks, or security vulnerabilities.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/linting",
+      "@type": "ko:Concept",
+      "prefLabel": "Linting",
+      "definition": "The process of checking code for potential errors, bugs, stylistic issues, and inconsistencies.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/dead-code-detection",
+      "@type": "ko:Concept",
+      "prefLabel": "Dead Code Detection",
+      "definition": "Identifying unused files, exports, types, or code that can be removed to improve performance and maintainability.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/performance-optimization",
+      "@type": "ko:Concept",
+      "prefLabel": "Performance Optimization",
+      "definition": "Improving the speed, efficiency, and responsiveness of code or applications.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/security-analysis",
+      "@type": "ko:Concept",
+      "prefLabel": "Security Analysis",
+      "definition": "Analyzing code for security vulnerabilities, such as injection attacks, improper authentication, or sensitive data exposure.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/correctness",
+      "@type": "ko:Concept",
+      "prefLabel": "Correctness",
+      "definition": "Ensuring that code behaves as intended and adheres to specifications, without logical errors or bugs.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/accessibility",
+      "@type": "ko:Concept",
+      "prefLabel": "Accessibility",
+      "definition": "Designing applications that are usable by people with disabilities, including visual, auditory, motor, and cognitive impairments.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/framework-specific-rules",
+      "@type": "ko:Concept",
+      "prefLabel": "Framework-Specific Rules",
+      "definition": "Rules tailored to specific frameworks like Next.js or React Native, addressing their unique requirements and best practices.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/health-score",
+      "@type": "ko:Concept",
+      "prefLabel": "Health Score",
+      "definition": "A numerical score (0-100) representing the overall health of a codebase, based on diagnostics for errors, warnings, and other issues.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/actionable-diagnostics",
+      "@type": "ko:Concept",
+      "prefLabel": "Actionable Diagnostics",
+      "definition": "Diagnostics that provide clear, actionable insights to fix issues in the codebase.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/cli-integration",
+      "@type": "ko:Concept",
+      "prefLabel": "CLI Integration",
+      "definition": "Integrating tools or features into a command-line interface for easier access and automation.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/configuration-customization",
+      "@type": "ko:Concept",
+      "prefLabel": "Configuration Customization",
+      "definition": "Customizing tool configurations to suit specific project needs, such as ignoring certain rules or files.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/cross-platform-development",
+      "@type": "ko:Concept",
+      "prefLabel": "Développement multiplateforme",
+      "altLabel": [
+        "cross-platform development"
+      ],
+      "definition": "Développement de logiciels compatibles avec plusieurs systèmes d'exploitation ou environnements d'exécution.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/productivity",
+      "@type": "ko:Concept",
+      "prefLabel": "Productivité",
+      "altLabel": [
+        "productivity",
+        "efficacité de travail"
+      ],
+      "definition": "Capacité à accomplir des tâches de manière efficace et fluide.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/expected-error",
+      "@type": "ko:Concept",
+      "prefLabel": "Expected Error",
+      "altLabel": [
+        "Validation error",
+        "Network error",
+        "Permission error"
+      ],
+      "definition": "An expected error occurs during normal operation and is not the developer's fault. Examples include validation errors, network failures, or permission issues. These should be handled gracefully without crashing the program.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/unexpected-error",
+      "@type": "ko:Concept",
+      "prefLabel": "Unexpected Error",
+      "altLabel": [
+        "Assertion error",
+        "Logic error",
+        "Null pointer exception"
+      ],
+      "definition": "An unexpected error should never happen and indicates a bug. Examples include assertion errors, logic errors, or null pointer exceptions. These are allowed to crash the program as they signify serious issues.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/error-handling",
+      "@type": "ko:Concept",
+      "prefLabel": "Error Handling",
+      "definition": "The process of managing errors in software development to ensure robustness and reliability. This includes logging, user notifications, and fallback mechanisms.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/validation-error",
+      "@type": "ko:Concept",
+      "prefLabel": "Validation Error",
+      "definition": "An error that occurs when user input or data does not meet the expected criteria. These are common in forms and data entry processes.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/network-error",
+      "@type": "ko:Concept",
+      "prefLabel": "Network Error",
+      "definition": "An error related to network issues, such as failed connections or slow responses. These are often beyond the control of the developer.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/permission-error",
+      "@type": "ko:Concept",
+      "prefLabel": "Permission Error",
+      "definition": "An error that occurs when a program attempts to perform an action without the necessary permissions, such as accessing restricted files or resources.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/assertion-error",
+      "@type": "ko:Concept",
+      "prefLabel": "Assertion Error",
+      "definition": "An error that occurs when a condition or assumption is violated, often due to incorrect usage of a function or API.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/logic-error",
+      "@type": "ko:Concept",
+      "prefLabel": "Logic Error",
+      "definition": "An error in the program's logic, such as incorrect initialization or dependencies not being met. These often lead to unexpected behavior.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/null-pointer-exception",
+      "@type": "ko:Concept",
+      "prefLabel": "Null Pointer Exception",
+      "definition": "An error that occurs when a program attempts to access a null reference, often indicating a bug in the code.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/property-based-testing",
+      "@type": "ko:Concept",
+      "prefLabel": "Property-Based Testing",
+      "altLabel": [
+        "property testing",
+        "generative testing"
+      ],
+      "definition": "A testing technique that generalizes concrete scenarios to focus on essential features, improving bug detection and test robustness.",
+      "domain": "software engineering",
+      "broader": "ko:concept/software-testing"
+    },
+    {
+      "@id": "ko:concept/shrinking",
+      "@type": "ko:Concept",
+      "prefLabel": "Shrinking",
+      "altLabel": [
+        "test shrinking",
+        "shrinkwrap"
+      ],
+      "definition": "A technique used in property-based testing to reduce complex failing inputs to simpler, more understandable examples for debugging.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/round-tripping",
+      "@type": "ko:Concept",
+      "prefLabel": "Round-Tripping",
+      "altLabel": [
+        "encode-decode test",
+        "serialization test"
+      ],
+      "definition": "A property-based test that verifies data consistency when converting between formats (e.g., serialization and deserialization).",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/example-based-testing",
+      "@type": "ko:Concept",
+      "prefLabel": "Example-Based Testing",
+      "altLabel": [
+        "fixture testing",
+        "concrete scenario testing"
+      ],
+      "definition": "A traditional testing approach that uses specific, concrete scenarios to validate software behavior.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/hypothesis-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Hypothesis Library",
+      "altLabel": [
+        "Hypothesis (Python)"
+      ],
+      "definition": "A Python library for property-based testing, enabling generation of test data and shrinking failing examples.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/bug-detection",
+      "@type": "ko:Concept",
+      "prefLabel": "Bug Detection",
+      "altLabel": [
+        "error detection",
+        "fault detection"
+      ],
+      "definition": "The process of identifying defects or errors in software, often through systematic testing techniques.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/real-time-processing",
+      "@type": "ko:Concept",
+      "prefLabel": "Traitement en temps réel",
+      "altLabel": [
+        "real-time processing"
+      ],
+      "definition": "Traitement de données ou d'entrées avec une latence suffisamment faible pour sembler instantané.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/big-ball-of-mud",
+      "@type": "ko:Concept",
+      "prefLabel": "Big Ball of Mud",
+      "altLabel": [
+        "chaotic software architecture",
+        "unreasonable software"
+      ],
+      "definition": "A term describing software that has evolved into a chaotic, unmanageable state due to quick fixes and lack of architectural discipline.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/golden-age-software",
+      "@type": "ko:Concept",
+      "prefLabel": "Golden Age Software",
+      "altLabel": [
+        "well-maintained software"
+      ],
+      "definition": "Software that is well-maintained, familiar to its team, and solves problems effectively within its original design constraints.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/post-apocalyptic-software",
+      "@type": "ko:Concept",
+      "prefLabel": "Post-Apocalyptic Software",
+      "altLabel": [
+        "decayed software"
+      ],
+      "definition": "Software that has become complex and difficult to maintain, often due to decay over time and loss of institutional knowledge.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/rewrite-vs-reclaim",
+      "@type": "ko:Concept",
+      "prefLabel": "Rewrite vs. Reclaim",
+      "altLabel": [
+        "software reclamation"
+      ],
+      "definition": "A comparison between the traditional approach of rewriting software and the alternative approach of reclaiming it by evolving beliefs into verified behaviors and asserted properties.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/beliefs-behaviors-properties",
+      "@type": "ko:Concept",
+      "prefLabel": "Beliefs, Behaviors, and Properties",
+      "altLabel": [
+        "beliefs-to-properties"
+      ],
+      "definition": "A framework for evolving beliefs about software into verified behaviors and asserted properties to regain confidence in making changes.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/verified-behaviors",
+      "@type": "ko:Concept",
+      "prefLabel": "Verified Behaviors",
+      "altLabel": [
+        "empirically validated behaviors"
+      ],
+      "definition": "Aspects of software that can be validated empirically, such as performance metrics or error rates.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/asserted-properties",
+      "@type": "ko:Concept",
+      "prefLabel": "Asserted Properties",
+      "altLabel": [
+        "statically validated properties"
+      ],
+      "definition": "Aspects of software that can be validated statically or through local exercise, such as code coverage or linting rules.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/mcp-client",
+      "@type": "ko:Concept",
+      "prefLabel": "MCP Client",
+      "definition": "A client implementation of the Model Context Protocol, used for interacting with context models.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/model-context-protocol",
+      "@type": "ko:Concept",
+      "prefLabel": "Model Context Protocol",
+      "definition": "A protocol for managing and interacting with context models in software systems.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/agent-first-design",
+      "@type": "ko:Concept",
+      "prefLabel": "Agent-first Design",
+      "altLabel": [
+        "agent-first"
+      ],
+      "definition": "Approche de conception où les code agents sont les utilisateurs primaires des outils de développement, conçus en premier.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/javascript-engine",
+      "@type": "ko:Concept",
+      "prefLabel": "Moteur JavaScript",
+      "altLabel": [
+        "JavaScript engine",
+        "JS runtime"
+      ],
+      "definition": "Interpréteur ou compilateur exécutant du code JavaScript, souvent intégré dans un navigateur ou un environnement embarqué.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/interactive-gui",
+      "@type": "ko:Concept",
+      "prefLabel": "Interface graphique interactive",
+      "altLabel": [
+        "interactive GUI"
+      ],
+      "definition": "Interface utilisateur permettant des interactions directes via des éléments visuels.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/mystral-native",
+      "@type": "ko:Concept",
+      "prefLabel": "Mystral Native",
+      "altLabel": [
+        "Mystral Native.js",
+        "mystral"
+      ],
+      "definition": "Runtime léger qui permet d'écrire des jeux en utilisant les API Web familières (WebGPU, Canvas, Audio, fetch) et de les exécuter comme applications natives de bureau sur macOS, Windows et Linux. Think of it as 'Electron for games' but without Chromium — just your game code, a JS engine, and native WebGPU rendering.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/native-development",
+      "@type": "ko:Concept",
+      "prefLabel": "Native Development",
+      "altLabel": [
+        "native app development"
+      ],
+      "definition": "Développement d'applications qui s'exécutent directement sur le système d'exploitation sans sandboxing du navigateur.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/front-end-development",
+      "@type": "ko:Concept",
+      "prefLabel": "Développement front-end",
+      "altLabel": [
+        "front-end development",
+        "client-side development"
+      ],
+      "definition": "Développement de la partie visible d'une application web, exécutée dans le navigateur.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/retrozone-display-engine",
+      "@type": "ko:Concept",
+      "prefLabel": "RetroZone Display Engine",
+      "altLabel": [
+        "RetroZone"
+      ],
+      "definition": "Moteur d'affichage rétro pour jeux HTML5 qui applique des effets authentiques CRT et vector via WebGL shaders. Zéro dépendance, fonctionne avec n'importe quel canvas.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/zig-standard-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Zig Standard Library",
+      "altLabel": [
+        "std",
+        "zig std"
+      ],
+      "definition": "Bibliothèque standard de Zig contenant des algorithmes, structures de données et définitions couramment utilisés pour aider à construire des programmes ou bibliothèques. Robust, optimal, et reusable.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/zero-cost-abstractions",
+      "@type": "ko:Concept",
+      "prefLabel": "Zero-cost Abstractions",
+      "altLabel": [
+        "zero-cost abstractions"
+      ],
+      "definition": "Optimisations au moment de la compilation qui n'ajoutent pas d'overhead en temps d'exécution.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/robust-software",
+      "@type": "ko:Concept",
+      "prefLabel": "Logiciel robuste",
+      "altLabel": [
+        "robust software"
+      ],
+      "definition": "Code qui se comporte correctement même dans des cas limites comme la gestion de la mémoire épuisée.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/optimal-code",
+      "@type": "ko:Concept",
+      "prefLabel": "Code optimal",
+      "altLabel": [
+        "optimal code"
+      ],
+      "definition": "Programmes qui se comportent et performent de la meilleure manière possible.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/reusable-code",
+      "@type": "ko:Concept",
+      "prefLabel": "Code réutilisable",
+      "altLabel": [
+        "reusable code"
+      ],
+      "definition": "Même code qui fonctionne dans de nombreux environnements ayant des contraintes différentes.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/maintainable-code",
+      "@type": "ko:Concept",
+      "prefLabel": "Code maintenable",
+      "altLabel": [
+        "maintainable code"
+      ],
+      "definition": "Code qui communique précisément l'intention au compilateur et autres programmeurs, avec une faible surcharge de lecture.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/programming-language",
+      "@type": "ko:Concept",
+      "prefLabel": "Langage de programmation",
+      "altLabel": [
+        "programming language"
+      ],
+      "definition": "Système formel pour exprimer des algorithmes et programmes informatiques.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/data-structure",
+      "@type": "ko:Concept",
+      "prefLabel": "Structure de données",
+      "altLabel": [
+        "data structure"
+      ],
+      "definition": "Méthode d'organisation et de stockage des données pour un accès et une modification efficaces.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/algorithms",
+      "@type": "ko:Concept",
+      "prefLabel": "Algorithmes",
+      "altLabel": [
+        "algorithms"
+      ],
+      "definition": "Ensemble fini d'instructions pour résoudre un problème spécifique.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/software-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Bibliothèque logicielle",
+      "altLabel": [
+        "software library"
+      ],
+      "definition": "Collection de code réutilisable pour construire des programmes ou bibliothèques.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/toolchain",
+      "@type": "ko:Concept",
+      "prefLabel": "Chaîne d'outils",
+      "altLabel": [
+        "toolchain"
+      ],
+      "definition": "Ensemble d'outils utilisés pour développer, compiler et déployer un logiciel.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/software-engineering",
+      "@type": "ko:Concept",
+      "prefLabel": "Software Engineering",
+      "definition": "The broader context of software development, teamwork, and engineering practices.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/glue-work",
+      "@type": "ko:Concept",
+      "prefLabel": "Glue Work",
+      "definition": "The role of essential but less visible tasks in software engineering teams that contribute to team success.",
+      "domain": "software engineering",
+      "related": [
+        "ko:concept/technical-leadership",
+        "ko:concept/team-success"
+      ]
+    },
+    {
+      "@id": "ko:concept/technical-leadership",
+      "@type": "ko:Concept",
+      "prefLabel": "Technical Leadership",
+      "definition": "Demonstrating and building strong technical leadership skills, often through coordination and glue work.",
+      "domain": "software engineering",
+      "related": [
+        "ko:concept/glue-work"
+      ]
+    },
+    {
+      "@id": "ko:concept/career-path",
+      "@type": "ko:Concept",
+      "prefLabel": "Career Path",
+      "definition": "The trajectory chosen by an individual in their professional development.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/team-success",
+      "@type": "ko:Concept",
+      "prefLabel": "Team Success",
+      "definition": "The collective achievement of a team's goals, enabled by visible and invisible contributions.",
+      "domain": "software engineering",
+      "related": [
+        "ko:concept/glue-work"
+      ]
+    },
+    {
+      "@id": "ko:concept/software-simplification",
+      "@type": "ko:Concept",
+      "prefLabel": "Software Simplification",
+      "definition": "The historical attempts to simplify software creation, making it accessible to non-programmers.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/cobol",
+      "@type": "ko:Concept",
+      "prefLabel": "COBOL",
+      "definition": "A programming language designed for business, data processing, and its enduring legacy in critical systems.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/ai-hype-cycle",
+      "@type": "ko:Concept",
+      "prefLabel": "AI Hype Cycle",
+      "definition": "The recurring pattern of overpromising AI capabilities and the reality gap.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/programming-democratization",
+      "@type": "ko:Concept",
+      "prefLabel": "Programming Democratization",
+      "definition": "The idea that non-programmers could write software without specialized skills.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/expert-systems",
+      "@type": "ko:Concept",
+      "prefLabel": "Expert Systems",
+      "definition": "Early AI systems designed to mimic human expertise in rule-based engines.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/automatic-programming",
+      "@type": "ko:Concept",
+      "prefLabel": "Automatic Programming",
+      "definition": "Systems that translate natural language specifications into working code.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/ai-winter",
+      "@type": "ko:Concept",
+      "prefLabel": "AI Winter",
+      "definition": "Periods of reduced funding and interest in AI due to unmet expectations.",
+      "domain": "software engineering"
+    }
+  ]
+}

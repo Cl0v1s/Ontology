@@ -11,45 +11,26 @@
   },
   "@graph": [
     {
-      "@id": "ko:article/mistral-forge",
-      "@type": "ko:Article",
-      "title": "Forge - Mistral AI",
-      "url": "https://mistral.ai/news/forge",
-      "publishedDate": "2026-03-24",
-      "readDate": "2026-03-24",
-      "language": "en",
-      "abstract": "Forge est un système pour les entreprises de construire des modèles IA frontier-grade basés sur leur connaissance propriétaire, permettant le contrôle stratégique et l'autonomie.",
-      "hasAuthor": "ko:author/mistral-ai",
-      "introduces": [
-        "ko:concept/forge"
+      "@id": "ko:concept/text-to-speech",
+      "@type": "ko:Concept",
+      "prefLabel": "Synthèse vocale",
+      "altLabel": [
+        "text-to-speech",
+        "TTS"
       ],
-      "uses": [
-        "ko:concept/institutional-knowledge",
-        "ko:concept/pre-training",
-        "ko:concept/post-training",
-        "ko:concept/reinforcement-learning"
-      ]
+      "definition": "Conversion automatique de texte écrit en parole audio.",
+      "domain": "machine learning"
     },
     {
-      "@id": "ko:concept/forge",
+      "@id": "ko:concept/lightweight-ml-model",
       "@type": "ko:Concept",
-      "prefLabel": "Forge",
+      "prefLabel": "Modèle ML léger",
       "altLabel": [
-        "Mistral Forge"
+        "lightweight model",
+        "small model"
       ],
-      "definition": "Système pour les entreprises de construire des modèles IA frontier-grade basés sur leur connaissance propriétaire, permettant le contrôle stratégique et l'autonomie.",
-      "domain": "artificial intelligence"
-    },
-    {
-      "@id": "ko:concept/institutional-knowledge",
-      "@type": "ko:Concept",
-      "prefLabel": "Institutional Knowledge",
-      "altLabel": [
-        "proprietary knowledge",
-        "internal knowledge"
-      ],
-      "definition": "Connaissance interne d'une organisation : standards, politiques, codebases, processus opérationnels et décisions institutionnelles.",
-      "domain": "enterprise"
+      "definition": "Modèle de machine learning conçu pour fonctionner avec un minimum de mémoire et de ressources de calcul.",
+      "domain": "machine learning"
     },
     {
       "@id": "ko:concept/pre-training",
@@ -82,16 +63,6 @@
       "domain": "machine learning"
     },
     {
-      "@id": "ko:concept/strategic-autonomy",
-      "@type": "ko:Concept",
-      "prefLabel": "Strategic Autonomy",
-      "altLabel": [
-        "strategic autonomy"
-      ],
-      "definition": "Capacité d'une organisation à garder le contrôle sur ses modèles, données et propriété intellectuelle en les construisant sur sa propre connaissance.",
-      "domain": "enterprise"
-    },
-    {
       "@id": "ko:concept/dense-models",
       "@type": "ko:Concept",
       "prefLabel": "Dense Models",
@@ -121,16 +92,6 @@
       ],
       "definition": "Support d'entrées multimodales permettant aux modèles d'apprendre à partir de texte, images et autres formats de données.",
       "domain": "machine learning"
-    },
-    {
-      "@id": "ko:concept/agent-first-design",
-      "@type": "ko:Concept",
-      "prefLabel": "Agent-first Design",
-      "altLabel": [
-        "agent-first"
-      ],
-      "definition": "Approche de conception où les code agents sont les utilisateurs primaires des outils de développement, conçus en premier.",
-      "domain": "software engineering"
     },
     {
       "@id": "ko:concept/continuous-improvement",

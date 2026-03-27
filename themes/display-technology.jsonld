@@ -11,55 +11,6 @@
   },
   "@graph": [
     {
-      "@id": "ko:article/themarco-retrozone",
-      "@type": "ko:Article",
-      "title": "RetroZone - A cool display engine for web games that looks authentically retro, both CRT and vector displays",
-      "url": "https://github.com/TheMarco/retrozone",
-      "publishedDate": "2026-03-21",
-      "readDate": "2026-03-23",
-      "language": "en",
-      "abstract": "Moteur d'affichage rétro pour jeux HTML5 avec effets CRT et vector authentiques via WebGL shaders. Zéro dépendance, fonctionne avec n'importe quel canvas.",
-      "hasAuthor": "ko:author/themarco",
-      "introduces": [
-        "ko:concept/retrozone-display-engine"
-      ],
-      "uses": [
-        "ko:concept/webgl-shaders",
-        "ko:concept/vector-mode",
-        "ko:concept/crt-mode",
-        "ko:concept/phosphor-glow",
-        "ko:concept/scanlines",
-        "ko:concept/bloom-effect",
-        "ko:concept/barrel-distortion",
-        "ko:concept/per-pixel-persistence-trails",
-        "ko:concept/chromatic-aberration",
-        "ko:concept/grain-texture"
-      ],
-      "hasFeature": [
-        "ko:concept/phaser-integration"
-      ]
-    },
-    {
-      "@id": "ko:concept/retrozone-display-engine",
-      "@type": "ko:Concept",
-      "prefLabel": "RetroZone Display Engine",
-      "altLabel": [
-        "RetroZone"
-      ],
-      "definition": "Moteur d'affichage rétro pour jeux HTML5 qui applique des effets authentiques CRT et vector via WebGL shaders. Zéro dépendance, fonctionne avec n'importe quel canvas.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/webgl-shaders",
-      "@type": "ko:Concept",
-      "prefLabel": "WebGL Shaders",
-      "altLabel": [
-        "WebGL shaders"
-      ],
-      "definition": "Programmation graphique via WebGL pour appliquer des effets post-traitement en temps réel sur les canvas.",
-      "domain": "graphics programming"
-    },
-    {
       "@id": "ko:concept/vector-mode",
       "@type": "ko:Concept",
       "prefLabel": "Vector Mode",
@@ -150,16 +101,6 @@
       ],
       "definition": "Texture de grain ajoutée pour simuler le bruit des écrans CRT et l'aspect analogique.",
       "domain": "display technology"
-    },
-    {
-      "@id": "ko:concept/phaser-integration",
-      "@type": "ko:Concept",
-      "prefLabel": "Phaser Integration",
-      "altLabel": [
-        "Phaser graphics API"
-      ],
-      "definition": "Utilitaires de rendu conçus pour l'API Graphics de Phaser, incluant projection 3D et systèmes d'explosions.",
-      "domain": "game development"
     }
   ]
 }

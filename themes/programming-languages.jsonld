@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/language-mermaid",
+      "@type": "ko:Concept",
+      "prefLabel": "Mermaid",
+      "definition": "Langage de description de diagrammes basé sur du texte, rendu en SVG dans les navigateurs.",
+      "domain": "programming languages"
+    },
+    {
+      "@id": "ko:concept/language-javascript",
+      "@type": "ko:Concept",
+      "prefLabel": "JavaScript",
+      "altLabel": [
+        "JS",
+        "Node.js"
+      ],
+      "definition": "Langage de programmation interprété, initialement conçu pour le web, aussi utilisé côté serveur via Node.js.",
+      "domain": "programming languages"
+    },
+    {
+      "@id": "ko:concept/language-css",
+      "@type": "ko:Concept",
+      "prefLabel": "CSS",
+      "altLabel": [
+        "Cascading Style Sheets"
+      ],
+      "definition": "Langage de feuilles de style pour décrire la présentation de documents HTML.",
+      "domain": "programming languages"
+    },
+    {
+      "@id": "ko:concept/language-rust",
+      "@type": "ko:Concept",
+      "prefLabel": "Rust",
+      "definition": "A systems programming language known for its performance, memory safety, and concurrency features.",
+      "domain": "programming"
+    },
+    {
+      "@id": "ko:concept/language-c",
+      "@type": "ko:Concept",
+      "prefLabel": "C",
+      "definition": "A general-purpose programming language known for its performance and widespread use in system/software development.",
+      "domain": "programming"
+    },
+    {
+      "@id": "ko:concept/language-python",
+      "@type": "ko:Concept",
+      "prefLabel": "Python",
+      "definition": "A high-level, interpreted programming language known for its readability and versatility in web development, data analysis, and scripting.",
+      "domain": "programming"
+    }
+  ]
+}

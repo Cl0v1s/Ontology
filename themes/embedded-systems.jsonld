@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:concept/low-memory-runtime",
+      "@type": "ko:Concept",
+      "prefLabel": "Runtime à faible empreinte mémoire",
+      "altLabel": [
+        "low-memory runtime",
+        "minimal footprint"
+      ],
+      "definition": "Environnement d'exécution conçu pour fonctionner avec une quantité extrêmement limitée de RAM et de ROM.",
+      "domain": "embedded systems",
+      "related": [
+        "ko:concept/embedded-systems"
+      ]
+    },
+    {
+      "@id": "ko:concept/javascript-embedded",
+      "@type": "ko:Concept",
+      "prefLabel": "JavaScript embarqué",
+      "altLabel": [
+        "embedded JavaScript"
+      ],
+      "definition": "Utilisation du langage JavaScript dans des environnements à ressources contraintes, hors des navigateurs web.",
+      "domain": "embedded systems",
+      "related": [
+        "ko:concept/javascript-engine",
+        "ko:concept/embedded-systems"
+      ]
+    }
+  ]
+}
