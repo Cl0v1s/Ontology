@@ -337,9 +337,17 @@ async function cmdAddArticle(args) {
     sharedModified = true;
   }
 
-  // ── Verify hasAuthor resolves ──
+  // ── Auto-create missing authors referenced in hasAuthor ──
   for (const a of [article.hasAuthor ?? []].flat()) {
-    if (!index.has(a)) warn(`hasAuthor "${a}" is not defined anywhere — add it to newAuthors`);
+    if (!index.has(a)) {
+      const slug = a.replace('ko:author/', '');
+      const name = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      const node = { '@id': a, '@type': 'ko:Author', name, domain: 'author' };
+      sharedData['@graph'].push(node);
+      index.set(a, { item: node, file: sharedPath, locations: [{ item: node, file: sharedPath }] });
+      result.created.push({ '@id': a, '@type': 'ko:Author', file: 'shared.jsonld', note: `auto-created from slug` });
+      sharedModified = true;
+    }
   }
 
   // ── Process concepts ──

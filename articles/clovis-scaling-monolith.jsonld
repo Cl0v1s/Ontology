@@ -1,0 +1,158 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/clovis-scaling-monolith",
+      "@type": "ko:Article",
+      "title": "Scaling a Monolith to 1M LOC: 113 Pragmatic Lessons from Tech Lead to CTO",
+      "url": "https://example.com/placeholder",
+      "publishedDate": "2024-05-15",
+      "readDate": "2026-03-28",
+      "language": "en",
+      "abstract": "A comprehensive guide to scaling monolithic systems, covering performance optimization, database indexing, frontend performance issues, team dynamics, monitoring, and best practices.",
+      "hasAuthor": "ko:author/clovis",
+      "introduces": [
+        "ko:concept/comptage-des-pages-et-optimisation-de-la-base-de-données",
+        "ko:concept/requêtes-longues-et-jobs-cron",
+        "ko:concept/pression-mémoire-ram",
+        "ko:concept/surveillance-des-déploiements",
+        "ko:concept/optimisation-frontend-react",
+        "ko:concept/indexation-et-requêtes-sql",
+        "ko:concept/compétences-full-stack",
+        "ko:concept/éviter-les-blame-games",
+        "ko:concept/documentation-des-attentes",
+        "ko:concept/gestion-des-performances"
+      ],
+      "uses": [
+        "ko:concept/tech-debt-fridays",
+        "ko:concept/linters-et-prs-courts",
+        "ko:concept/communication-dans-les-équipes-à-distance",
+        "ko:concept/page-de-demandes-fonctionnelles"
+      ],
+      "exemplifies": [
+        "ko:concept/alertes-et-inbox-zero",
+        "ko:concept/surveillance-des-emails-et-notifications-push",
+        "ko:concept/monitoring-des-files-d-attente"
+      ]
+    },
+    {
+      "@id": "ko:concept/comptage-des-pages-et-optimisation-de-la-base-de-données",
+      "@type": "ko:Concept",
+      "prefLabel": "Page Counting and Database Optimization",
+      "altLabel": [
+        "page counting",
+        "database optimization"
+      ],
+      "definition": "Avoid expensive queries for counting pages or elements. Use estimated paginators or caches for critical counts.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/requêtes-longues-et-jobs-cron",
+      "@type": "ko:Concept",
+      "prefLabel": "Long-Running Queries and Cron Jobs",
+      "altLabel": [
+        "cron jobs",
+        "long-running queries"
+      ],
+      "definition": "Inefficient queries in cron jobs can degrade system performance. Monitor these queries and use read-only databases to isolate them.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/pression-mémoire-ram",
+      "@type": "ko:Concept",
+      "prefLabel": "Memory Pressure (RAM)",
+      "altLabel": [
+        "memory pressure",
+        "RAM pressure"
+      ],
+      "definition": "Memory pressure can slow down the system without crashing it, using swap.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/surveillance-des-déploiements",
+      "@type": "ko:Concept",
+      "prefLabel": "Deployment Monitoring",
+      "altLabel": [
+        "deployment monitoring",
+        "APM monitoring"
+      ],
+      "definition": "Mark each deployment in an APM (e.g., New Relic) to correlate code changes with performance regressions.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/optimisation-frontend-react",
+      "@type": "ko:Concept",
+      "prefLabel": "Frontend Optimization (React)",
+      "altLabel": [
+        "frontend optimization",
+        "React optimization"
+      ],
+      "definition": "Avoid complex DOM elements, unnecessary re-renders, and excessive backend requests. Optimize initial page load for React.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/indexation-et-requêtes-sql",
+      "@type": "ko:Concept",
+      "prefLabel": "Indexing and SQL Queries",
+      "altLabel": [
+        "SQL indexing",
+        "query optimization"
+      ],
+      "definition": "Use composite indexes and avoid inefficient queries like `ORDER BY created`. Remove unnecessary data to improve performance.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/compétences-full-stack",
+      "@type": "ko:Concept",
+      "prefLabel": "Full-Stack Skills",
+      "altLabel": [
+        "full-stack development",
+        "bottleneck reduction"
+      ],
+      "definition": "Encourage a full-stack approach among developers to reduce bottlenecks.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/éviter-les-blame-games",
+      "@type": "ko:Concept",
+      "prefLabel": "Avoid Blame Games",
+      "altLabel": [
+        "blame culture",
+        "cumulative failures"
+      ],
+      "definition": "Production errors are often the result of cumulative failures (code, review, QA, etc.). Avoid assigning blame and focus on solutions.",
+      "domain": "team dynamics"
+    },
+    {
+      "@id": "ko:concept/documentation-des-attentes",
+      "@type": "ko:Concept",
+      "prefLabel": "Documenting Expectations",
+      "altLabel": [
+        "expectation documentation",
+        "behavior guidance"
+      ],
+      "definition": "Clarify expectations to guide behavior (e.g., resolve issues before they reach management).",
+      "domain": "team dynamics"
+    },
+    {
+      "@id": "ko:concept/gestion-des-performances",
+      "@type": "ko:Concept",
+      "prefLabel": "Performance Management",
+      "altLabel": [
+        "performance issues",
+        "frustration avoidance"
+      ],
+      "definition": "Address performance issues early with teams to avoid frustration.",
+      "domain": "team dynamics"
+    }
+  ]
+}

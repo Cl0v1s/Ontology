@@ -684,6 +684,12 @@
       "prefLabel": "Outil de Visualisation",
       "definition": "Un outil conçu pour représenter des données ou des processus sous une forme visuelle, facilitant l'analyse et la compréhension.",
       "domain": "software"
+    },
+    {
+      "@id": "ko:author/helgeklein",
+      "@type": "ko:Author",
+      "name": "Helge Klein",
+      "domain": "author"
     }
   ]
-}{"newAuthors": [{"@id": "ko:author/helgeklein", "name": "Helge Klein"}]}
+}

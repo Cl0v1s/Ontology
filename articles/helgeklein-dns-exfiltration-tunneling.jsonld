@@ -1,0 +1,138 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/helgeklein-dns-exfiltration-tunneling",
+      "@type": "ko:Article",
+      "title": "DNS Exfiltration & Tunneling: How it Works & DNSteal Demo Setup",
+      "url": "https://helgeklein.com/blog/dns-exfiltration-tunneling-how-it-works-dnsteal-demo-setup/",
+      "publishedDate": "2024-01-01",
+      "readDate": "2026-03-27",
+      "language": "en",
+      "abstract": "Article explaining how data exfiltration via DNS works, presenting two variants (direct communication with attacker's DNS server or using the DNS resolver chain), and demonstrating DNSteal setup to receive exfiltrated data.",
+      "hasAuthor": "ko:author/helgeklein",
+      "introduces": [
+        "ko:concept/dns-exfiltration",
+        "ko:concept/dns-tunneling"
+      ],
+      "uses": [
+        "ko:concept/command-and-control-c2",
+        "ko:concept/malware"
+      ],
+      "exemplifies": [
+        "ko:concept/dnsteal"
+      ]
+    },
+    {
+      "@id": "ko:concept/dns-exfiltration",
+      "@type": "ko:Concept",
+      "prefLabel": "DNS Exfiltration",
+      "definition": "Technique to exfiltrate data from a corporate network to an attacker-controlled server using the DNS protocol. Data is encoded (base64 or hex) and transmitted via DNS queries.",
+      "domain": "cybersecurity",
+      "broader": "ko:concept/data-exfiltration"
+    },
+    {
+      "@id": "ko:concept/dns-tunneling",
+      "@type": "ko:Concept",
+      "prefLabel": "DNS Tunneling",
+      "definition": "Using the DNS protocol as a tunnel to transfer data between two machines. Allows bypassing network restrictions by using the unmonitored port 53.",
+      "domain": "cybersecurity",
+      "broader": "ko:concept/network-tunneling"
+    },
+    {
+      "@id": "ko:concept/command-and-control-c2",
+      "@type": "ko:Concept",
+      "prefLabel": "Command and Control (C2)",
+      "definition": "Bidirectional communication between infected malware and an attacker-controlled server. Includes data exfiltration and remote commands.",
+      "domain": "cybersecurity",
+      "broader": "ko:concept/malware-operations"
+    },
+    {
+      "@id": "ko:concept/dnsteal",
+      "@type": "ko:Concept",
+      "prefLabel": "DNSteal",
+      "definition": "Python script implementing the server-side receiver for direct DNS exfiltration (variant A). Listens on port 53, decodes received data and saves it while recreating the original file structure.",
+      "domain": "cybersecurity"
+    },
+    {
+      "@id": "ko:concept/data-exfiltration",
+      "@type": "ko:Concept",
+      "prefLabel": "Data Exfiltration",
+      "definition": "Technique to extract sensitive data from a compromised network or system to an external server controlled by the attacker.",
+      "domain": "cybersecurity",
+      "broader": "ko:concept/cyber-attack"
+    },
+    {
+      "@id": "ko:concept/network-tunneling",
+      "@type": "ko:Concept",
+      "prefLabel": "Network Tunneling",
+      "definition": "Technique to transport data across a network by encapsulating traffic in other protocols or using unmonitored channels.",
+      "domain": "cybersecurity",
+      "broader": "ko:concept/attack-techniques"
+    },
+    {
+      "@id": "ko:concept/malware",
+      "@type": "ko:Concept",
+      "prefLabel": "Malware",
+      "definition": "Malicious software installed on a system without consent, used for various purposes including data exfiltration and remote control.",
+      "domain": "cybersecurity",
+      "broader": "ko:concept/malicious-software"
+    },
+    {
+      "@id": "ko:concept/malicious-software",
+      "@type": "ko:Concept",
+      "prefLabel": "Malicious Software",
+      "definition": "Programs created with the intention to harm, compromise or exploit computer systems.",
+      "domain": "cybersecurity",
+      "broader": "ko:concept/software"
+    },
+    {
+      "@id": "ko:concept/cyber-attack",
+      "@type": "ko:Concept",
+      "prefLabel": "Cyber Attack",
+      "definition": "Malicious action aimed at compromising, damaging or exploiting computer systems, networks or data.",
+      "domain": "cybersecurity",
+      "broader": "ko:concept/security-threat"
+    },
+    {
+      "@id": "ko:concept/security-threat",
+      "@type": "ko:Concept",
+      "prefLabel": "Security Threat",
+      "definition": "Any event or condition that may compromise the confidentiality, integrity or availability of systems and data.",
+      "domain": "cybersecurity",
+      "broader": "ko:concept/risk"
+    },
+    {
+      "@id": "ko:concept/attack-techniques",
+      "@type": "ko:Concept",
+      "prefLabel": "Attack Techniques",
+      "definition": "Methods and procedures used by attackers to compromise systems or exfiltrate data.",
+      "domain": "cybersecurity",
+      "broader": "ko:concept/cybersecurity"
+    },
+    {
+      "@id": "ko:concept/cybersecurity",
+      "@type": "ko:Concept",
+      "prefLabel": "Cybersecurity",
+      "definition": "Practices, technologies and processes aimed at protecting systems, networks and programs from digital attacks.",
+      "domain": "technology"
+    },
+    {
+      "@id": "ko:concept/python",
+      "@type": "ko:Concept",
+      "prefLabel": "Python",
+      "definition": "Interpreted programming language used for developing security tools, scripts and automation.",
+      "domain": "programming",
+      "broader": "ko:concept/programming-language"
+    }
+  ]
+}
