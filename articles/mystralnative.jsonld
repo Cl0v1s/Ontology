@@ -39,26 +39,6 @@
       ],
       "definition": "Runtime léger qui permet d'écrire des jeux en utilisant les API Web familières (WebGPU, Canvas, Audio, fetch) et de les exécuter comme applications natives de bureau sur macOS, Windows et Linux. Think of it as 'Electron for games' but without Chromium — just your game code, a JS engine, and native WebGPU rendering.",
       "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/native-development",
-      "@type": "ko:Concept",
-      "prefLabel": "Native Development",
-      "altLabel": [
-        "native app development"
-      ],
-      "definition": "Développement d'applications qui s'exécutent directement sur le système d'exploitation sans sandboxing du navigateur.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/webgpu",
-      "@type": "ko:Concept",
-      "prefLabel": "WebGPU",
-      "altLabel": [
-        "Web Graphics Platform"
-      ],
-      "definition": "API graphique moderne pour le rendu 3D haute performance dans les navigateurs et applications natives, permettant un accès direct au GPU.",
-      "domain": "graphics programming"
     }
   ]
 }

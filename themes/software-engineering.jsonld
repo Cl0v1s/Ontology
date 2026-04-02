@@ -933,6 +933,149 @@
       "prefLabel": "AI Winter",
       "definition": "Periods of reduced funding and interest in AI due to unmet expectations.",
       "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/zig-standard-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Zig Standard Library",
+      "altLabel": [
+        "std",
+        "zig std"
+      ],
+      "definition": "Bibliothèque standard de Zig contenant des algorithmes, structures de données et définitions couramment utilisés pour aider à construire des programmes ou bibliothèques. Robust, optimal, et reusable.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/zero-cost-abstractions",
+      "@type": "ko:Concept",
+      "prefLabel": "Zero-cost Abstractions",
+      "altLabel": [
+        "zero-cost abstractions"
+      ],
+      "definition": "Optimisations au moment de la compilation qui n'ajoutent pas d'overhead en temps d'exécution.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/front-end-development",
+      "@type": "ko:Concept",
+      "prefLabel": "Développement front-end",
+      "altLabel": [
+        "front-end development",
+        "client-side development"
+      ],
+      "definition": "Développement de la partie visible d'une application web, exécutée dans le navigateur.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/retrozone-display-engine",
+      "@type": "ko:Concept",
+      "prefLabel": "RetroZone Display Engine",
+      "altLabel": [
+        "RetroZone"
+      ],
+      "definition": "Moteur d'affichage rétro pour jeux HTML5 qui applique des effets authentiques CRT et vector via WebGL shaders. Zéro dépendance, fonctionne avec n'importe quel canvas.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/zig-standard-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Zig Standard Library",
+      "altLabel": [
+        "zig std",
+        "Zig standard library"
+      ],
+      "definition": "Bibliothèque standard de Zig contenant des algorithmes, structures de données et définitions couramment utilisés pour construire des programmes ou bibliothèques.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/robust-software",
+      "@type": "ko:Concept",
+      "prefLabel": "Logiciel robuste",
+      "altLabel": [
+        "robust software"
+      ],
+      "definition": "Code qui se comporte correctement même dans des cas limites comme la gestion de la mémoire épuisée.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/optimal-code",
+      "@type": "ko:Concept",
+      "prefLabel": "Code optimal",
+      "altLabel": [
+        "optimal code"
+      ],
+      "definition": "Programmes qui se comportent et performent de la meilleure manière possible.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/reusable-code",
+      "@type": "ko:Concept",
+      "prefLabel": "Code réutilisable",
+      "altLabel": [
+        "reusable code"
+      ],
+      "definition": "Même code qui fonctionne dans de nombreux environnements ayant des contraintes différentes.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/maintainable-code",
+      "@type": "ko:Concept",
+      "prefLabel": "Code maintenable",
+      "altLabel": [
+        "maintainable code"
+      ],
+      "definition": "Code qui communique précisément l'intention au compilateur et autres programmeurs, avec une faible surcharge de lecture.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/programming-language",
+      "@type": "ko:Concept",
+      "prefLabel": "Langage de programmation",
+      "altLabel": [
+        "programming language"
+      ],
+      "definition": "Système formel pour exprimer des algorithmes et programmes informatiques.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/data-structure",
+      "@type": "ko:Concept",
+      "prefLabel": "Structure de données",
+      "altLabel": [
+        "data structure"
+      ],
+      "definition": "Méthode d'organisation et de stockage des données pour un accès et une modification efficaces.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/algorithms",
+      "@type": "ko:Concept",
+      "prefLabel": "Algorithmes",
+      "altLabel": [
+        "algorithms"
+      ],
+      "definition": "Ensemble fini d'instructions pour résoudre un problème spécifique.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/software-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Bibliothèque logicielle",
+      "altLabel": [
+        "software library"
+      ],
+      "definition": "Collection de code réutilisable pour construire des programmes ou bibliothèques.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/toolchain",
+      "@type": "ko:Concept",
+      "prefLabel": "Chaîne d'outils",
+      "altLabel": [
+        "toolchain"
+      ],
+      "definition": "Ensemble d'outils utilisés pour développer, compiler et déployer un logiciel.",
+      "domain": "software engineering"
     }
   ]
 }

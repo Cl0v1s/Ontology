@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/missing-concepts",
+      "@type": "ko:Article",
+      "title": "Missing Concepts for Error Handling",
+      "url": "https://example.com/missing-concepts",
+      "readDate": "2026-03-31",
+      "language": "en",
+      "abstract": "This article introduces missing concepts related to error handling and validation.",
+      "introduces": [
+        "ko:concept/form-validation",
+        "ko:concept/user-support-communication",
+        "ko:concept/error-reporting-form",
+        "ko:concept/bug-reporting-strategy"
+      ]
+    },
+    {
+      "@id": "ko:concept/form-validation",
+      "@type": "ko:Concept",
+      "prefLabel": "Form Validation",
+      "definition": "The process of validating user input in forms to ensure data integrity and correctness.",
+      "domain": "software engineering, validation"
+    },
+    {
+      "@id": "ko:concept/user-support-communication",
+      "@type": "ko:Concept",
+      "prefLabel": "User Support Communication",
+      "definition": "Strategies for communicating errors and support information effectively to users.",
+      "domain": "software engineering, user experience"
+    },
+    {
+      "@id": "ko:concept/error-reporting-form",
+      "@type": "ko:Concept",
+      "prefLabel": "Error Reporting Form",
+      "definition": "A form or interface designed for users to report errors or issues encountered in a system.",
+      "domain": "software engineering, user feedback"
+    },
+    {
+      "@id": "ko:concept/bug-reporting-strategy",
+      "@type": "ko:Concept",
+      "prefLabel": "Bug Reporting Strategy",
+      "definition": "A structured approach for collecting and prioritizing bug reports to improve software quality.",
+      "domain": "software engineering, debugging"
+    }
+  ]
+}

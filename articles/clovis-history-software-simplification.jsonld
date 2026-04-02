@@ -13,8 +13,12 @@
     {
       "@id": "ko:article/clovis-history-software-simplification",
       "@type": "ko:Article",
+      "title": "History of Software Simplification",
+      "url": "https://example.com/history-software-simplification",
       "dc:title": {"@language": "en", "@value": "The Eternal Promise: A History of Attempts to Eliminate Programmers"},
       "dc:description": {"@language": "en", "@value": "Explores the history of attempts to simplify software creation, from COBOL to AI-driven programming."},
+      "dcterms:published": {"@type": "xsd:date", "@value": "2024-01-01"},
+      "dc:url": {"@value": "https://example.com/clovis-history-software-simplification"},
       "ko:concept": [
         {
           "@id": "ko:concept/software-simplification",

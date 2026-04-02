@@ -1,0 +1,112 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/schemathesis-io",
+      "@type": "ko:Article",
+      "title": "Schemathesis - Property-based API Testing Tool",
+      "url": "https://schemathesis.io/",
+      "readDate": "2026-03-31",
+      "language": "en",
+      "abstract": "Schemathesis is an open-source API testing tool that generates tests from OpenAPI and GraphQL schemas using property-based testing.",
+      "hasAuthor": "ko:author/schemathesis",
+      "introduces": [
+        "ko:concept/schemathesis"
+      ],
+      "uses": [
+        "ko:concept/property-based-testing"
+      ],
+      "exemplifies": [
+        "ko:concept/test-generation"
+      ],
+      "hasFeature": [
+        "ko:concept/cli-schemathesis",
+        "ko:concept/docker-schemathesis"
+      ],
+      "usesLanguage": [
+        "ko:concept/python"
+      ]
+    },
+    {
+      "@id": "ko:concept/schemathesis",
+      "@type": "ko:Concept",
+      "prefLabel": "Schemathesis",
+      "altLabel": [
+        "Schemathesis.io"
+      ],
+      "definition": "An open-source API testing tool that generates tests from OpenAPI and GraphQL schemas using property-based testing.",
+      "domain": "software engineering, testing, API development",
+      "broader": "ko:concept/property-based-testing"
+    },
+    {
+      "@id": "ko:concept/openapi-schemas",
+      "@type": "ko:Concept",
+      "prefLabel": "OpenAPI Schemas",
+      "altLabel": [
+        "OpenAPI",
+        "Swagger Schemas"
+      ],
+      "definition": "Schemas used to describe RESTful APIs, enabling automatic test generation for validation and bug detection.",
+      "domain": "software engineering, API development",
+      "related": [
+        "ko:concept/graphql-schemas"
+      ]
+    },
+    {
+      "@id": "ko:concept/graphql-schemas",
+      "@type": "ko:Concept",
+      "prefLabel": "GraphQL Schemas",
+      "altLabel": [
+        "GraphQL"
+      ],
+      "definition": "Schemas used to describe GraphQL APIs, enabling automatic test generation for validation and bug detection.",
+      "domain": "software engineering, API development",
+      "related": [
+        "ko:concept/openapi-schemas"
+      ]
+    },
+    {
+      "@id": "ko:concept/test-generation",
+      "@type": "ko:Concept",
+      "prefLabel": "Test Generation",
+      "definition": "The process of automatically generating test cases from API schemas to validate behavior and detect bugs.",
+      "domain": "software engineering, testing",
+      "broader": "ko:concept/schemathesis"
+    },
+    {
+      "@id": "ko:concept/cli-schemathesis",
+      "@type": "ko:Concept",
+      "prefLabel": "Schemathesis CLI",
+      "definition": "The command-line interface for Schemathesis, used to run tests and generate test cases from OpenAPI/GraphQL schemas.",
+      "domain": "software engineering, testing",
+      "broader": "ko:concept/schemathesis"
+    },
+    {
+      "@id": "ko:concept/docker-schemathesis",
+      "@type": "ko:Concept",
+      "prefLabel": "Schemathesis Docker Image",
+      "definition": "The official Docker image for running Schemathesis without local installation, enabling easy integration into CI/CD pipelines.",
+      "domain": "software engineering, containerization",
+      "related": [
+        "ko:concept/cli-schemathesis"
+      ]
+    },
+    {
+      "@id": "ko:concept/ci-cd-integration-schemathesis",
+      "@type": "ko:Concept",
+      "prefLabel": "Schemathesis CI/CD Integration",
+      "definition": "Integration of Schemathesis into CI/CD pipelines (e.g., GitHub Actions, GitLab CI) for automated API testing.",
+      "domain": "software engineering, DevOps",
+      "broader": "ko:concept/schemathesis"
+    }
+  ]
+}

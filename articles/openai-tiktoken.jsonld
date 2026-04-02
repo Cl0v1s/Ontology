@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/openai-tiktoken",
+      "@type": "ko:Article",
+      "title": "tiktoken: A fast BPE tokenizer for use with OpenAI's models",
+      "url": "https://github.com/openai/tiktoken",
+      "publishedDate": "2025-10-06",
+      "readDate": "2026-03-31",
+      "language": "en",
+      "abstract": "tiktoken is an open-source library that provides a fast Byte Pair Encoding (BPE) tokenizer optimized for OpenAI's models. It supports tokenization for various models, including GPT-4 and GPT-2, and offers performance improvements compared to other open-source tokenizers.",
+      "hasAuthor": "ko:author/openai",
+      "introduces": [
+        "ko:concept/bpe-tokenizer"
+      ],
+      "uses": [
+        "ko:concept/tokenization",
+        "ko:concept/openai-models"
+      ],
+      "exemplifies": [
+        "ko:concept/performance-optimization"
+      ],
+      "hasFeature": [
+        "ko:concept/extensibility"
+      ],
+      "usesLanguage": [
+        "ko:concept/python"
+      ]
+    },
+    {
+      "@id": "ko:concept/bpe-tokenizer",
+      "@type": "ko:Concept",
+      "prefLabel": "Byte Pair Encoding (BPE) Tokenizer",
+      "definition": "A subword tokenization technique used in natural language processing to convert text into tokens for machine learning models.",
+      "domain": "natural-language-processing"
+    },
+    {
+      "@id": "ko:concept/tokenization",
+      "@type": "ko:Concept",
+      "prefLabel": "Tokenizer",
+      "definition": "A tool or algorithm that converts text into tokens for use in machine learning models.",
+      "domain": "nlp"
+    },
+    {
+      "@id": "ko:concept/openai-models",
+      "@type": "ko:Concept",
+      "prefLabel": "OpenAI Models",
+      "definition": "Machine learning models developed by OpenAI, such as GPT-4 and GPT-2.",
+      "domain": "ai"
+    },
+    {
+      "@id": "ko:concept/extensibility",
+      "@type": "ko:Concept",
+      "prefLabel": "Extensibility",
+      "definition": "The ability of a system or tool to be extended or customized for specific use cases.",
+      "domain": "software-engineering"
+    }
+  ]
+}

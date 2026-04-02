@@ -58,6 +58,16 @@
       "prefLabel": "Python",
       "definition": "A high-level, interpreted programming language known for its readability and versatility in web development, data analysis, and scripting.",
       "domain": "programming"
+    },
+    {
+      "@id": "ko:concept/language-css",
+      "@type": "ko:Concept",
+      "prefLabel": "CSS",
+      "altLabel": [
+        "Cascading Style Sheets"
+      ],
+      "definition": "Langage de feuilles de style pour décrire la présentation de documents HTML.",
+      "domain": "programming languages"
     }
   ]
 }

@@ -1,0 +1,1 @@
+{'@context': 'https://www.w3.org/ns/json-ld/', '@graph': [{'@id': 'ko:concept/test-concept', 'prefLabel': 'Test Concept', 'definition': 'A test concept for validation.', 'domain': 'test'}]}

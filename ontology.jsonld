@@ -118,13 +118,62 @@
       "rdfs:domain": { "@id": "ko:Concept" },
       "rdfs:range":  { "@id": "ko:Concept" }
     },
+  {
+       "@id": "ko:related",
+       "@type": "owl:ObjectProperty",
+       "rdfs:label": "related",
+       "rdfs:comment": "Relation symétrique entre concepts. Rendu en violet pointillé sans direction.",
+       "rdfs:domain": { "@id": "ko:Concept" },
+       "rdfs:range":  { "@id": "ko:Concept" }
+     },
     {
-      "@id": "ko:related",
-      "@type": "owl:ObjectProperty",
-      "rdfs:label": "related",
-      "rdfs:comment": "Relation symétrique entre concepts. Rendu en violet pointillé sans direction.",
-      "rdfs:domain": { "@id": "ko:Concept" },
-      "rdfs:range":  { "@id": "ko:Concept" }
+      "@id": "ko:Abstraction",
+      "@type": "owl:Class",
+      "rdfs:label": "Abstraction",
+      "rdfs:comment": "Idée qui cache les détails non importants et met en avant les détails pertinents.",
+      "skos:broader": { "@id": "ko:Concept" }
+    },
+    {
+      "@id": "ko:Complexity",
+      "@type": "owl:Class",
+      "rdfs:label": "Complexity",
+      "rdfs:comment": "Problème central des codebases mal conçues, souvent trop complexes pour être comprises.",
+      "skos:broader": { "@id": "ko:Concept" }
+    },
+    {
+      "@id": "ko:DesignAbstraction",
+      "@type": "owl:Class",
+      "rdfs:label": "Design Abstraction",
+      "rdfs:comment": "Processus de création d'abstractions qui simplifient la compréhension du système.",
+      "skos:broader": { "@id": "ko:Concept" }
+    },
+    {
+      "@id": "ko:RedesignAbstraction",
+      "@type": "owl:Class",
+      "rdfs:label": "Redesign Abstraction",
+      "rdfs:comment": "Réévaluation et refonte des abstractions existantes pour les améliorer ou les remplacer.",
+      "skos:broader": { "@id": "ko:Concept" }
+    },
+    {
+      "@id": "ko:TechnicalDebt",
+      "@type": "owl:Class",
+      "rdfs:label": "Technical Debt",
+      "rdfs:comment": "Accumulation de problèmes non résolus qui compliquent l'évolution du codebase.",
+      "skos:broader": { "@id": "ko:Concept" }
+    },
+    {
+      "@id": "ko:Refactoring",
+      "@type": "owl:Class",
+      "rdfs:label": "Refactoring",
+      "rdfs:comment": "Processus essentiel pour améliorer le code, notamment en redessinant les abstractions.",
+      "skos:broader": { "@id": "ko:Concept" }
+    },
+    {
+      "@id": "ko:ComplexityManagement",
+      "@type": "owl:Class",
+      "rdfs:label": "Complexity Management",
+      "rdfs:comment": "Tâche principale des développeurs, consistant à simplifier et structurer les systèmes complexes.",
+      "skos:broader": { "@id": "ko:Concept" }
     }
-  ]
+   ]
 }

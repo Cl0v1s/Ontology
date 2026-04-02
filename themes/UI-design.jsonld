@@ -11,8 +11,6 @@
   },
   "@graph": [
     {
-      "@id": "ko:concept/retro-ui-design",
-      "@type": "ko:Concept",
       "prefLabel": "Design d'interface rétro",
       "altLabel": [
         "retro UI design",
@@ -22,7 +20,24 @@
       "domain": "UI design"
     },
     {
-      "@id": "ko:concept/design-system",
+      "@type": "ko:Concept",
+      "prefLabel": "Système de design",
+      "altLabel": [
+        "design system"
+      ],
+      "definition": "Ensemble de composants, règles et guidelines visuelles réutilisables pour construire des interfaces cohérentes.",
+      "domain": "UI design"
+    },
+    {
+      "prefLabel": "Design d'interface rétro",
+      "altLabel": [
+        "retro UI design",
+        "skeuomorphic design"
+      ],
+      "definition": "Conception d'interfaces imitant l'esthétique des systèmes informatiques anciens.",
+      "domain": "UI design"
+    },
+    {
       "@type": "ko:Concept",
       "prefLabel": "Système de design",
       "altLabel": [

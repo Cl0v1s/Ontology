@@ -18,50 +18,19 @@
       "readDate": "2026-03-10",
       "language": "en",
       "abstract": "Bibliothèque CSS pour recréer des interfaces inspirées de l'Apple System OS (1984-1991), sans dépendance JavaScript.",
-      "uses": ["ko:concept/outil-de-visualisation", "ko:concept/design-system", "ko:concept/front-end-development"],
-      "introduces": ["ko:concept/retro-ui-design"],
-      "hasFeature": ["ko:concept/retro-ui-design", "ko:concept/css-only-approach"],
-      "usesLanguage": ["ko:concept/language-css"]
-    },
-    {
-      "@id": "ko:concept/retro-ui-design",
-      "@type": "ko:Concept",
-      "prefLabel": "Design d'interface rétro",
-      "altLabel": ["retro UI design", "skeuomorphic design"],
-      "definition": "Conception d'interfaces imitant l'esthétique des systèmes informatiques anciens.",
-      "domain": "UI design"
-    },
-    {
-      "@id": "ko:concept/css-only-approach",
-      "@type": "ko:Concept",
-      "prefLabel": "Approche CSS-only",
-      "altLabel": ["CSS-only", "no-JavaScript"],
-      "definition": "Implémentation d'interfaces ou de fonctionnalités visuelles en utilisant uniquement CSS, sans JavaScript.",
-      "domain": "front-end development"
-    },
-    {
-      "@id": "ko:concept/language-css",
-      "@type": "ko:Concept",
-      "prefLabel": "CSS",
-      "altLabel": ["Cascading Style Sheets"],
-      "definition": "Langage de feuilles de style pour décrire la présentation de documents HTML.",
-      "domain": "programming languages"
-    },
-    {
-      "@id": "ko:concept/design-system",
-      "@type": "ko:Concept",
-      "prefLabel": "Système de design",
-      "altLabel": ["design system"],
-      "definition": "Ensemble de composants, règles et guidelines visuelles réutilisables pour construire des interfaces cohérentes.",
-      "domain": "UI design"
-    },
-    {
-      "@id": "ko:concept/front-end-development",
-      "@type": "ko:Concept",
-      "prefLabel": "Développement front-end",
-      "altLabel": ["front-end development", "client-side development"],
-      "definition": "Développement de la partie visible d'une application web, exécutée dans le navigateur.",
-      "domain": "software engineering"
+      "uses": [
+        "ko:concept/outil-de-visualisation",
+        "ko:concept/design-system",
+        "ko:concept/front-end-development"
+      ],
+      "introduces": [
+      ],
+      "hasFeature": [
+        "ko:concept/css-only-approach"
+      ],
+      "usesLanguage": [
+        "ko:concept/language-css"
+      ]
     }
   ]
 }

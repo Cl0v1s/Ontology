@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/antithesishq-bombadil-introduction",
+      "@type": "ko:Article",
+      "title": "Introduction to Bombadil",
+      "url": "https://antithesishq.github.io/bombadil/1-introduction.html",
+      "publishedDate": "2026-04-02",
+      "readDate": "2026-04-02",
+      "language": "en",
+      "abstract": "Bombadil is a property-based testing tool for web UIs, autonomously exploring and validating correctness properties.",
+      "hasAuthor": "ko:author/antithesishq",
+      "introduces": [
+        "ko:concept/bombadil",
+        "ko:concept/state-space-exploration"
+      ],
+      "uses": [
+        "ko:concept/property-based-testing"
+      ],
+      "exemplifies": [
+        "ko:concept/specification-language"
+      ]
+    },
+    {
+      "@id": "ko:concept/bombadil",
+      "@type": "ko:Concept",
+      "prefLabel": "Bombadil",
+      "definition": "A property-based testing tool for web UIs, autonomously exploring and validating correctness properties.",
+      "domain": "software engineering",
+      "broader": "ko:concept/property-based-testing"
+    },
+    {
+      "@id": "ko:concept/state-space-exploration",
+      "@type": "ko:Concept",
+      "prefLabel": "State Space Exploration",
+      "definition": "The systematic exploration of all possible states of a system to identify potential bugs or edge cases.",
+      "domain": "software engineering",
+      "broader": "ko:concept/property-based-testing"
+    },
+    {
+      "@id": "ko:concept/specification-language",
+      "@type": "ko:Concept",
+      "prefLabel": "Specification Language",
+      "definition": "A domain-specific language used to define properties and action generators for testing web applications.",
+      "domain": "software engineering",
+      "broader": "ko:concept/property-based-testing"
+    },
+    {
+      "@id": "ko:concept/antithesis",
+      "@type": "ko:Concept",
+      "prefLabel": "Antithesis",
+      "definition": "A platform or company associated with Bombadil, providing tools and services for property-based testing.",
+      "domain": "software engineering"
+    }
+  ]
+}

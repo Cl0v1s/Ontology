@@ -1,0 +1,30 @@
+{
+  "article": {
+    "@id": "ko:article/helgeklein-dns-exfiltration-tunneling",
+    "title": "DNS Exfiltration & Tunneling: How it Works & DNSteal Demo Setup",
+    "url": "https://helgeklein.com/blog/dns-exfiltration-tunneling-how-it-works-dnsteal-demo-setup/",
+    "readDate": "2026-03-27",
+    "publishedDate": "2024-01-01",
+    "language": "en",
+    "abstract": "Article explaining how data exfiltration via DNS works, presenting two variants (direct communication with attacker's DNS server or using the DNS resolver chain), and demonstrating DNSteal setup to receive exfiltrated data.",
+    "hasAuthor": "ko:author/helgeklein",
+    "introduces": ["ko:concept/dns-exfiltration", "ko:concept/dns-tunneling"],
+    "exemplifies": ["ko:concept/dnsteal"],
+    "uses": ["ko:concept/command-and-control-c2", "ko:concept/malware"]
+  },
+  "newAuthors": [
+    {
+      "@id": "ko:author/helgeklein",
+      "name": "Helge Klein"
+    }
+  ],
+  "newConcepts": [
+    {
+      "@id": "ko:concept/command-and-control-c2",
+      "prefLabel": "Command and Control (C2)",
+      "definition": "Bidirectional communication between infected malware and an attacker-controlled server. Includes data exfiltration and remote commands.",
+      "domain": "cybersecurity",
+      "broader": "ko:concept/malware-operations"
+    }
+  ]
+}

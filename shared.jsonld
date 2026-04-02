@@ -690,6 +690,24 @@
       "@type": "ko:Author",
       "name": "Helge Klein",
       "domain": "author"
+    },
+    {
+      "@id": "ko:author/schemathesis",
+      "@type": "ko:Author",
+      "name": "Schemathesis",
+      "domain": "author"
+    },
+    {
+      "@id": "ko:author/openai",
+      "@type": "ko:Author",
+      "name": "Openai",
+      "domain": "author"
+    },
+    {
+      "@id": "ko:author/antithesishq",
+      "@type": "ko:Author",
+      "name": "Antithesishq",
+      "domain": "author"
     }
   ]
 }

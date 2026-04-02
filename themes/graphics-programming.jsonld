@@ -29,6 +29,36 @@
       ],
       "definition": "Programmation graphique via WebGL pour appliquer des effets post-traitement en temps réel sur les canvas.",
       "domain": "graphics programming"
+    },
+    {
+      "@id": "ko:concept/webgl-shaders",
+      "@type": "ko:Concept",
+      "prefLabel": "WebGL Shaders",
+      "altLabel": [
+        "WebGL shaders"
+      ],
+      "definition": "Programmation graphique via WebGL pour appliquer des effets post-traitement en temps réel sur les canvas.",
+      "domain": "graphics programming"
+    },
+    {
+      "@id": "ko:concept/native-development",
+      "@type": "ko:Concept",
+      "prefLabel": "Native Development",
+      "altLabel": [
+        "native app development"
+      ],
+      "definition": "Développement d'applications qui s'exécutent directement sur le système d'exploitation sans sandboxing du navigateur.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/webgpu",
+      "@type": "ko:Concept",
+      "prefLabel": "WebGPU",
+      "altLabel": [
+        "Web Graphics Platform"
+      ],
+      "definition": "API graphique moderne pour le rendu 3D haute performance dans les navigateurs et applications natives, permettant un accès direct au GPU.",
+      "domain": "graphics programming"
     }
   ]
 }
