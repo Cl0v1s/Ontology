@@ -32,62 +32,6 @@
       "exemplifies": [
         "ko:concept/secure-storage-implementation"
       ]
-    },
-    {
-      "@id": "ko:concept/capacitor-secure-storage-plugin",
-      "@type": "ko:Concept",
-      "prefLabel": "Capacitor Secure Storage Plugin",
-      "altLabel": ["capacitor-secure-storage-plugin"],
-      "definition": "A Capacitor plugin for securely storing string values on iOS and Android, using platform-specific secure storage mechanisms like SwiftKeychainWrapper and AndroidKeyStore.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/secure-keychain-wrapper",
-      "@type": "ko:Concept",
-      "prefLabel": "Secure Keychain Wrapper",
-      "altLabel": ["SwiftKeychainWrapper"],
-      "definition": "A wrapper around iOS's Keychain services, providing a secure way to store sensitive data like passwords and tokens.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/androidkeystore",
-      "@type": "ko:Concept",
-      "prefLabel": "AndroidKeyStore",
-      "altLabel": ["Android KeyStore"],
-      "definition": "A security module in Android for securely storing cryptographic keys and sensitive data, compliant with hardware-backed storage requirements.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/swiftkeychainwrapper",
-      "@type": "ko:Concept",
-      "prefLabel": "SwiftKeychainWrapper",
-      "altLabel": ["iOS Keychain Wrapper"],
-      "definition": "A Swift library that simplifies interaction with the iOS Keychain, providing a secure storage solution for sensitive data.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/sharedpreferences",
-      "@type": "ko:Concept",
-      "prefLabel": "SharedPreferences",
-      "altLabel": ["Android SharedPreferences"],
-      "definition": "A mechanism in Android for storing persistent key-value pairs, often used for configuration settings or simple data storage.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/capacitor-plugin-architecture",
-      "@type": "ko:Concept",
-      "prefLabel": "Capacitor Plugin Architecture",
-      "altLabel": ["Capacitor Plugins"],
-      "definition": "The architecture and design principles for creating plugins in Capacitor, enabling cross-platform functionality in mobile applications.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/secure-storage-implementation",
-      "@type": "ko:Concept",
-      "prefLabel": "Secure Storage Implementation",
-      "altLabel": ["Secure Data Storage"],
-      "definition": "A technical implementation for securely storing sensitive data, often involving encryption and platform-specific secure storage mechanisms.",
-      "domain": "software engineering"
     }
   ]
 }

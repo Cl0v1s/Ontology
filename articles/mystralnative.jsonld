@@ -28,13 +28,6 @@
         "ko:concept/webgpu",
         "ko:concept/js-engine-runtime"
       ]
-    },
-    {
-      "@id": "ko:concept/mystral-native",
-      "@type": "ko:Concept",
-      "prefLabel": "Mystral Native",
-      "definition": "A native WebGPU JavaScript runtime with SDL3 that runs JavaScript/TypeScript games as native applications without Chromium.",
-      "domain": "software engineering"
     }
   ]
 }

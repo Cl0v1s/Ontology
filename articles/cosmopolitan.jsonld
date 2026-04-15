@@ -31,23 +31,6 @@
         "ko:concept/language-c",
         "ko:concept/language-cpp"
       ]
-    },
-    {
-      "@id": "ko:concept/build-once-run-anywhere",
-      "@type": "ko:Concept",
-      "prefLabel": "Build-once, run-anywhere",
-      "definition": "Capacité à compiler un exécutable unique fonctionnant sur plusieurs systèmes d'exploitation sans recompilation.",
-      "domain": "cross-platform development"
-    },
-    {
-      "@id": "ko:concept/cross-platform-development",
-      "@type": "ko:Concept",
-      "prefLabel": "Développement multiplateforme",
-      "altLabel": [
-        "cross-platform development"
-      ],
-      "definition": "Développement de logiciels compatibles avec plusieurs systèmes d'exploitation ou environnements d'exécution.",
-      "domain": "software engineering"
     }
   ]
 }
