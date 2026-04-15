@@ -1,0 +1,40 @@
+{
+  "article": {
+    "@id": "ko:article/smhanov-laconic",
+    "title": "Laconic: An Agentic Research Orchestrator for Go",
+    "url": "https://github.com/smhanov/laconic",
+    "readDate": "2026-04-16",
+    "publishedDate": "2023-01-01",
+    "language": "en",
+    "abstract": "An agentic research orchestrator for Go that is optimized to use free search and low-cost limited context window LLMs.",
+    "introduces": ["ko:concept/laconic-research-orchestrator"],
+    "uses": ["ko:concept/go-language", "ko:concept/agentic-systems"],
+    "hasFeature": ["ko:concept/research-optimization"]
+  },
+  "newConcepts": [
+    {
+      "@id": "ko:concept/laconic-research-orchestrator",
+      "prefLabel": "Laconic Research Orchestrator",
+      "definition": "An agentic system designed to orchestrate research tasks using Go, optimized for free search and low-cost limited context window LLMs.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/go-language",
+      "prefLabel": "Go Language",
+      "definition": "A statically typed, compiled programming language developed by Google, known for its efficiency and simplicity.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/agentic-systems",
+      "prefLabel": "Agentic Systems",
+      "definition": "Systems that exhibit autonomous behavior, capable of making decisions and performing tasks without human intervention.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/research-optimization",
+      "prefLabel": "Research Optimization",
+      "definition": "Techniques and strategies to optimize research processes, including the use of efficient algorithms and tools.",
+      "domain": "software engineering"
+    }
+  ]
+}

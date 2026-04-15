@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/smhanov-laconic",
+      "@type": "ko:Article",
+      "title": "Laconic: An Agentic Research Orchestrator for Go",
+      "url": "https://github.com/smhanov/laconic",
+      "publishedDate": "2023-01-01",
+      "readDate": "2026-04-16",
+      "language": "en",
+      "abstract": "An agentic research orchestrator for Go that is optimized to use free search and low-cost limited context window LLMs.",
+      "introduces": [
+        "ko:concept/laconic-research-orchestrator"
+      ],
+      "uses": [
+        "ko:concept/go-language",
+        "ko:concept/agentic-systems"
+      ],
+      "hasFeature": [
+        "ko:concept/research-optimization"
+      ]
+    },
+    {
+      "@id": "ko:concept/laconic-research-orchestrator",
+      "@type": "ko:Concept",
+      "prefLabel": "Laconic Research Orchestrator",
+      "definition": "An agentic system designed to orchestrate research tasks using Go, optimized for free search and low-cost limited context window LLMs.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/go-language",
+      "@type": "ko:Concept",
+      "prefLabel": "Go Language",
+      "definition": "A statically typed, compiled programming language developed by Google, known for its efficiency and simplicity.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/agentic-systems",
+      "@type": "ko:Concept",
+      "prefLabel": "Agentic Systems",
+      "definition": "Systems that exhibit autonomous behavior, capable of making decisions and performing tasks without human intervention.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/research-optimization",
+      "@type": "ko:Concept",
+      "prefLabel": "Research Optimization",
+      "definition": "Techniques and strategies to optimize research processes, including the use of efficient algorithms and tools.",
+      "domain": "software engineering"
+    }
+  ]
+}
