@@ -20,9 +20,62 @@
       "language": "fr",
       "abstract": "L'article explore les principes de l'éco-conception et comment ils peuvent être appliqués pour réduire l'impact environnemental des systèmes numériques.",
       "hasAuthor": "ko:author/clovis",
-      "introduces": ["ko:concept/eco-conception", "ko:concept/simplicite-logicielle", "ko:concept/gouvernance-soutenable"],
-      "uses": ["ko:concept/mesure-impact-ecologique", "ko:concept/taux-de-rebond", "ko:concept/pue"],
-      "relatedTo": ["ko:concept/eco-conception", "ko:concept/simplicite-logicielle"]
+      "introduces": [
+        "ko:concept/eco-conception",
+        "ko:concept/simplicite-logicielle",
+        "ko:concept/gouvernance-soutenable"
+      ],
+      "uses": [
+        "ko:concept/mesure-impact-ecologique",
+        "ko:concept/taux-de-rebond",
+        "ko:concept/pue"
+      ],
+      "relatedTo": [
+        "ko:concept/eco-conception",
+        "ko:concept/simplicite-logicielle"
+      ]
+    },
+    {
+      "@id": "ko:concept/eco-conception",
+      "@type": "ko:Concept",
+      "prefLabel": "Éco-conception",
+      "definition": "Approche de conception qui intègre les considérations environnementales dès les premières étapes du développement.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/simplicite-logicielle",
+      "@type": "ko:Concept",
+      "prefLabel": "Simplicité Logicielle",
+      "definition": "Le principe de réduire la complexité des logiciels pour diminuer leur consommation en ressources et leur impact environnemental.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/gouvernance-soutenable",
+      "@type": "ko:Concept",
+      "prefLabel": "Gouvernance Soutenable",
+      "definition": "Les pratiques organisationnelles visant à rendre les décisions technologiques compatibles avec les objectifs de durabilité.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/mesure-impact-ecologique",
+      "@type": "ko:Concept",
+      "prefLabel": "Mesure d'Impact Écologique",
+      "definition": "Les outils et méthodes permettant de quantifier l'empreinte environnementale des systèmes numériques.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/taux-de-rebond",
+      "@type": "ko:Concept",
+      "prefLabel": "Taux de Rebond",
+      "definition": "Indicateur mesurant le pourcentage de visiteurs qui quittent un site après avoir consulté une seule page.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/pue",
+      "@type": "ko:Concept",
+      "prefLabel": "PUE (Power Usage Effectiveness)",
+      "definition": "Métrique qui mesure l'efficacité énergétique d'un centre de données en comparant l'énergie totale consommée à celle utilisée par les équipements informatiques.",
+      "domain": "ecology"
     }
   ]
 }

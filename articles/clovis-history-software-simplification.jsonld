@@ -15,54 +15,122 @@
       "@type": "ko:Article",
       "title": "History of Software Simplification",
       "url": "https://example.com/history-software-simplification",
-      "dc:title": {"@language": "en", "@value": "The Eternal Promise: A History of Attempts to Eliminate Programmers"},
-      "dc:description": {"@language": "en", "@value": "Explores the history of attempts to simplify software creation, from COBOL to AI-driven programming."},
-      "dcterms:published": {"@type": "xsd:date", "@value": "2024-01-01"},
-      "dc:url": {"@value": "https://example.com/clovis-history-software-simplification"},
+      "dc:title": {
+        "@language": "en",
+        "@value": "The Eternal Promise: A History of Attempts to Eliminate Programmers"
+      },
+      "dc:description": {
+        "@language": "en",
+        "@value": "Explores the history of attempts to simplify software creation, from COBOL to AI-driven programming."
+      },
+      "dcterms:published": {
+        "@type": "xsd:date",
+        "@value": "2024-01-01"
+      },
+      "dc:url": {
+        "@value": "https://example.com/clovis-history-software-simplification"
+      },
       "ko:concept": [
         {
           "@id": "ko:concept/software-simplification",
           "@type": "ko:Concept",
-          "skos:prefLabel": [{"@language": "en", "@value": "Software Simplification"}],
-          "dc:description": {"@language": "en", "@value": "The historical attempts to simplify software creation, making it accessible to non-programmers."}
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "Software Simplification"
+            }
+          ],
+          "dc:description": {
+            "@language": "en",
+            "@value": "The historical attempts to simplify software creation, making it accessible to non-programmers."
+          }
         },
         {
           "@id": "ko:concept/cobol",
           "@type": "ko:Concept",
-          "skos:prefLabel": [{"@language": "en", "@value": "COBOL"}],
-          "dc:description": {"@language": "en", "@value": "A programming language designed for business, data processing, and its enduring legacy in critical systems."}
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "COBOL"
+            }
+          ],
+          "dc:description": {
+            "@language": "en",
+            "@value": "A programming language designed for business, data processing, and its enduring legacy in critical systems."
+          }
         },
         {
           "@id": "ko:concept/ai-hype-cycle",
           "@type": "ko:Concept",
-          "skos:prefLabel": [{"@language": "en", "@value": "AI Hype Cycle"}],
-          "dc:description": {"@language": "en", "@value": "The recurring pattern of overpromising AI capabilities and the reality gap."}
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "AI Hype Cycle"
+            }
+          ],
+          "dc:description": {
+            "@language": "en",
+            "@value": "The recurring pattern of overpromising AI capabilities and the reality gap."
+          }
         },
         {
           "@id": "ko:concept/programming-democratization",
           "@type": "ko:Concept",
-          "skos:prefLabel": [{"@language": "en", "@value": "Programming Democratization"}],
-          "dc:description": {"@language": "en", "@value": "The idea that non-programmers could write software without specialized skills."}
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "Programming Democratization"
+            }
+          ],
+          "dc:description": {
+            "@language": "en",
+            "@value": "The idea that non-programmers could write software without specialized skills."
+          }
         },
         {
           "@id": "ko:concept/expert-systems",
           "@type": "ko:Concept",
-          "skos:prefLabel": [{"@language": "en", "@value": "Expert Systems"}],
-          "dc:description": {"@language": "en", "@value": "Early AI systems designed to mimic human expertise in rule-based engines."}
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "Expert Systems"
+            }
+          ],
+          "dc:description": {
+            "@language": "en",
+            "@value": "Early AI systems designed to mimic human expertise in rule-based engines."
+          }
         },
         {
           "@id": "ko:concept/automatic-programming",
           "@type": "ko:Concept",
-          "skos:prefLabel": [{"@language": "en", "@value": "Automatic Programming"}],
-          "dc:description": {"@language": "en", "@value": "Systems that translate natural language specifications into working code."}
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "Automatic Programming"
+            }
+          ],
+          "dc:description": {
+            "@language": "en",
+            "@value": "Systems that translate natural language specifications into working code."
+          }
         },
         {
           "@id": "ko:concept/ai-winter",
           "@type": "ko:Concept",
-          "skos:prefLabel": [{"@language": "en", "@value": "AI Winter"}],
-          "dc:description": {"@language": "en", "@value": "Periods of reduced funding and interest in AI due to unmet expectations."}
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "AI Winter"
+            }
+          ],
+          "dc:description": {
+            "@language": "en",
+            "@value": "Periods of reduced funding and interest in AI due to unmet expectations."
+          }
         }
-      ]
+      ],
+      "readDate": "2024-01-01"
     }
   ]
 }

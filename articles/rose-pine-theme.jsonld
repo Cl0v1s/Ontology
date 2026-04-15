@@ -31,6 +31,48 @@
       "exemplifies": [
         "ko:concept/aesthetic-themes"
       ]
+    },
+    {
+      "@id": "ko:concept/rose-pine-theme",
+      "@type": "ko:Concept",
+      "prefLabel": "Rosé Pine Theme",
+      "definition": "An aesthetic and minimalist color theme for code editors and terminals, inspired by natural pine and soho vibes.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/soho-aesthetics",
+      "@type": "ko:Concept",
+      "prefLabel": "Soho Aesthetics",
+      "definition": "A design aesthetic inspired by the Soho neighborhood style, characterized by earthy tones and understated elegance.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/minimalist-design",
+      "@type": "ko:Concept",
+      "prefLabel": "Minimalist Design",
+      "definition": "A design philosophy that emphasizes simplicity, removing unnecessary elements to focus on essential features.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/palette-design",
+      "@type": "ko:Concept",
+      "prefLabel": "Palette Design",
+      "definition": "The deliberate selection and arrangement of colors forming a cohesive visual identity for a theme or application.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/theme-customization",
+      "@type": "ko:Concept",
+      "prefLabel": "Theme Customization",
+      "definition": "The ability to modify and personalize visual themes in software applications or editors.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/aesthetic-themes",
+      "@type": "ko:Concept",
+      "prefLabel": "Aesthetic Themes",
+      "definition": "Visual themes designed primarily for aesthetic appeal, often used in code editors, terminals, and applications.",
+      "domain": "software engineering"
     }
   ]
 }

@@ -37,17 +37,6 @@
       ]
     },
     {
-      "@id": "ko:concept/schemathesis",
-      "@type": "ko:Concept",
-      "prefLabel": "Schemathesis",
-      "altLabel": [
-        "Schemathesis.io"
-      ],
-      "definition": "An open-source API testing tool that generates tests from OpenAPI and GraphQL schemas using property-based testing.",
-      "domain": "software engineering, testing, API development",
-      "broader": "ko:concept/property-based-testing"
-    },
-    {
       "@id": "ko:concept/openapi-schemas",
       "@type": "ko:Concept",
       "prefLabel": "OpenAPI Schemas",
@@ -73,40 +62,6 @@
       "related": [
         "ko:concept/openapi-schemas"
       ]
-    },
-    {
-      "@id": "ko:concept/test-generation",
-      "@type": "ko:Concept",
-      "prefLabel": "Test Generation",
-      "definition": "The process of automatically generating test cases from API schemas to validate behavior and detect bugs.",
-      "domain": "software engineering, testing",
-      "broader": "ko:concept/schemathesis"
-    },
-    {
-      "@id": "ko:concept/cli-schemathesis",
-      "@type": "ko:Concept",
-      "prefLabel": "Schemathesis CLI",
-      "definition": "The command-line interface for Schemathesis, used to run tests and generate test cases from OpenAPI/GraphQL schemas.",
-      "domain": "software engineering, testing",
-      "broader": "ko:concept/schemathesis"
-    },
-    {
-      "@id": "ko:concept/docker-schemathesis",
-      "@type": "ko:Concept",
-      "prefLabel": "Schemathesis Docker Image",
-      "definition": "The official Docker image for running Schemathesis without local installation, enabling easy integration into CI/CD pipelines.",
-      "domain": "software engineering, containerization",
-      "related": [
-        "ko:concept/cli-schemathesis"
-      ]
-    },
-    {
-      "@id": "ko:concept/ci-cd-integration-schemathesis",
-      "@type": "ko:Concept",
-      "prefLabel": "Schemathesis CI/CD Integration",
-      "definition": "Integration of Schemathesis into CI/CD pipelines (e.g., GitHub Actions, GitLab CI) for automated API testing.",
-      "domain": "software engineering, DevOps",
-      "broader": "ko:concept/schemathesis"
     }
   ]
 }

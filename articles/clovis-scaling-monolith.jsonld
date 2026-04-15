@@ -153,6 +153,55 @@
       ],
       "definition": "Address performance issues early with teams to avoid frustration.",
       "domain": "team dynamics"
+    },
+    {
+      "@id": "ko:concept/tech-debt-fridays",
+      "@type": "ko:Concept",
+      "prefLabel": "Tech Debt Fridays",
+      "definition": "A practice of dedicating regular Friday time slots to address technical debt and improve code quality.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/linters-et-prs-courts",
+      "@type": "ko:Concept",
+      "prefLabel": "Linters et PRs Courts",
+      "definition": "L'utilisation de linters automatiques et de pull requests courtes pour maintenir la qualité du code et faciliter les revues.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/communication-dans-les-équipes-à-distance",
+      "@type": "ko:Concept",
+      "prefLabel": "Communication dans les Équipes à Distance",
+      "definition": "Les pratiques et outils permettant une communication efficace au sein d'équipes distribuées géographiquement.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/page-de-demandes-fonctionnelles",
+      "@type": "ko:Concept",
+      "prefLabel": "Page de Demandes Fonctionnelles",
+      "definition": "Un espace centralisé où les parties prenantes peuvent soumettre et suivre les demandes de nouvelles fonctionnalités.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/alertes-et-inbox-zero",
+      "@type": "ko:Concept",
+      "prefLabel": "Alertes et Inbox Zero",
+      "definition": "La pratique de maintenir une boîte de réception vide en traitant immédiatement les alertes système.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/surveillance-des-emails-et-notifications-push",
+      "@type": "ko:Concept",
+      "prefLabel": "Surveillance des Emails et Notifications Push",
+      "definition": "Le monitoring proactif des emails et notifications pour détecter rapidement les problèmes système.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/monitoring-des-files-d-attente",
+      "@type": "ko:Concept",
+      "prefLabel": "Monitoring des Files d'Attente",
+      "definition": "La surveillance continue des files d'attente de messages pour détecter les congestions et anomalies.",
+      "domain": "software engineering"
     }
   ]
 }

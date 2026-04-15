@@ -10,124 +10,28 @@
     "ko": "http://knowledge.local/ontology#"
   },
   "@graph": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
     {
-      "@id": "ko:concept/rose-pine-theme",
+      "@id": "ko:concept/typography",
       "@type": "ko:Concept",
-      "prefLabel": "Rosé Pine Theme",
-      "altLabel": [
-        "Rose Pine"
-      ],
-      "definition": "A visually appealing and minimalist theme inspired by natural pine, faux fur, and soho aesthetics, designed for classy minimalists.",
+      "prefLabel": "Typography",
+      "definition": "The art and technique of arranging type to make written language legible and readable.",
       "domain": "design"
     },
     {
-      "@id": "ko:concept/soho-aesthetics",
+      "@id": "ko:concept/navigation",
       "@type": "ko:Concept",
-      "prefLabel": "Soho Aesthetics",
-      "altLabel": [
-        "Soho Style"
-      ],
-      "definition": "A design aesthetic characterized by minimalist, urban, and cozy elements, often associated with the soho (SoHo) district in New York City.",
-      "domain": "design"
-    },
-    {
-      "@id": "ko:concept/minimalist-design",
-      "@type": "ko:Concept",
-      "prefLabel": "Minimalist Design",
-      "altLabel": [
-        "Minimalism"
-      ],
-      "definition": "A design approach that emphasizes simplicity, clean lines, and the elimination of unnecessary elements to achieve a visually balanced and functional result.",
-      "domain": "design"
-    },
-    {
-      "@id": "ko:concept/palette-design",
-      "@type": "ko:Concept",
-      "prefLabel": "Palette Design",
-      "altLabel": [
-        "Color Palette"
-      ],
-      "definition": "The process of selecting and combining colors to create a visually harmonious and aesthetically pleasing design.",
-      "domain": "design"
-    },
-    {
-      "@id": "ko:concept/theme-customization",
-      "@type": "ko:Concept",
-      "prefLabel": "Theme Customization",
-      "altLabel": [
-        "Custom Themes"
-      ],
-      "definition": "The process of modifying or adapting a theme to suit personal preferences, often involving changes to colors, fonts, and layout.",
-      "domain": "design"
-    },
-    {
-      "@id": "ko:concept/aesthetic-themes",
-      "@type": "ko:Concept",
-      "prefLabel": "Aesthetic Themes",
-      "altLabel": [
-        "Design Themes"
-      ],
-      "definition": "Visually cohesive and stylish themes designed to evoke specific moods or vibes, often used in UI/UX design.",
-      "domain": "design"
-    },
-    {
-      "@id": "ko:concept/rose-pine-theme",
-      "@type": "ko:Concept",
-      "prefLabel": "Rosé Pine Theme",
-      "altLabel": [
-        "Rose Pine"
-      ],
-      "definition": "A visually appealing and minimalist theme inspired by natural pine, faux fur, and soho aesthetics, designed for classy minimalists.",
-      "domain": "design"
-    },
-    {
-      "@id": "ko:concept/soho-aesthetics",
-      "@type": "ko:Concept",
-      "prefLabel": "Soho Aesthetics",
-      "altLabel": [
-        "Soho Style"
-      ],
-      "definition": "A design aesthetic characterized by minimalist, urban, and cozy elements, often associated with the soho (SoHo) district in New York City.",
-      "domain": "design"
-    },
-    {
-      "@id": "ko:concept/minimalist-design",
-      "@type": "ko:Concept",
-      "prefLabel": "Minimalist Design",
-      "altLabel": [
-        "Minimalism"
-      ],
-      "definition": "A design approach that emphasizes simplicity, clean lines, and the elimination of unnecessary elements to achieve a visually balanced and functional result.",
-      "domain": "design"
-    },
-    {
-      "@id": "ko:concept/palette-design",
-      "@type": "ko:Concept",
-      "prefLabel": "Palette Design",
-      "altLabel": [
-        "Color Palette"
-      ],
-      "definition": "The process of selecting and combining colors to create a visually harmonious and aesthetically pleasing design.",
-      "domain": "design"
-    },
-    {
-      "@id": "ko:concept/theme-customization",
-      "@type": "ko:Concept",
-      "prefLabel": "Theme Customization",
-      "altLabel": [
-        "Custom Themes"
-      ],
-      "definition": "The process of modifying or adapting a theme to suit personal preferences, often involving changes to colors, fonts, and layout.",
-      "domain": "design"
-    },
-    {
-      "@id": "ko:concept/aesthetic-themes",
-      "@type": "ko:Concept",
-      "prefLabel": "Aesthetic Themes",
-      "altLabel": [
-        "Design Themes"
-      ],
-      "definition": "Visually cohesive and stylish themes designed to evoke specific moods or vibes, often used in UI/UX design.",
+      "prefLabel": "Navigation",
+      "definition": "Design patterns and techniques for guiding users through digital interfaces.",
       "domain": "design"
     }
   ]

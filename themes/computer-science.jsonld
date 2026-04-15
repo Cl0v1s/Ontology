@@ -11,24 +11,10 @@
   },
   "@graph": [
     {
-      "@id": "ko:concept/memory-safety",
-      "@type": "ko:Concept",
-      "prefLabel": "Memory Safety",
-      "altLabel": [
-        "memory safety"
-      ],
-      "definition": "Approche de Zig pour équilibrer sécurité et performance via une gestion explicite de la mémoire.",
-      "domain": "computer science"
+
     },
     {
-      "@id": "ko:concept/memory-safety",
-      "@type": "ko:Concept",
-      "prefLabel": "Memory Safety",
-      "altLabel": [
-        "memory safety"
-      ],
-      "definition": "Approche de Zig pour équilibrer sécurité et performance via une gestion explicite de la mémoire.",
-      "domain": "computer science"
+
     }
   ]
 }

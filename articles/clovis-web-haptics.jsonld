@@ -20,11 +20,52 @@
       "language": "en",
       "abstract": "A tool for adding haptic feedback to mobile web applications, supporting React, Vue, and Svelte.",
       "hasAuthor": "ko:author/clovis",
-      "introduces": ["ko:concept/haptic-feedback", "ko:concept/web-haptics-library"],
-      "uses": ["ko:concept/react", "ko:concept/vue", "ko:concept/svelte"],
-      "exemplifies": ["ko:concept/mobile-web-enhancement"],
-      "hasFeature": ["ko:concept/cross-framework-support"],
-      "usesLanguage": ["ko:concept/english"]
+      "introduces": [
+        "ko:concept/haptic-feedback",
+        "ko:concept/web-haptics-library"
+      ],
+      "uses": [
+        "ko:concept/react",
+        "ko:concept/vue",
+        "ko:concept/svelte"
+      ],
+      "exemplifies": [
+        "ko:concept/mobile-web-enhancement"
+      ],
+      "hasFeature": [
+        "ko:concept/cross-framework-support"
+      ],
+      "usesLanguage": [
+        "ko:concept/english"
+      ]
+    },
+    {
+      "@id": "ko:concept/haptic-feedback",
+      "@type": "ko:Concept",
+      "prefLabel": "Haptic Feedback",
+      "definition": "Tactile feedback delivered to a user through vibrations or forces, simulating the sense of touch.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/web-haptics-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Web Haptics Library",
+      "definition": "A JavaScript library that provides haptic feedback capabilities for web applications on mobile devices.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/mobile-web-enhancement",
+      "@type": "ko:Concept",
+      "prefLabel": "Mobile Web Enhancement",
+      "definition": "Techniques and features that improve the user experience of web applications on mobile devices.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/cross-framework-support",
+      "@type": "ko:Concept",
+      "prefLabel": "Cross-Framework Support",
+      "definition": "The ability of a library or tool to work with multiple JavaScript frameworks such as React, Vue, and Svelte.",
+      "domain": "software engineering"
     }
   ]
 }

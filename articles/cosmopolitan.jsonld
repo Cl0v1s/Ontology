@@ -18,9 +18,19 @@
       "readDate": "2026-03-10",
       "language": "en",
       "abstract": "Bibliothèque C/C++ permettant de créer des exécutables polyglottes fonctionnant sur Linux, macOS, Windows et d'autres systèmes sans recompilation.",
-      "uses": ["ko:concept/outil-de-transformation", "ko:concept/embedded-systems", "ko:concept/cross-platform-development"],
-      "hasFeature": ["ko:concept/build-once-run-anywhere", "ko:concept/polyglot-executables"],
-      "usesLanguage": ["ko:concept/language-c", "ko:concept/language-cpp"]
+      "uses": [
+        "ko:concept/outil-de-transformation",
+        "ko:concept/embedded-systems",
+        "ko:concept/cross-platform-development"
+      ],
+      "hasFeature": [
+        "ko:concept/build-once-run-anywhere",
+        "ko:concept/polyglot-executables"
+      ],
+      "usesLanguage": [
+        "ko:concept/language-c",
+        "ko:concept/language-cpp"
+      ]
     },
     {
       "@id": "ko:concept/build-once-run-anywhere",
@@ -30,18 +40,12 @@
       "domain": "cross-platform development"
     },
     {
-      "@id": "ko:concept/polyglot-executables",
-      "@type": "ko:Concept",
-      "prefLabel": "Exécutables polyglottes",
-      "definition": "Fichiers binaires valides simultanément pour plusieurs systèmes d'exploitation (Linux, macOS, Windows, etc.).",
-      "domain": "cross-platform development",
-      "related": ["ko:concept/build-once-run-anywhere"]
-    },
-    {
       "@id": "ko:concept/cross-platform-development",
       "@type": "ko:Concept",
       "prefLabel": "Développement multiplateforme",
-      "altLabel": ["cross-platform development"],
+      "altLabel": [
+        "cross-platform development"
+      ],
       "definition": "Développement de logiciels compatibles avec plusieurs systèmes d'exploitation ou environnements d'exécution.",
       "domain": "software engineering"
     }

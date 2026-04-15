@@ -7,6 +7,7 @@
  *   find  <keyword>   Search concepts/articles by keyword
  *   validate          Check the ontology for structural errors
  *   promote <id> <theme-file>   Move a concept from an article file to a theme file
+ *   fix                         Auto-promote all concepts linked to a theme concept
  *
  * WORKFLOW FOR THE AGENT
  *   1. Run `find` to check whether the concepts you identified already exist.
@@ -14,6 +15,7 @@
  *   3. Pipe it: echo '<json>' | node ontology-cli.mjs add-article
  *   4. Read the JSON result on stdout to see what was created / skipped / warned.
  *   5. When two articles share a concept, run `promote` to move it to a theme file.
+ *   5b. Run `fix` to auto-promote all concepts linked to an existing theme concept.
  *   6. Run `validate` before every commit.
  *
  * INPUT SCHEMA FOR add-article
@@ -639,16 +641,118 @@ function cmdPromote(conceptId, themeArg) {
   const themeData = themeExists
     ? readJsonld(themePath)
     : { '@context': CONTEXT, '@graph': [] };
-  themeData['@graph'].push(conceptNode);
+  const alreadyInTheme = themeData['@graph'].some(i => i['@id'] === conceptId);
+  if (!alreadyInTheme) themeData['@graph'].push(conceptNode);
   writeJsonld(themePath, themeData);
 
   out({
-    ok:      true,
-    moved:   conceptId,
-    from:    relPath(sourceFile),
-    to:      relPath(themePath),
-    created: !themeExists,
+    ok:           true,
+    moved:        conceptId,
+    from:         relPath(sourceFile),
+    to:           relPath(themePath),
+    created:      !themeExists,
+    alreadyInTheme,
   });
+}
+
+// ── COMMAND: fix ─────────────────────────────────────────────────────────────────
+// Auto-promote concepts from article files when they are linked (broader/narrower/related)
+// to a concept already living in a theme file. Batches file I/O per source/target.
+
+function cmdFix() {
+  const index = buildIndex();
+
+  // Collect promotions: conceptId → { sourceFile, targetThemePath, node }
+  // We pick the *first* theme found via broader > narrower > related priority.
+  const promotions = new Map(); // conceptId → { sourceFile, targetThemePath, node }
+
+  for (const [id, entry] of index) {
+    if (!id.startsWith('ko:concept/')) continue;
+    if (!relPath(entry.file).startsWith('articles/')) continue;
+
+    const concept = entry.item;
+    const linkedIds = [
+      ...[concept.broader  ?? []].flat(),
+      ...[concept.narrower ?? []].flat(),
+      ...[concept.related  ?? []].flat(),
+    ];
+
+    let targetThemePath = null;
+    outer: for (const linkedId of linkedIds) {
+      const linkedEntry = index.get(linkedId);
+      if (!linkedEntry) continue;
+      for (const loc of linkedEntry.locations) {
+        if (relPath(loc.file).startsWith('themes/')) {
+          targetThemePath = loc.file;
+          break outer;
+        }
+      }
+    }
+
+    if (!targetThemePath) continue;
+
+    // If the concept is already in any theme file, we only need to clean the article.
+    const existingThemeLoc = entry.locations.find(
+      loc => relPath(loc.file).startsWith('themes/')
+    );
+
+    promotions.set(id, { sourceFile: entry.file, targetThemePath, node: concept, existingThemePath: existingThemeLoc?.file ?? null });
+  }
+
+  if (promotions.size === 0) {
+    out({ ok: true, promoted: [], cleaned: [], skipped: [] });
+    return;
+  }
+
+  // Group by source article file → Set of concept IDs to remove
+  const bySource = new Map(); // sourceFile → Set<conceptId>
+  for (const [id, { sourceFile }] of promotions) {
+    if (!bySource.has(sourceFile)) bySource.set(sourceFile, new Set());
+    bySource.get(sourceFile).add(id);
+  }
+
+  // Group by target theme file → list of { id, node } to add (only new ones)
+  const byTheme = new Map(); // targetThemePath → [{ id, node }]
+  for (const [id, { targetThemePath, node, existingThemePath }] of promotions) {
+    if (existingThemePath) continue; // already in a theme — only cleanup needed
+    if (!byTheme.has(targetThemePath)) byTheme.set(targetThemePath, []);
+    byTheme.get(targetThemePath).push({ id, node });
+  }
+
+  const result = { ok: true, promoted: [], cleaned: [], skipped: [] };
+
+  // Remove concepts from article files (one read/write per file)
+  for (const [sourceFile, ids] of bySource) {
+    const data = readJsonld(sourceFile);
+    data['@graph'] = data['@graph'].filter(i => !ids.has(i['@id']));
+    writeJsonld(sourceFile, data);
+  }
+
+  // Add concepts to theme files (one read/write per file)
+  for (const [targetThemePath, entries] of byTheme) {
+    const data = readJsonld(targetThemePath);
+    for (const { id, node } of entries) {
+      const alreadyInTarget = data['@graph'].some(i => i['@id'] === id);
+      const { sourceFile } = promotions.get(id);
+      if (alreadyInTarget) {
+        // Shouldn't normally happen (already caught above), but guard anyway
+        result.skipped.push({ '@id': id, reason: 'already in target theme', from: relPath(sourceFile), to: relPath(targetThemePath) });
+      } else {
+        data['@graph'].push(node);
+        result.promoted.push({ '@id': id, from: relPath(sourceFile), to: relPath(targetThemePath) });
+      }
+    }
+    writeJsonld(targetThemePath, data);
+  }
+
+  // Record cleanups (concepts removed from article because already in a theme)
+  for (const [id, { sourceFile, existingThemePath }] of promotions) {
+    if (existingThemePath) {
+      result.cleaned.push({ '@id': id, from: relPath(sourceFile), existsIn: relPath(existingThemePath) });
+    }
+  }
+
+  out(result);
 }
 
 // ── Dispatch ────────────────────────────────────────────────────────────────────
@@ -663,12 +767,15 @@ Commands:
   find <keyword>          Search concepts/articles by keyword
   validate                Check ontology for errors and unresolved references
   promote <id> <theme>    Move a concept from an article file to a theme file
+  fix                     Auto-promote concepts linked (broader/narrower/related)
+                          to a theme concept; batches all writes per file
 
 Examples:
   cat payload.json | node ontology-cli.mjs add-article
   node ontology-cli.mjs find "property testing"
   node ontology-cli.mjs validate
   node ontology-cli.mjs promote ko:concept/glue-work software-engineering
+  node ontology-cli.mjs fix
 `.trim();
 
 switch (command) {
@@ -676,6 +783,7 @@ switch (command) {
   case 'find':        cmdFind(args[0]); break;
   case 'validate':    cmdValidate(); break;
   case 'promote':     cmdPromote(args[0], args[1]); break;
+  case 'fix':         cmdFix(); break;
   default:
     console.error(command ? `Unknown command: ${command}\n` : '');
     console.error(HELP);

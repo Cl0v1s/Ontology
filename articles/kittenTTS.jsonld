@@ -18,33 +18,19 @@
       "readDate": "2026-03-10",
       "language": "en",
       "abstract": "Modèle de synthèse vocale léger (<25MB, 15M paramètres) optimisé pour le CPU et le traitement en temps réel. Compatible Python 3.12.",
-      "uses": ["ko:concept/outil-de-transformation", "ko:concept/text-to-speech", "ko:concept/real-time-processing"],
-      "hasFeature": ["ko:concept/text-to-speech", "ko:concept/lightweight-ml-model"],
-      "usesLanguage": ["ko:concept/language-python", "ko:concept/language-cpp"]
-    },
-    {
-      "@id": "ko:concept/text-to-speech",
-      "@type": "ko:Concept",
-      "prefLabel": "Synthèse vocale",
-      "altLabel": ["text-to-speech", "TTS"],
-      "definition": "Conversion automatique de texte écrit en parole audio.",
-      "domain": "machine learning"
-    },
-    {
-      "@id": "ko:concept/lightweight-ml-model",
-      "@type": "ko:Concept",
-      "prefLabel": "Modèle ML léger",
-      "altLabel": ["lightweight model", "small model"],
-      "definition": "Modèle de machine learning conçu pour fonctionner avec un minimum de mémoire et de ressources de calcul.",
-      "domain": "machine learning"
-    },
-    {
-      "@id": "ko:concept/real-time-processing",
-      "@type": "ko:Concept",
-      "prefLabel": "Traitement en temps réel",
-      "altLabel": ["real-time processing"],
-      "definition": "Traitement de données ou d'entrées avec une latence suffisamment faible pour sembler instantané.",
-      "domain": "software engineering"
+      "uses": [
+        "ko:concept/outil-de-transformation",
+        "ko:concept/text-to-speech",
+        "ko:concept/real-time-processing"
+      ],
+      "hasFeature": [
+        "ko:concept/text-to-speech",
+        "ko:concept/lightweight-ml-model"
+      ],
+      "usesLanguage": [
+        "ko:concept/language-python",
+        "ko:concept/language-cpp"
+      ]
     }
   ]
 }

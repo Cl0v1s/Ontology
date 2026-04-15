@@ -708,6 +708,117 @@
       "@type": "ko:Author",
       "name": "Antithesishq",
       "domain": "author"
+    },
+    {
+      "@id": "ko:author/gnome-team",
+      "@type": "ko:Author",
+      "name": "Gnome Team",
+      "domain": "author"
+    },
+    {
+      "@id": "ko:concept/english",
+      "@type": "ko:Concept",
+      "prefLabel": "English",
+      "definition": "The English language, used as the language of an article or resource.",
+      "domain": "linguistics"
+    },
+    {
+      "@id": "ko:concept/outil-de-transformation",
+      "@type": "ko:Concept",
+      "prefLabel": "Outil de Transformation",
+      "definition": "Un outil logiciel permettant de transformer, convertir ou manipuler des données d'un format à un autre.",
+      "domain": "software engineering",
+      "broader": "ko:concept/outil"
+    },
+    {
+      "@id": "ko:concept/embedded-systems",
+      "@type": "ko:Concept",
+      "prefLabel": "Embedded Systems",
+      "definition": "Computer systems with dedicated functions within larger mechanical or electronic systems, typically constrained in memory and processing power.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/language-cpp",
+      "@type": "ko:Concept",
+      "prefLabel": "C++",
+      "definition": "A general-purpose programming language with low-level memory manipulation facilities.",
+      "domain": "software engineering",
+      "broader": "ko:concept/programming-language"
+    },
+    {
+      "@id": "ko:concept/data-visualization",
+      "@type": "ko:Concept",
+      "prefLabel": "Data Visualization",
+      "definition": "The graphical representation of data and information using visual elements like charts, graphs, and maps.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/graph-algorithms",
+      "@type": "ko:Concept",
+      "prefLabel": "Graph Algorithms",
+      "definition": "Algorithms designed to operate on graph data structures, solving problems like shortest paths, spanning trees, and connectivity.",
+      "domain": "software engineering",
+      "broader": "ko:concept/algorithms"
+    },
+    {
+      "@id": "ko:concept/memory-safety",
+      "@type": "ko:Concept",
+      "prefLabel": "Memory Safety",
+      "definition": "A property of programming languages or systems that prevents memory-related errors such as buffer overflows, use-after-free, and null pointer dereferences.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/design-system",
+      "@type": "ko:Concept",
+      "prefLabel": "Design System",
+      "definition": "A collection of reusable components, patterns, and guidelines used to build consistent user interfaces.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/react",
+      "@type": "ko:Concept",
+      "prefLabel": "React",
+      "definition": "A JavaScript library for building user interfaces, maintained by Meta.",
+      "domain": "software engineering",
+      "broader": "ko:concept/front-end-development"
+    },
+    {
+      "@id": "ko:concept/vue",
+      "@type": "ko:Concept",
+      "prefLabel": "Vue.js",
+      "definition": "A progressive JavaScript framework for building user interfaces.",
+      "domain": "software engineering",
+      "broader": "ko:concept/front-end-development"
+    },
+    {
+      "@id": "ko:concept/svelte",
+      "@type": "ko:Concept",
+      "prefLabel": "Svelte",
+      "definition": "A component-based JavaScript framework that compiles components to efficient vanilla JavaScript.",
+      "domain": "software engineering",
+      "broader": "ko:concept/front-end-development"
+    },
+    {
+      "@id": "ko:concept/python-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Python Library",
+      "definition": "A reusable collection of Python modules and packages that provide specific functionality.",
+      "domain": "software engineering",
+      "broader": "ko:concept/software-library"
+    },
+    {
+      "@id": "ko:concept/llm-integration",
+      "@type": "ko:Concept",
+      "prefLabel": "LLM Integration",
+      "definition": "The process of incorporating large language models into software applications or pipelines.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/js-engine-runtime",
+      "@type": "ko:Concept",
+      "prefLabel": "JS Engine Runtime",
+      "definition": "A JavaScript engine that executes JavaScript code, typically embedded within a larger application or runtime environment.",
+      "domain": "software engineering"
     }
   ]
 }

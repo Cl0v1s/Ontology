@@ -20,11 +20,73 @@
       "language": "en",
       "abstract": "A guide to building small-scale solar power systems, covering component selection, wiring, safety, and design choices. It focuses on low-voltage DC systems for off-grid applications.",
       "hasAuthor": "ko:author/clovis",
-      "introduces": ["ko:concept/solar-power-system", "ko:concept/low-voltage-dc-systems"],
-      "uses": ["ko:concept/charge-controller", "ko:concept/battery-explosion-prevention", "ko:concept/solar-panel-installation"],
-      "exemplifies": ["ko:concept/decentralized-power-production"],
-      "hasFeature": ["ko:concept/off-grid-solar-setup"],
-      "usesLanguage": ["ko:concept/english"]
+      "introduces": [
+        "ko:concept/solar-power-system",
+        "ko:concept/low-voltage-dc-systems"
+      ],
+      "uses": [
+        "ko:concept/charge-controller",
+        "ko:concept/battery-explosion-prevention",
+        "ko:concept/solar-panel-installation"
+      ],
+      "exemplifies": [
+        "ko:concept/decentralized-power-production"
+      ],
+      "hasFeature": [
+        "ko:concept/off-grid-solar-setup"
+      ],
+      "usesLanguage": [
+        "ko:concept/english"
+      ]
+    },
+    {
+      "@id": "ko:concept/solar-power-system",
+      "@type": "ko:Concept",
+      "prefLabel": "Solar Power System",
+      "definition": "A system that converts sunlight into electricity using photovoltaic panels and associated components.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/low-voltage-dc-systems",
+      "@type": "ko:Concept",
+      "prefLabel": "Low-Voltage DC Systems",
+      "definition": "Electrical systems operating at low voltages using direct current, commonly used in off-grid solar applications.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/charge-controller",
+      "@type": "ko:Concept",
+      "prefLabel": "Charge Controller",
+      "definition": "A device that regulates the voltage and current from solar panels to batteries, preventing overcharging.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/battery-explosion-prevention",
+      "@type": "ko:Concept",
+      "prefLabel": "Battery Explosion Prevention",
+      "definition": "Safety measures and practices to prevent battery failures, thermal runaway, and explosions in energy storage systems.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/solar-panel-installation",
+      "@type": "ko:Concept",
+      "prefLabel": "Solar Panel Installation",
+      "definition": "The process of physically mounting and wiring solar panels for optimal energy capture.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/decentralized-power-production",
+      "@type": "ko:Concept",
+      "prefLabel": "Decentralized Power Production",
+      "definition": "The generation of electricity at or near the point of consumption rather than at a central plant.",
+      "domain": "ecology"
+    },
+    {
+      "@id": "ko:concept/off-grid-solar-setup",
+      "@type": "ko:Concept",
+      "prefLabel": "Off-Grid Solar Setup",
+      "definition": "A solar power installation that operates independently from the utility grid, using battery storage.",
+      "domain": "ecology"
     }
   ]
 }

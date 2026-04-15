@@ -699,16 +699,6 @@
       "domain": "software engineering"
     },
     {
-      "@id": "ko:concept/native-development",
-      "@type": "ko:Concept",
-      "prefLabel": "Native Development",
-      "altLabel": [
-        "native app development"
-      ],
-      "definition": "Développement d'applications qui s'exécutent directement sur le système d'exploitation sans sandboxing du navigateur.",
-      "domain": "software engineering"
-    },
-    {
       "@id": "ko:concept/front-end-development",
       "@type": "ko:Concept",
       "prefLabel": "Développement front-end",
@@ -935,147 +925,81 @@
       "domain": "software engineering"
     },
     {
-      "@id": "ko:concept/zig-standard-library",
+      "@id": "ko:concept/bombadil",
       "@type": "ko:Concept",
-      "prefLabel": "Zig Standard Library",
-      "altLabel": [
-        "std",
-        "zig std"
-      ],
-      "definition": "Bibliothèque standard de Zig contenant des algorithmes, structures de données et définitions couramment utilisés pour aider à construire des programmes ou bibliothèques. Robust, optimal, et reusable.",
-      "domain": "software engineering"
+      "prefLabel": "Bombadil",
+      "definition": "A property-based testing tool for web UIs, autonomously exploring and validating correctness properties.",
+      "domain": "software engineering",
+      "broader": "ko:concept/property-based-testing"
     },
     {
-      "@id": "ko:concept/zero-cost-abstractions",
+      "@id": "ko:concept/state-space-exploration",
       "@type": "ko:Concept",
-      "prefLabel": "Zero-cost Abstractions",
-      "altLabel": [
-        "zero-cost abstractions"
-      ],
-      "definition": "Optimisations au moment de la compilation qui n'ajoutent pas d'overhead en temps d'exécution.",
-      "domain": "software engineering"
+      "prefLabel": "State Space Exploration",
+      "definition": "The systematic exploration of all possible states of a system to identify potential bugs or edge cases.",
+      "domain": "software engineering",
+      "broader": "ko:concept/property-based-testing"
     },
     {
-      "@id": "ko:concept/front-end-development",
+      "@id": "ko:concept/specification-language",
       "@type": "ko:Concept",
-      "prefLabel": "Développement front-end",
-      "altLabel": [
-        "front-end development",
-        "client-side development"
-      ],
-      "definition": "Développement de la partie visible d'une application web, exécutée dans le navigateur.",
-      "domain": "software engineering"
+      "prefLabel": "Specification Language",
+      "definition": "A domain-specific language used to define properties and action generators for testing web applications.",
+      "domain": "software engineering",
+      "broader": "ko:concept/property-based-testing"
     },
     {
-      "@id": "ko:concept/retrozone-display-engine",
+      "@id": "ko:concept/python",
       "@type": "ko:Concept",
-      "prefLabel": "RetroZone Display Engine",
-      "altLabel": [
-        "RetroZone"
-      ],
-      "definition": "Moteur d'affichage rétro pour jeux HTML5 qui applique des effets authentiques CRT et vector via WebGL shaders. Zéro dépendance, fonctionne avec n'importe quel canvas.",
-      "domain": "software engineering"
+      "prefLabel": "Python",
+      "definition": "Interpreted programming language used for developing security tools, scripts and automation.",
+      "domain": "programming",
+      "broader": "ko:concept/programming-language"
     },
     {
-      "@id": "ko:concept/zig-standard-library",
+      "@id": "ko:concept/schemathesis",
       "@type": "ko:Concept",
-      "prefLabel": "Zig Standard Library",
+      "prefLabel": "Schemathesis",
       "altLabel": [
-        "zig std",
-        "Zig standard library"
+        "Schemathesis.io"
       ],
-      "definition": "Bibliothèque standard de Zig contenant des algorithmes, structures de données et définitions couramment utilisés pour construire des programmes ou bibliothèques.",
-      "domain": "software engineering"
+      "definition": "An open-source API testing tool that generates tests from OpenAPI and GraphQL schemas using property-based testing.",
+      "domain": "software engineering, testing, API development",
+      "broader": "ko:concept/property-based-testing"
     },
     {
-      "@id": "ko:concept/robust-software",
+      "@id": "ko:concept/test-generation",
       "@type": "ko:Concept",
-      "prefLabel": "Logiciel robuste",
-      "altLabel": [
-        "robust software"
-      ],
-      "definition": "Code qui se comporte correctement même dans des cas limites comme la gestion de la mémoire épuisée.",
-      "domain": "software engineering"
+      "prefLabel": "Test Generation",
+      "definition": "The process of automatically generating test cases from API schemas to validate behavior and detect bugs.",
+      "domain": "software engineering, testing",
+      "broader": "ko:concept/schemathesis"
     },
     {
-      "@id": "ko:concept/optimal-code",
+      "@id": "ko:concept/cli-schemathesis",
       "@type": "ko:Concept",
-      "prefLabel": "Code optimal",
-      "altLabel": [
-        "optimal code"
-      ],
-      "definition": "Programmes qui se comportent et performent de la meilleure manière possible.",
-      "domain": "software engineering"
+      "prefLabel": "Schemathesis CLI",
+      "definition": "The command-line interface for Schemathesis, used to run tests and generate test cases from OpenAPI/GraphQL schemas.",
+      "domain": "software engineering, testing",
+      "broader": "ko:concept/schemathesis"
     },
     {
-      "@id": "ko:concept/reusable-code",
+      "@id": "ko:concept/ci-cd-integration-schemathesis",
       "@type": "ko:Concept",
-      "prefLabel": "Code réutilisable",
-      "altLabel": [
-        "reusable code"
-      ],
-      "definition": "Même code qui fonctionne dans de nombreux environnements ayant des contraintes différentes.",
-      "domain": "software engineering"
+      "prefLabel": "Schemathesis CI/CD Integration",
+      "definition": "Integration of Schemathesis into CI/CD pipelines (e.g., GitHub Actions, GitLab CI) for automated API testing.",
+      "domain": "software engineering, DevOps",
+      "broader": "ko:concept/schemathesis"
     },
     {
-      "@id": "ko:concept/maintainable-code",
+      "@id": "ko:concept/docker-schemathesis",
       "@type": "ko:Concept",
-      "prefLabel": "Code maintenable",
-      "altLabel": [
-        "maintainable code"
-      ],
-      "definition": "Code qui communique précisément l'intention au compilateur et autres programmeurs, avec une faible surcharge de lecture.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/programming-language",
-      "@type": "ko:Concept",
-      "prefLabel": "Langage de programmation",
-      "altLabel": [
-        "programming language"
-      ],
-      "definition": "Système formel pour exprimer des algorithmes et programmes informatiques.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/data-structure",
-      "@type": "ko:Concept",
-      "prefLabel": "Structure de données",
-      "altLabel": [
-        "data structure"
-      ],
-      "definition": "Méthode d'organisation et de stockage des données pour un accès et une modification efficaces.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/algorithms",
-      "@type": "ko:Concept",
-      "prefLabel": "Algorithmes",
-      "altLabel": [
-        "algorithms"
-      ],
-      "definition": "Ensemble fini d'instructions pour résoudre un problème spécifique.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/software-library",
-      "@type": "ko:Concept",
-      "prefLabel": "Bibliothèque logicielle",
-      "altLabel": [
-        "software library"
-      ],
-      "definition": "Collection de code réutilisable pour construire des programmes ou bibliothèques.",
-      "domain": "software engineering"
-    },
-    {
-      "@id": "ko:concept/toolchain",
-      "@type": "ko:Concept",
-      "prefLabel": "Chaîne d'outils",
-      "altLabel": [
-        "toolchain"
-      ],
-      "definition": "Ensemble d'outils utilisés pour développer, compiler et déployer un logiciel.",
-      "domain": "software engineering"
+      "prefLabel": "Schemathesis Docker Image",
+      "definition": "The official Docker image for running Schemathesis without local installation, enabling easy integration into CI/CD pipelines.",
+      "domain": "software engineering, containerization",
+      "related": [
+        "ko:concept/cli-schemathesis"
+      ]
     }
   ]
 }

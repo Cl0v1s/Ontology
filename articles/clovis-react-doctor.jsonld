@@ -102,13 +102,6 @@
       "domain": "software engineering"
     },
     {
-      "@id": "ko:concept/accessibility",
-      "@type": "ko:Concept",
-      "prefLabel": "Accessibility",
-      "definition": "Designing applications that are usable by people with disabilities, including visual, auditory, motor, and cognitive impairments.",
-      "domain": "software engineering"
-    },
-    {
       "@id": "ko:concept/framework-specific-rules",
       "@type": "ko:Concept",
       "prefLabel": "Framework-Specific Rules",

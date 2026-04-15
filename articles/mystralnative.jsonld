@@ -33,11 +33,7 @@
       "@id": "ko:concept/mystral-native",
       "@type": "ko:Concept",
       "prefLabel": "Mystral Native",
-      "altLabel": [
-        "Mystral Native.js",
-        "mystral"
-      ],
-      "definition": "Runtime léger qui permet d'écrire des jeux en utilisant les API Web familières (WebGPU, Canvas, Audio, fetch) et de les exécuter comme applications natives de bureau sur macOS, Windows et Linux. Think of it as 'Electron for games' but without Chromium — just your game code, a JS engine, and native WebGPU rendering.",
+      "definition": "A native WebGPU JavaScript runtime with SDL3 that runs JavaScript/TypeScript games as native applications without Chromium.",
       "domain": "software engineering"
     }
   ]

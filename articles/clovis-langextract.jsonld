@@ -20,11 +20,59 @@
       "language": "en",
       "abstract": "A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.",
       "hasAuthor": "ko:author/clovis",
-      "introduces": ["ko:concept/structured-text-extraction", "ko:concept/source-grounding"],
-      "uses": ["ko:concept/python-library", "ko:concept/llm-integration", "ko:concept/gemini-models"],
-      "exemplifies": ["ko:concept/long-document-processing"],
-      "hasFeature": ["ko:concept/interactive-visualization"],
-      "usesLanguage": ["ko:concept/english"]
+      "introduces": [
+        "ko:concept/structured-text-extraction",
+        "ko:concept/source-grounding"
+      ],
+      "uses": [
+        "ko:concept/python-library",
+        "ko:concept/llm-integration",
+        "ko:concept/gemini-models"
+      ],
+      "exemplifies": [
+        "ko:concept/long-document-processing"
+      ],
+      "hasFeature": [
+        "ko:concept/interactive-visualization"
+      ],
+      "usesLanguage": [
+        "ko:concept/english"
+      ]
+    },
+    {
+      "@id": "ko:concept/structured-text-extraction",
+      "@type": "ko:Concept",
+      "prefLabel": "Structured Text Extraction",
+      "definition": "The process of extracting structured information from unstructured or semi-structured text using NLP or LLM techniques.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/source-grounding",
+      "@type": "ko:Concept",
+      "prefLabel": "Source Grounding",
+      "definition": "The ability to link extracted information back to its precise source location in the original document.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/gemini-models",
+      "@type": "ko:Concept",
+      "prefLabel": "Gemini Models",
+      "definition": "Google's family of large language models used for text understanding, generation, and multimodal tasks.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/long-document-processing",
+      "@type": "ko:Concept",
+      "prefLabel": "Long Document Processing",
+      "definition": "Techniques for handling documents that exceed typical context window limits of language models.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/interactive-visualization",
+      "@type": "ko:Concept",
+      "prefLabel": "Interactive Visualization",
+      "definition": "A data visualization that allows users to explore and interact with data dynamically.",
+      "domain": "software engineering"
     }
   ]
 }

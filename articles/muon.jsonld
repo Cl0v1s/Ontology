@@ -18,26 +18,19 @@
       "readDate": "2026-03-10",
       "language": "en",
       "abstract": "Bibliothèque Rust pour la visualisation interactive de graphes, avec des bindings Python.",
-      "uses": ["ko:concept/outil-de-visualisation", "ko:concept/data-visualization", "ko:concept/graph-algorithms"],
-      "hasFeature": ["ko:concept/interactive-graph-visualization", "ko:concept/interactive-gui"],
-      "usesLanguage": ["ko:concept/language-rust", "ko:concept/language-python"]
-    },
-    {
-      "@id": "ko:concept/interactive-graph-visualization",
-      "@type": "ko:Concept",
-      "prefLabel": "Visualisation interactive de graphes",
-      "altLabel": ["interactive graph visualization"],
-      "definition": "Représentation visuelle de graphes (nœuds et arêtes) avec interaction en temps réel.",
-      "domain": "data visualization",
-      "broader": "ko:concept/data-visualization"
-    },
-    {
-      "@id": "ko:concept/interactive-gui",
-      "@type": "ko:Concept",
-      "prefLabel": "Interface graphique interactive",
-      "altLabel": ["interactive GUI"],
-      "definition": "Interface utilisateur permettant des interactions directes via des éléments visuels.",
-      "domain": "software engineering"
+      "uses": [
+        "ko:concept/outil-de-visualisation",
+        "ko:concept/data-visualization",
+        "ko:concept/graph-algorithms"
+      ],
+      "hasFeature": [
+        "ko:concept/interactive-graph-visualization",
+        "ko:concept/interactive-gui"
+      ],
+      "usesLanguage": [
+        "ko:concept/language-rust",
+        "ko:concept/language-python"
+      ]
     }
   ]
 }

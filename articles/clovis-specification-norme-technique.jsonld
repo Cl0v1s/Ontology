@@ -20,11 +20,65 @@
       "language": "fr",
       "abstract": "A technical specification defines the requirements, characteristics, and standards for a product or system. It serves as a formal document that guides development and ensures consistency.",
       "hasAuthor": "ko:author/clovis",
-      "introduces": ["ko:concept/technical-specification", "ko:concept/norme-technique"],
-      "uses": ["ko:concept/standardization", "ko:concept/quality-control"],
-      "exemplifies": ["ko:concept/engineering-documentation"],
-      "hasFeature": ["ko:concept/formal-requirements"],
-      "usesLanguage": ["ko:concept/french"]
+      "introduces": [
+        "ko:concept/technical-specification",
+        "ko:concept/norme-technique"
+      ],
+      "uses": [
+        "ko:concept/standardization",
+        "ko:concept/quality-control"
+      ],
+      "exemplifies": [
+        "ko:concept/engineering-documentation"
+      ],
+      "hasFeature": [
+        "ko:concept/formal-requirements"
+      ],
+      "usesLanguage": [
+        "ko:concept/french"
+      ]
+    },
+    {
+      "@id": "ko:concept/technical-specification",
+      "@type": "ko:Concept",
+      "prefLabel": "Technical Specification",
+      "definition": "A formal document that defines the requirements, characteristics, and standards for a product or system.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/norme-technique",
+      "@type": "ko:Concept",
+      "prefLabel": "Norme Technique",
+      "definition": "Un document établi par consensus et approuvé par un organisme reconnu, qui fournit des règles, lignes directrices ou caractéristiques pour des usages communs et répétés.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/standardization",
+      "@type": "ko:Concept",
+      "prefLabel": "Standardization",
+      "definition": "The process of implementing and developing technical standards based on consensus of different parties.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/quality-control",
+      "@type": "ko:Concept",
+      "prefLabel": "Quality Control",
+      "definition": "A process by which entities review the quality of all factors involved in production or service delivery.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/engineering-documentation",
+      "@type": "ko:Concept",
+      "prefLabel": "Engineering Documentation",
+      "definition": "Technical documents that describe the design, architecture, requirements, and behavior of engineering systems.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/formal-requirements",
+      "@type": "ko:Concept",
+      "prefLabel": "Formal Requirements",
+      "definition": "Precisely stated, unambiguous requirements that define what a system must do or achieve.",
+      "domain": "software engineering"
     }
   ]
 }

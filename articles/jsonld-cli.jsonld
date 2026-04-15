@@ -18,40 +18,17 @@
       "readDate": "2026-03-10",
       "language": "en",
       "abstract": "Outil en ligne de commande pour manipuler des données JSON-LD : compactage, expansion, validation et canonisation.",
-      "uses": ["ko:concept/outil-de-transformation", "ko:concept/json-ld"],
-      "hasFeature": ["ko:concept/jsonld-transformation", "ko:concept/data-canonization"],
-      "usesLanguage": ["ko:concept/language-javascript"]
-    },
-    {
-      "@id": "ko:concept/jsonld-transformation",
-      "@type": "ko:Concept",
-      "prefLabel": "Transformation JSON-LD",
-      "definition": "Opérations sur des documents JSON-LD : compactage, expansion, aplatissement, conversion en RDF.",
-      "domain": "semantic web"
-    },
-    {
-      "@id": "ko:concept/data-canonization",
-      "@type": "ko:Concept",
-      "prefLabel": "Canonisation de données",
-      "altLabel": ["data canonization", "RDF dataset normalization"],
-      "definition": "Processus produisant une représentation normalisée et déterministe d'un graphe RDF.",
-      "domain": "semantic web"
-    },
-    {
-      "@id": "ko:concept/language-javascript",
-      "@type": "ko:Concept",
-      "prefLabel": "JavaScript",
-      "altLabel": ["JS", "Node.js"],
-      "definition": "Langage de programmation interprété, initialement conçu pour le web, aussi utilisé côté serveur via Node.js.",
-      "domain": "programming languages"
-    },
-    {
-      "@id": "ko:concept/json-ld",
-      "@type": "ko:Concept",
-      "prefLabel": "JSON-LD",
-      "altLabel": ["JSON for Linked Data"],
-      "definition": "Format de données basé sur JSON pour représenter des données liées selon les principes du web sémantique.",
-      "domain": "semantic web"
+      "uses": [
+        "ko:concept/outil-de-transformation",
+        "ko:concept/json-ld"
+      ],
+      "hasFeature": [
+        "ko:concept/jsonld-transformation",
+        "ko:concept/data-canonization"
+      ],
+      "usesLanguage": [
+        "ko:concept/language-javascript"
+      ]
     }
   ]
 }

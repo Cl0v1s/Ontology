@@ -125,14 +125,6 @@
       "prefLabel": "Cybersecurity",
       "definition": "Practices, technologies and processes aimed at protecting systems, networks and programs from digital attacks.",
       "domain": "technology"
-    },
-    {
-      "@id": "ko:concept/python",
-      "@type": "ko:Concept",
-      "prefLabel": "Python",
-      "definition": "Interpreted programming language used for developing security tools, scripts and automation.",
-      "domain": "programming",
-      "broader": "ko:concept/programming-language"
     }
   ]
 }

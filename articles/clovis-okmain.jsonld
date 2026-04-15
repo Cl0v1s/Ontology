@@ -20,11 +20,74 @@
       "language": "en",
       "abstract": "A library for finding the main color of an image using advanced techniques like colour clustering and Oklab calculations.",
       "hasAuthor": "ko:author/clovis",
-      "introduces": ["ko:concept/colour-clustering", "ko:concept/oklab-calculations"],
-      "uses": ["ko:concept/k-means-clustering", "ko:concept/rust-implementation", "ko:concept/python-wrapper"],
-      "exemplifies": ["ko:concept/image-color-extraction"],
-      "hasFeature": ["ko:concept/perceptual-colour-mixing"],
-      "usesLanguage": ["ko:concept/english"]
+      "introduces": [
+        "ko:concept/colour-clustering",
+        "ko:concept/oklab-calculations"
+      ],
+      "uses": [
+        "ko:concept/k-means-clustering",
+        "ko:concept/rust-implementation",
+        "ko:concept/python-wrapper"
+      ],
+      "exemplifies": [
+        "ko:concept/image-color-extraction"
+      ],
+      "hasFeature": [
+        "ko:concept/perceptual-colour-mixing"
+      ],
+      "usesLanguage": [
+        "ko:concept/english"
+      ]
+    },
+    {
+      "@id": "ko:concept/colour-clustering",
+      "@type": "ko:Concept",
+      "prefLabel": "Colour Clustering",
+      "definition": "The grouping of similar colors in an image using clustering algorithms to identify dominant colors.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/oklab-calculations",
+      "@type": "ko:Concept",
+      "prefLabel": "Oklab Calculations",
+      "definition": "Mathematical operations performed in the Oklab perceptual color space, designed for uniform color perception.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/k-means-clustering",
+      "@type": "ko:Concept",
+      "prefLabel": "K-Means Clustering",
+      "definition": "A machine learning algorithm that partitions data into k clusters based on feature similarity.",
+      "domain": "software engineering",
+      "broader": "ko:concept/algorithms"
+    },
+    {
+      "@id": "ko:concept/rust-implementation",
+      "@type": "ko:Concept",
+      "prefLabel": "Rust Implementation",
+      "definition": "The implementation of a library or algorithm in the Rust programming language for performance and safety.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/python-wrapper",
+      "@type": "ko:Concept",
+      "prefLabel": "Python Wrapper",
+      "definition": "A Python interface that wraps a library written in another language (e.g., Rust or C) for ease of use.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/image-color-extraction",
+      "@type": "ko:Concept",
+      "prefLabel": "Image Color Extraction",
+      "definition": "The process of identifying and extracting dominant or representative colors from an image.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/perceptual-colour-mixing",
+      "@type": "ko:Concept",
+      "prefLabel": "Perceptual Colour Mixing",
+      "definition": "Color blending that produces results consistent with human visual perception, using perceptual color spaces.",
+      "domain": "software engineering"
     }
   ]
 }

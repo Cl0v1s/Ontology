@@ -19,16 +19,6 @@
       ],
       "definition": "Utilitaires de rendu conçus pour l'API Graphics de Phaser, incluant projection 3D et systèmes d'explosions.",
       "domain": "game development"
-    },
-    {
-      "@id": "ko:concept/phaser-integration",
-      "@type": "ko:Concept",
-      "prefLabel": "Phaser Integration",
-      "altLabel": [
-        "Phaser graphics API"
-      ],
-      "definition": "Utilitaires de rendu conçus pour l'API Graphics de Phaser, incluant projection 3D et systèmes d'explosions.",
-      "domain": "game development"
     }
   ]
 }
