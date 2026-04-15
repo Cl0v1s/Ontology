@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/jon-charter-things-you-didnt-know-about-indexes",
+      "@type": "ko:Article",
+      "title": "Things you didn't know about indexes",
+      "url": "https://jon.chrt.dev/2026/04/15/things-you-didnt-know-about-indexes.html",
+      "publishedDate": "2026-04-15",
+      "readDate": "2026-04-16",
+      "language": "en",
+      "abstract": "A deep dive into database indexes, covering their purpose, performance implications, and advanced use cases like INCLUDE columns in PostgreSQL.",
+      "introduces": [
+        "ko:concept/database-indexes-advanced-usage"
+      ],
+      "uses": [
+        
+        "ko:concept/sql-performance-optimization"
+      ],
+      "hasFeature": [
+        "ko:concept/covering-indexes",
+        "ko:concept/postgresql-features"
+      ]
+    },
+    {
+      "@id": "ko:concept/database-indexes-advanced-usage",
+      "@type": "ko:Concept",
+      "prefLabel": "Database Indexes Advanced Usage",
+      "definition": "Advanced techniques for using database indexes, including INCLUDE columns, performance optimization, and avoiding common pitfalls.",
+      "domain": "database engineering"
+    },
+    {
+      "@id": "ko:concept/covering-indexes",
+      "@type": "ko:Concept",
+      "prefLabel": "Covering Indexes",
+      "definition": "Indexes that include additional columns to avoid table lookups, improving query performance without sorting or uniqueness constraints.",
+      "domain": "database engineering"
+    },
+    {
+      "@id": "ko:concept/postgresql-features",
+      "@type": "ko:Concept",
+      "prefLabel": "PostgreSQL Features",
+      "definition": "Advanced features of PostgreSQL, including INCLUDE columns and unique index semantics for performance optimization.",
+      "domain": "database engineering"
+    },
+    {
+      "@id": "ko:concept/sql-performance-optimization",
+      "@type": "ko:Concept",
+      "prefLabel": "SQL Performance Optimization",
+      "definition": "Strategies to optimize SQL query performance, including indexing, query restructuring, and avoiding full table scans.",
+      "domain": "database engineering"
+    }
+  ]
+}
