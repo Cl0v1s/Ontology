@@ -1000,6 +1000,37 @@
       "related": [
         "ko:concept/cli-schemathesis"
       ]
+    },
+    {
+      "@id": "ko:concept/k-means-clustering",
+      "@type": "ko:Concept",
+      "prefLabel": "K-Means Clustering",
+      "definition": "A machine learning algorithm that partitions data into k clusters based on feature similarity.",
+      "domain": "software engineering",
+      "broader": "ko:concept/algorithms"
+    },
+    {
+      "@id": "ko:concept/online-k-means",
+      "@type": "ko:Concept",
+      "prefLabel": "Online K-Means (OKM)",
+      "altLabel": [
+        "online k-means clustering"
+      ],
+      "definition": "A variant of k-means clustering where palette refinement happens sequentially during pixel processing, rather than in batch iterations.",
+      "domain": "software engineering",
+      "broader": "ko:concept/k-means-clustering"
+    },
+    {
+      "@id": "ko:concept/maximin-k-means-initializer",
+      "@type": "ko:Concept",
+      "prefLabel": "Maximin K-Means Initializer",
+      "altLabel": [
+        "maximin initializer",
+        "maximum coverage initializer"
+      ],
+      "definition": "A deterministic variant of the k-means++ initializer that selects cluster centers based on maximum coverage.",
+      "domain": "software engineering",
+      "broader": "ko:concept/k-means-clustering"
     }
   ]
 }

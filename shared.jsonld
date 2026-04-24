@@ -819,6 +819,18 @@
       "prefLabel": "JS Engine Runtime",
       "definition": "A JavaScript engine that executes JavaScript code, typically embedded within a larger application or runtime environment.",
       "domain": "software engineering"
+    },
+    {
+      "@id": "ko:author/david-crawshaw",
+      "@type": "ko:Author",
+      "name": "David Crawshaw",
+      "domain": "author"
+    },
+    {
+      "@id": "ko:author/pekkavaanenen",
+      "@type": "ko:Author",
+      "name": "Pekka Väänänen",
+      "domain": "author"
     }
   ]
 }

@@ -54,14 +54,6 @@
       "domain": "software engineering"
     },
     {
-      "@id": "ko:concept/k-means-clustering",
-      "@type": "ko:Concept",
-      "prefLabel": "K-Means Clustering",
-      "definition": "A machine learning algorithm that partitions data into k clusters based on feature similarity.",
-      "domain": "software engineering",
-      "broader": "ko:concept/algorithms"
-    },
-    {
       "@id": "ko:concept/rust-implementation",
       "@type": "ko:Concept",
       "prefLabel": "Rust Implementation",
