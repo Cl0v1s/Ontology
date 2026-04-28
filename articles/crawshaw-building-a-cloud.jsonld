@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/crawshaw-building-a-cloud",
+      "@type": "ko:Article",
+      "title": "crawshaw - 2026-04-22",
+      "url": "https://crawshaw.io/blog/building-a-cloud",
+      "publishedDate": "2026-04-22",
+      "readDate": "2026-04-24",
+      "language": "en",
+      "abstract": "L'auteur critique les abstractions actuelles des clouds (VM, PaaS, disk, networking) et présente son projet exe.dev pour construire un cloud alternatif.",
+      "hasAuthor": "ko:author/david-crawshaw",
+      "introduces": [
+        "ko:concept/cloud-computing-critique",
+        "ko:concept/virtual-machines-issues",
+        "ko:concept/paas-abstractions",
+        "ko:concept/disk-storage-local-vs-remote",
+        "ko:concept/networking-cloud-limits",
+        "ko:concept/kubernetes-limitations",
+        "ko:concept/jevons-paradox-software",
+        "ko:concept/exe-dev-project"
+      ],
+      "uses": [
+        "ko:concept/agent-first-design"
+      ],
+      "critiques": [
+        "ko:concept/cloud-computing-critique"
+      ],
+      "exemplifies": [
+        "ko:concept/virtual-machines-issues",
+        "ko:concept/paas-abstractions"
+      ],
+      "hasFeature": [
+        "ko:concept/exe-dev-project"
+      ]
+    },
+    {
+      "@id": "ko:concept/cloud-computing-critique",
+      "@type": "ko:Concept",
+      "prefLabel": "Cloud Computing Critique",
+      "definition": "Critique des abstractions actuelles des clouds (VM, PaaS, disk, networking) et de leurs limitations.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/virtual-machines-issues",
+      "@type": "ko:Concept",
+      "prefLabel": "Virtual Machines Issues",
+      "definition": "Problèmes avec les machines virtuelles, notamment l'isolation des ressources et la performance.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/paas-abstractions",
+      "@type": "ko:Concept",
+      "prefLabel": "PaaS Abstractions",
+      "definition": "Abstractions limitées des plateformes as a service (PaaS) et leurs contraintes.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/disk-storage-local-vs-remote",
+      "@type": "ko:Concept",
+      "prefLabel": "Disk Storage Local vs Remote",
+      "definition": "Comparaison entre le stockage local (NVMe) et les devices de stockage à distance.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/networking-cloud-limits",
+      "@type": "ko:Concept",
+      "prefLabel": "Networking Cloud Limits",
+      "definition": "Limitations des réseaux dans les clouds, notamment les coûts élevés et les restrictions d'accès.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/kubernetes-limitations",
+      "@type": "ko:Concept",
+      "prefLabel": "Kubernetes Limitations",
+      "definition": "Limitations de Kubernetes pour résoudre les problèmes des clouds actuels.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/jevons-paradox-software",
+      "@type": "ko:Concept",
+      "prefLabel": "Jevons Paradox Software",
+      "definition": "Paradoxe de Jevons appliqué à la génération de logiciels : plus d'agents IA → besoin accru de ressources cloud.",
+      "domain": "artificial intelligence"
+    },
+    {
+      "@id": "ko:concept/exe-dev-project",
+      "@type": "ko:Concept",
+      "prefLabel": "exe.dev Project",
+      "definition": "Projet personnel pour construire un cloud alternatif, plus performant et économique.",
+      "domain": "software engineering"
+    }
+  ]
+}

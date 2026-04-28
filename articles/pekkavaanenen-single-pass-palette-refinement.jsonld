@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/pekkavaanenen-single-pass-palette-refinement",
+      "@type": "ko:Article",
+      "title": "Single-pass palette refinement and ordered dithering",
+      "url": "https://30fps.net/pages/bayer-order-online-kmeans/",
+      "publishedDate": "2026-04-23",
+      "readDate": "2026-04-24",
+      "language": "en",
+      "abstract": "Explores a method that modifies the online k-means algorithm to produce ordered dithering patterns as a side effect, combining palette refinement and dithering in a single pass. The article demonstrates how pixel traversal order (e.g., Bayer matrix) affects the quality and style of the output.",
+      "hasAuthor": "ko:author/pekkavaanenen",
+      "introduces": [
+        "ko:concept/online-k-means",
+        "ko:concept/bayer-matrix-order",
+        "ko:concept/palette-refinement"
+      ],
+      "uses": [
+        "ko:concept/k-means-clustering",
+        "ko:concept/color-quantization",
+        "ko:concept/maximin-k-means-initializer"
+      ],
+      "exemplifies": [
+        "ko:concept/ordered-dithering"
+      ]
+    },
+    {
+      "@id": "ko:concept/bayer-matrix-order",
+      "@type": "ko:Concept",
+      "prefLabel": "Bayer Matrix Order",
+      "altLabel": [
+        "bayer order traversal"
+      ],
+      "definition": "A method for traversing pixels using Bayer matrix patterns to create ordered dithering effects while refining the palette.",
+      "domain": "software engineering",
+      "broader": "ko:concept/ordered-dithering"
+    },
+    {
+      "@id": "ko:concept/palette-refinement",
+      "@type": "ko:Concept",
+      "prefLabel": "Palette Refinement",
+      "altLabel": [
+        "palette optimization"
+      ],
+      "definition": "The process of iteratively improving a color palette based on pixel data during quantization.",
+      "domain": "software engineering",
+      "broader": "ko:concept/color-quantization"
+    },
+    {
+      "@id": "ko:concept/color-quantization",
+      "@type": "ko:Concept",
+      "prefLabel": "Color Quantization",
+      "altLabel": [
+        "palette quantization"
+      ],
+      "definition": "The process of reducing the number of colors in an image to a smaller set, often used for compression or stylization.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/ordered-dithering",
+      "@type": "ko:Concept",
+      "prefLabel": "Ordered Dithering",
+      "altLabel": [
+        "ordered dither",
+        "dithering pattern"
+      ],
+      "definition": "A technique used in image processing to simulate continuous tones using a limited palette, often employing patterns like Bayer matrices.",
+      "domain": "software engineering",
+      "broader": "ko:concept/color-quantization"
+    }
+  ]
+}

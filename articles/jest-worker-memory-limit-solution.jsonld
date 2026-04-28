@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/jest-worker-memory-limit-solution",
+      "@type": "ko:Article",
+      "title": "Soluce: Forcing Worker Recycling in Jest",
+      "url": "https://bdx.town/soluce-jest-worker-memory",
+      "publishedDate": "2026-04-28",
+      "readDate": "2026-04-28",
+      "language": "en",
+      "abstract": "Describes how setting maxWorkerMemoryLimit in Jest forces worker recycling beyond a certain memory consumption threshold, mitigating or bypassing memory leak issues.",
+      "hasAuthor": "ko:author/clovis",
+      "introduces": [
+        "ko:concept/max-worker-memory-limit"
+      ]
+    },
+    {
+      "@id": "ko:concept/max-worker-memory-limit",
+      "@type": "ko:Concept",
+      "prefLabel": "Max Worker Memory Limit (Jest)",
+      "altLabel": [
+        "Jest maxWorkerMemoryLimit",
+        "worker memory limit in Jest"
+      ],
+      "definition": "A configuration option in Jest that limits the maximum memory a worker process can use, forcing recycling if the limit is exceeded. This helps mitigate or bypass memory leak issues.",
+      "domain": "software engineering"
+    }
+  ]
+}
