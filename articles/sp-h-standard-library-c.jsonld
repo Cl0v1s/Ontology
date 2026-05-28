@@ -1,0 +1,97 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/sp-h-standard-library-c",
+      "@type": "ko:Article",
+      "title": "sp.h is the standard library that C deserves",
+      "url": "https://spader.zone/sp/",
+      "publishedDate": "2026-05-28",
+      "readDate": "2026-05-28",
+      "language": "en",
+      "abstract": "The article introduces sp.h, a high-quality, ultra-portable standard library for C that does not depend on libc except when required by the platform. It highlights the principles of direct programming against syscalls and the design of a single-header library.",
+      "hasAuthor": "ko:author/clovis",
+      "introduces": [
+        "ko:concept/sp-h",
+        "ko:concept/c99",
+        "ko:concept/syscalls",
+        "ko:concept/portable-libraries",
+        "ko:concept/single-header-library"
+      ],
+      "usesLanguage": [
+        "ko:concept/c"
+      ]
+    },
+    {
+      "@id": "ko:concept/sp-h",
+      "@type": "ko:Concept",
+      "prefLabel": "sp.h",
+      "altLabel": [
+        "sp.h library",
+        "C standard library"
+      ],
+      "definition": "A high-quality, ultra-portable standard library for C that does not depend on libc except when required by the platform.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/c99",
+      "@type": "ko:Concept",
+      "prefLabel": "C99",
+      "altLabel": [
+        "ANSI C",
+        "ISO C99"
+      ],
+      "definition": "The 1999 version of the C programming language, introducing several new features and standardizing existing ones.",
+      "domain": "programming languages"
+    },
+    {
+      "@id": "ko:concept/syscalls",
+      "@type": "ko:Concept",
+      "prefLabel": "Syscalls",
+      "altLabel": [
+        "system calls",
+        "kernel calls"
+      ],
+      "definition": "System calls, the interface through which a process requests services from the kernel.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/portable-libraries",
+      "@type": "ko:Concept",
+      "prefLabel": "Portable libraries",
+      "altLabel": [
+        "cross-platform libraries",
+        "portable code"
+      ],
+      "definition": "Libraries designed to work across different platforms without relying on platform-specific dependencies like libc, except when necessary.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/single-header-library",
+      "@type": "ko:Concept",
+      "prefLabel": "Single-header library",
+      "altLabel": [
+        "single-file library",
+        "header-only library"
+      ],
+      "definition": "A library designed to be included in a single header file, reducing dependencies and simplifying integration.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/c",
+      "@type": "ko:Concept",
+      "prefLabel": "C",
+      "definition": "A general-purpose programming language that is widely used for system/application software.",
+      "domain": "programming languages"
+    }
+  ]
+}
