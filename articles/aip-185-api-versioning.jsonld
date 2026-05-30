@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/aip-185-api-versioning",
+      "@type": "ko:Article",
+      "title": "AIP-185: API Versioning",
+      "url": "https://google.aip.dev/185",
+      "publishedDate": "2026-05-30",
+      "readDate": "2026-05-30",
+      "language": "en",
+      "abstract": "The article introduces AIP-185, which outlines best practices for API versioning. It covers strategies like semantic versioning, backward-compatible changes, and deprecation policies to ensure smooth transitions and compatibility.",
+      "hasAuthor": "ko:author/google",
+      "introduces": [
+        "ko:concept/api-versioning",
+        "ko:concept/versioning-strategies",
+        "ko:concept/aip-api-interface-protocol"
+      ],
+      "usesLanguage": [
+        "ko:concept/english"
+      ]
+    },
+    {
+      "@id": "ko:concept/api-versioning",
+      "@type": "ko:Concept",
+      "prefLabel": "API Versioning",
+      "altLabel": [
+        "versioning APIs",
+        "API version management"
+      ],
+      "definition": "Strategies and best practices for managing API versions to ensure compatibility and smooth transitions, such as semantic versioning, backward-compatible changes, and deprecation policies.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/versioning-strategies",
+      "@type": "ko:Concept",
+      "prefLabel": "Versioning Strategies",
+      "altLabel": [
+        "versioning approaches",
+        "API version strategies"
+      ],
+      "definition": "Approaches for managing API versions, including semantic versioning (MAJOR.MINOR.PATCH), backward-compatible changes, and deprecation policies.",
+      "domain": "software engineering"
+    }
+  ]
+}

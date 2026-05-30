@@ -1,17 +1,17 @@
 {
   "article": {
-    "@id": "ko:article/aip-180-backwards-compatibility",
-    "title": "AIP-180: Backwards compatibility",
-    "url": "https://google.aip.dev/180",
+    "@id": "ko:article/aip-185-api-versioning",
+    "title": "AIP-185: API Versioning",
+    "url": "https://google.aip.dev/185",
     "readDate": "2026-05-30",
     "publishedDate": "2026-05-30",
     "language": "en",
-    "abstract": "The article introduces AIP-180, which outlines guidelines for ensuring backwards compatibility in API design. It covers principles and best practices to maintain existing functionality while introducing changes.",
+    "abstract": "The article introduces AIP-185, which outlines best practices for API versioning. It covers strategies like semantic versioning, backward-compatible changes, and deprecation policies to ensure smooth transitions and compatibility.",
     "hasAuthor": "ko:author/google",
     "introduces": [
-      "ko:concept/backwards-compatibility",
-      "ko:concept/aip-api-interface-protocol",
-      "ko:concept/api-design"
+      "ko:concept/api-versioning",
+      "ko:concept/versioning-strategies",
+      "ko:concept/aip-api-interface-protocol"
     ],
     "uses": [],
     "critiques": [],
@@ -21,11 +21,18 @@
   },
   "newConcepts": [
     {
-      "@id": "ko:concept/backwards-compatibility",
-      "prefLabel": "Backwards Compatibility",
-      "definition": "Ensuring that changes to an API or system do not break existing functionality, allowing smooth transitions and maintaining compatibility with existing code.",
+      "@id": "ko:concept/api-versioning",
+      "prefLabel": "API Versioning",
+      "definition": "Strategies and best practices for managing API versions to ensure compatibility and smooth transitions, such as semantic versioning, backward-compatible changes, and deprecation policies.",
       "domain": "software engineering",
-      "altLabel": ["backward compatibility", "API compatibility"]
+      "altLabel": ["versioning APIs", "API version management"]
+    },
+    {
+      "@id": "ko:concept/versioning-strategies",
+      "prefLabel": "Versioning Strategies",
+      "definition": "Approaches for managing API versions, including semantic versioning (MAJOR.MINOR.PATCH), backward-compatible changes, and deprecation policies.",
+      "domain": "software engineering",
+      "altLabel": ["versioning approaches", "API version strategies"]
     },
     {
       "@id": "ko:concept/aip-api-interface-protocol",
@@ -33,13 +40,6 @@
       "definition": "A set of guidelines and best practices for designing APIs, ensuring consistency, clarity, and maintainability in API development.",
       "domain": "software engineering",
       "altLabel": ["API Interface Protocol", "AIP guidelines"]
-    },
-    {
-      "@id": "ko:concept/api-design",
-      "prefLabel": "API Design",
-      "definition": "The principles and practices for creating effective, maintainable, and scalable APIs that meet the needs of developers and users.",
-      "domain": "software engineering",
-      "altLabel": ["application programming interface design", "interface design"]
     },
     {
       "@id": "ko:concept/english",
