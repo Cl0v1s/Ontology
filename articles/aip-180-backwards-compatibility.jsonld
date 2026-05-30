@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/aip-180-backwards-compatibility",
+      "@type": "ko:Article",
+      "title": "AIP-180: Backwards compatibility",
+      "url": "https://google.aip.dev/180",
+      "publishedDate": "2026-05-30",
+      "readDate": "2026-05-30",
+      "language": "en",
+      "abstract": "The article introduces AIP-180, which outlines guidelines for ensuring backwards compatibility in API design. It covers principles and best practices to maintain existing functionality while introducing changes.",
+      "hasAuthor": "ko:author/google",
+      "introduces": [
+        "ko:concept/backwards-compatibility",
+        "ko:concept/aip-api-interface-protocol",
+        "ko:concept/api-design"
+      ],
+      "usesLanguage": [
+        "ko:concept/english"
+      ]
+    },
+    {
+      "@id": "ko:concept/backwards-compatibility",
+      "@type": "ko:Concept",
+      "prefLabel": "Backwards Compatibility",
+      "altLabel": [
+        "backward compatibility",
+        "API compatibility"
+      ],
+      "definition": "Ensuring that changes to an API or system do not break existing functionality, allowing smooth transitions and maintaining compatibility with existing code.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/aip-api-interface-protocol",
+      "@type": "ko:Concept",
+      "prefLabel": "AIP (API Interface Protocol)",
+      "altLabel": [
+        "API Interface Protocol",
+        "AIP guidelines"
+      ],
+      "definition": "A set of guidelines and best practices for designing APIs, ensuring consistency, clarity, and maintainability in API development.",
+      "domain": "software engineering"
+    }
+  ]
+}

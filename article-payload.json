@@ -1,73 +1,57 @@
 {
   "article": {
-    "@id": "ko:article/sp-h-standard-library-c",
-    "title": "sp.h is the standard library that C deserves",
-    "url": "https://spader.zone/sp/",
-    "readDate": "2026-05-28",
-    "publishedDate": "2026-05-28",
+    "@id": "ko:article/aip-180-backwards-compatibility",
+    "title": "AIP-180: Backwards compatibility",
+    "url": "https://google.aip.dev/180",
+    "readDate": "2026-05-30",
+    "publishedDate": "2026-05-30",
     "language": "en",
-    "abstract": "The article introduces sp.h, a high-quality, ultra-portable standard library for C that does not depend on libc except when required by the platform. It highlights the principles of direct programming against syscalls and the design of a single-header library.",
-    "hasAuthor": "ko:author/clovis",
+    "abstract": "The article introduces AIP-180, which outlines guidelines for ensuring backwards compatibility in API design. It covers principles and best practices to maintain existing functionality while introducing changes.",
+    "hasAuthor": "ko:author/google",
     "introduces": [
-      "ko:concept/sp-h",
-      "ko:concept/c99",
-      "ko:concept/syscalls",
-      "ko:concept/portable-libraries",
-      "ko:concept/single-header-library"
+      "ko:concept/backwards-compatibility",
+      "ko:concept/aip-api-interface-protocol",
+      "ko:concept/api-design"
     ],
     "uses": [],
     "critiques": [],
     "exemplifies": [],
     "hasFeature": [],
-    "usesLanguage": ["ko:concept/c"]
+    "usesLanguage": ["ko:concept/english"]
   },
   "newConcepts": [
     {
-      "@id": "ko:concept/sp-h",
-      "prefLabel": "sp.h",
-      "definition": "A high-quality, ultra-portable standard library for C that does not depend on libc except when required by the platform.",
+      "@id": "ko:concept/backwards-compatibility",
+      "prefLabel": "Backwards Compatibility",
+      "definition": "Ensuring that changes to an API or system do not break existing functionality, allowing smooth transitions and maintaining compatibility with existing code.",
       "domain": "software engineering",
-      "altLabel": ["sp.h library", "C standard library"]
+      "altLabel": ["backward compatibility", "API compatibility"]
     },
     {
-      "@id": "ko:concept/c99",
-      "prefLabel": "C99",
-      "definition": "The 1999 version of the C programming language, introducing several new features and standardizing existing ones.",
-      "domain": "programming languages",
-      "altLabel": ["ANSI C", "ISO C99"]
-    },
-    {
-      "@id": "ko:concept/syscalls",
-      "prefLabel": "Syscalls",
-      "definition": "System calls, the interface through which a process requests services from the kernel.",
+      "@id": "ko:concept/aip-api-interface-protocol",
+      "prefLabel": "AIP (API Interface Protocol)",
+      "definition": "A set of guidelines and best practices for designing APIs, ensuring consistency, clarity, and maintainability in API development.",
       "domain": "software engineering",
-      "altLabel": ["system calls", "kernel calls"]
+      "altLabel": ["API Interface Protocol", "AIP guidelines"]
     },
     {
-      "@id": "ko:concept/portable-libraries",
-      "prefLabel": "Portable libraries",
-      "definition": "Libraries designed to work across different platforms without relying on platform-specific dependencies like libc, except when necessary.",
+      "@id": "ko:concept/api-design",
+      "prefLabel": "API Design",
+      "definition": "The principles and practices for creating effective, maintainable, and scalable APIs that meet the needs of developers and users.",
       "domain": "software engineering",
-      "altLabel": ["cross-platform libraries", "portable code"]
+      "altLabel": ["application programming interface design", "interface design"]
     },
     {
-      "@id": "ko:concept/single-header-library",
-      "prefLabel": "Single-header library",
-      "definition": "A library designed to be included in a single header file, reducing dependencies and simplifying integration.",
-      "domain": "software engineering",
-      "altLabel": ["single-file library", "header-only library"]
-    },
-    {
-      "@id": "ko:concept/c",
-      "prefLabel": "C",
-      "definition": "A general-purpose programming language that is widely used for system/application software.",
+      "@id": "ko:concept/english",
+      "prefLabel": "English",
+      "definition": "A widely used language for technical documentation, APIs, and software development.",
       "domain": "programming languages"
     }
   ],
   "newAuthors": [
     {
-      "@id": "ko:author/clovis",
-      "name": "Clovis"
+      "@id": "ko:author/google",
+      "name": "Google"
     }
   ]
 }
