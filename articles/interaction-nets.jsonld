@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/interaction-nets",
+      "@type": "ko:Article",
+      "title": "Interaction Nets",
+      "url": "https://wiki.xxiivv.com/site/interaction_nets.html",
+      "publishedDate": "2026-05-31",
+      "readDate": "2026-05-31",
+      "language": "en",
+      "abstract": "The article introduces Interaction Nets (INs), a graph rewriting system that encodes computations in a graph of nodes. It allows for parallelism and captures all computable functions without external machinery like garbage collectors.",
+      "hasAuthor": "ko:author/xxiivv-community",
+      "introduces": [
+        "ko:concept/interaction-nets",
+        "ko:concept/graph-rewriting",
+        "ko:concept/parallelism"
+      ],
+      "usesLanguage": [
+        "ko:concept/english"
+      ]
+    },
+    {
+      "@id": "ko:concept/interaction-nets",
+      "@type": "ko:Concept",
+      "prefLabel": "Interaction Nets (INs)",
+      "altLabel": [
+        "interaction nets",
+        "INs"
+      ],
+      "definition": "A graph rewriting system that encodes computations in a graph of nodes. It allows for parallelism and captures all computable functions without external machinery like garbage collectors.",
+      "domain": "computer science"
+    },
+    {
+      "@id": "ko:concept/graph-rewriting",
+      "@type": "ko:Concept",
+      "prefLabel": "Graph Rewriting",
+      "altLabel": [
+        "graph transformation",
+        "rewriting systems"
+      ],
+      "definition": "The process of transforming graphs to represent computational steps, enabling the modeling of computations in a structured and efficient manner.",
+      "domain": "computer science"
+    },
+    {
+      "@id": "ko:concept/parallelism",
+      "@type": "ko:Concept",
+      "prefLabel": "Parallelism",
+      "altLabel": [
+        "parallel computing",
+        "simultaneous execution"
+      ],
+      "definition": "The ability to perform multiple computational steps simultaneously, enabling efficient and scalable computation.",
+      "domain": "computer science"
+    }
+  ]
+}

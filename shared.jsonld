@@ -837,6 +837,12 @@
       "@type": "ko:Author",
       "name": "Google",
       "domain": "author"
+    },
+    {
+      "@id": "ko:author/xxiivv-community",
+      "@type": "ko:Author",
+      "name": "XXIIVV Community",
+      "domain": "author"
     }
   ]
 }
