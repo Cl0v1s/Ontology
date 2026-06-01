@@ -843,6 +843,12 @@
       "@type": "ko:Author",
       "name": "XXIIVV Community",
       "domain": "author"
+    },
+    {
+      "@id": "ko:author/vitali87",
+      "@type": "ko:Author",
+      "name": "vitali87",
+      "domain": "author"
     }
   ]
 }

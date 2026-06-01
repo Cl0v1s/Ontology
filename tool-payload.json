@@ -1,0 +1,65 @@
+{
+  "article": {
+    "@id": "ko:article/croft",
+    "title": "croft - A VS Code-style TUI Editor in Rust",
+    "url": "https://codeberg.org/vitali87/croft",
+    "readDate": "2026-06-01",
+    "publishedDate": "2026-06-01",
+    "language": "en",
+    "abstract": "croft is a VS Code-style three-pane workspace that runs entirely inside the terminal. Written in Rust, it provides a powerful and efficient development environment with features like tree-sitter syntax highlighting, inline previews for various file types, and a real interactive shell.",
+    "hasAuthor": "ko:author/vitali87",
+    "introduces": [
+      "ko:concept/terminal-based-code-editor",
+      "ko:concept/tree-sitter-syntax-highlighting",
+      "ko:concept/multi-pane-workspace",
+      "ko:concept/static-binary"
+    ],
+    "uses": ["ko:concept/rust"],
+    "critiques": [],
+    "exemplifies": [],
+    "hasFeature": [],
+    "usesLanguage": ["ko:concept/english"]
+  },
+  "newConcepts": [
+    {
+      "@id": "ko:concept/terminal-based-code-editor",
+      "prefLabel": "Terminal-based Code Editor",
+      "definition": "A code editor that runs entirely in the terminal, mimicking the interface and features of popular IDEs like VS Code.",
+      "domain": "software development",
+      "altLabel": ["terminal editor", "TUI editor"]
+    },
+    {
+      "@id": "ko:concept/tree-sitter-syntax-highlighting",
+      "prefLabel": "Tree-sitter Syntax Highlighting",
+      "definition": "A syntax highlighting engine that provides accurate and efficient parsing of code using tree-sitting technology, enabling advanced language features like incremental parsing.",
+      "domain": "software development",
+      "altLabel": ["tree-sitter", "syntax parsing"]
+    },
+    {
+      "@id": "ko:concept/multi-pane-workspace",
+      "prefLabel": "Multi-pane Workspace",
+      "definition": "A workspace layout that divides the screen into multiple panes (e.g., explorer, editor, terminal) for a unified and efficient development experience.",
+      "domain": "software development",
+      "altLabel": ["multi-pane interface", "split-screen workspace"]
+    },
+    {
+      "@id": "ko:concept/static-binary",
+      "prefLabel": "Static Binary",
+      "definition": "A compiled binary that is statically linked, making it easy to deploy without requiring additional dependencies or runtime environments.",
+      "domain": "software deployment",
+      "altLabel": ["static linking", "single-binary distribution"]
+    },
+    {
+      "@id": "ko:concept/rust",
+      "prefLabel": "Rust",
+      "definition": "A systems programming language known for its performance, memory safety, and concurrency features.",
+      "domain": "programming languages"
+    }
+  ],
+  "newAuthors": [
+    {
+      "@id": "ko:author/vitali87",
+      "name": "vitali87"
+    }
+  ]
+}

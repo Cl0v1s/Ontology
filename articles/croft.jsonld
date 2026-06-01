@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/croft",
+      "@type": "ko:Article",
+      "title": "croft - A VS Code-style TUI Editor in Rust",
+      "url": "https://codeberg.org/vitali87/croft",
+      "publishedDate": "2026-06-01",
+      "readDate": "2026-06-01",
+      "language": "en",
+      "abstract": "croft is a VS Code-style three-pane workspace that runs entirely inside the terminal. Written in Rust, it provides a powerful and efficient development environment with features like tree-sitter syntax highlighting, inline previews for various file types, and a real interactive shell.",
+      "hasAuthor": "ko:author/vitali87",
+      "introduces": [
+        "ko:concept/terminal-based-code-editor",
+        "ko:concept/tree-sitter-syntax-highlighting",
+        "ko:concept/multi-pane-workspace",
+        "ko:concept/static-binary"
+      ],
+      "uses": [
+        "ko:concept/rust"
+      ],
+      "usesLanguage": [
+        "ko:concept/english"
+      ]
+    },
+    {
+      "@id": "ko:concept/terminal-based-code-editor",
+      "@type": "ko:Concept",
+      "prefLabel": "Terminal-based Code Editor",
+      "altLabel": [
+        "terminal editor",
+        "TUI editor"
+      ],
+      "definition": "A code editor that runs entirely in the terminal, mimicking the interface and features of popular IDEs like VS Code.",
+      "domain": "software development"
+    },
+    {
+      "@id": "ko:concept/tree-sitter-syntax-highlighting",
+      "@type": "ko:Concept",
+      "prefLabel": "Tree-sitter Syntax Highlighting",
+      "altLabel": [
+        "tree-sitter",
+        "syntax parsing"
+      ],
+      "definition": "A syntax highlighting engine that provides accurate and efficient parsing of code using tree-sitting technology, enabling advanced language features like incremental parsing.",
+      "domain": "software development"
+    },
+    {
+      "@id": "ko:concept/multi-pane-workspace",
+      "@type": "ko:Concept",
+      "prefLabel": "Multi-pane Workspace",
+      "altLabel": [
+        "multi-pane interface",
+        "split-screen workspace"
+      ],
+      "definition": "A workspace layout that divides the screen into multiple panes (e.g., explorer, editor, terminal) for a unified and efficient development experience.",
+      "domain": "software development"
+    },
+    {
+      "@id": "ko:concept/static-binary",
+      "@type": "ko:Concept",
+      "prefLabel": "Static Binary",
+      "altLabel": [
+        "static linking",
+        "single-binary distribution"
+      ],
+      "definition": "A compiled binary that is statically linked, making it easy to deploy without requiring additional dependencies or runtime environments.",
+      "domain": "software deployment"
+    },
+    {
+      "@id": "ko:concept/rust",
+      "@type": "ko:Concept",
+      "prefLabel": "Rust",
+      "definition": "A systems programming language that focuses on safety, speed, and concurrency.",
+      "domain": "programming languages"
+    }
+  ]
+}
