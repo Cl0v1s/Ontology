@@ -849,6 +849,12 @@
       "@type": "ko:Author",
       "name": "vitali87",
       "domain": "author"
+    },
+    {
+      "@id": "ko:author/laluka",
+      "@type": "ko:Author",
+      "name": "laluka",
+      "domain": "author"
     }
   ]
 }

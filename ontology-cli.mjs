@@ -389,12 +389,17 @@ async function cmdAddArticle(args) {
   }
 
   // ── Verify all referenced concept IDs exist ──
+  // This is checked before any file write so failures are non-destructive.
+  const unresolvedRefs = [];
   for (const rel of ARTICLE_RELATION_KEYS) {
     for (const ref of [article[rel] ?? []].flat()) {
       if (ref.startsWith('ko:') && !index.has(ref)) {
-        warn(`${rel}: "${ref}" not found in ontology — define it in newConcepts or check the @id`);
+        unresolvedRefs.push(`${rel}: "${ref}" not found in ontology — define it in newConcepts or check the @id`);
       }
     }
+  }
+  if (unresolvedRefs.length) {
+    fatal(`Unresolved references (would fail validate):\n  • ${unresolvedRefs.join('\n  • ')}`);
   }
 
   // ── Write article file ──

@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ko": "http://knowledge.local/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "ko:article/laluka-bypass-url-parser",
+      "@type": "ko:Article",
+      "title": "bypass-url-parser",
+      "url": "https://github.com/laluka/bypass-url-parser",
+      "publishedDate": "2023-10-15",
+      "readDate": "2026-06-08",
+      "language": "en",
+      "abstract": "A Python library for parsing URLs with bypass techniques.",
+      "hasAuthor": "ko:author/laluka",
+      "introduces": [
+        "ko:concept/bypass-url-parser"
+      ],
+      "uses": [
+        "ko:concept/pypi",
+        "ko:concept/python"
+      ],
+      "hasFeature": [
+        "ko:concept/pdm-managed"
+      ]
+    },
+    {
+      "@id": "ko:concept/bypass-url-parser",
+      "@type": "ko:Concept",
+      "prefLabel": "Bypass URL Parser",
+      "altLabel": [
+        "bypass-url-parser"
+      ],
+      "definition": "A Python library for parsing URLs with bypass techniques.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/pypi",
+      "@type": "ko:Concept",
+      "prefLabel": "PyPI",
+      "altLabel": [
+        "Python Package Index"
+      ],
+      "definition": "Python Package Index, a repository for distributing Python packages.",
+      "domain": "software engineering"
+    },
+    {
+      "@id": "ko:concept/pdm-managed",
+      "@type": "ko:Concept",
+      "prefLabel": "pdm-managed",
+      "altLabel": [
+        "pdm",
+        "pdm package management"
+      ],
+      "definition": "A project managed using pdm, a modern Python package manager.",
+      "domain": "software engineering"
+    }
+  ]
+}
